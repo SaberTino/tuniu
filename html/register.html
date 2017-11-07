@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/register.css"/>
+</head>
+<body>
+    <div id="logo">
+        <a href="../index.html"></a>
+        <span>欢迎注册</span>
+    </div>
+    <hr/>
+    <div id="register">
+        <p class="title">用户注册</p>
+        <div class="registerBox">
+            <p class="uname">
+                <span class="hint">用户名：</span>
+                <input type="text" placeholder="请输入用户名" >
+                <span class="show-uname"></span>
+            </p>
+            <p class="upwd">
+                <span class="hint">密码：</span>
+                <input type="password" placeholder="请输入密码" />
+                <span class="show-upwd"></span>
+            </p>
+            <p class="checkUpwd">
+                <span class="hint">确认密码：</span>
+                <input type="password" placeholder="请确认密码" />
+                <span class="show-check"></span>
+            </p>
+            <p class="yzm">
+                <span class="hint">验证码：</span>
+                <input type="text"/>
+                <canvas id="yzm" width="110px" height="35px"></canvas>
+            </p>
+            <p class="protocal">
+                <input  id="agree" type="checkbox" checked/>
+                <label for="agree">同意</label>
+                <a href="javascript:;">途牛会员协议</a>
+                <span>并且愿意接受旅游咨询免费信息</span>
+            </p>
+            <p>
+                <button class="submit" name="submit">注册</button>
+            </p>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

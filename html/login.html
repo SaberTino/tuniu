@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>涂牛用户登录</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <!--引入自定义的longin.css-->
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+    <div id="login">
+        <!--顶部LOGO-->
+        <div id="header_logo">
+            <a href="../index.html" target="_blank">
+                <img src="../images/logo.png"/>
+            </a>
+        </div>
+        <!--中间用户登录-->
+        <div id="user_login">
+            <ul class="list_box">
+                <li class="list_box1">
+                    <a href="#">账户登录</a>
+                </li>
+                <li class="list_box2">
+                    <a href="#">扫码登录</a>
+                </li>
+            </ul>
+            <div id="user_login1">
+                <p class="kong">
+									<img src="../images/imageerror.png" alt="">
+									<span></span>
+								</p>
+                <form action="../data/00-login.php" method="post">
+                    <ul class="user_login1_box1 clear">
+                        <li class="user_login1_box1_1">
+                            <input type="text" id="uname" name="uname" maxlength="20" placeholder="手机号/会员号/昵称/邮箱" onblur="check_uname()"/>
+                        </li>
+                        <li class="user_login1_box1_2">
+                            <a href="javascript:;">国际手机号登录</a>
+                        </li>
+                    </ul>
+                    <div class="upwd_box" >
+                    <input type="password" placeholder="密码" id="upwd" name="upwd" onblur="check_upwd()"/>
+                    </div>
+                    <div class="verify">
+                        <input type="text" placeholder="验证码" maxlength="4" onblur="check_code()"/>
+												<canvas id="c3"></canvas>
+												<span id="change">看不清楚？换一张</span>
+                    </div>
+                    <ul class="phone_login clear">
+                        <li>
+                            <input type="checkbox"/>两周内自动登录
+                        </li>
+                        <a href="javascript:;" class="phone">
+                            <img src="../images/mobile.png"/>手机动态密码登录?
+                        </a>
+                    </ul>
+                    <div class="user_login_footer">
+                        <input type="button" value="登录" id="submit"/>
+                    </div>
+                </form>
+                <div class="f_upwd clear">
+                    <a href="javascript:;">忘记密码</a>
+                    <p>
+                        <a href="register.html">
+                            新用户送礼,
+                            <span>立即注册 &gt</span>
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <div class="login_box">
+                        <p>其它方式登录</p>
+                        <ul class="login_box_ul clear">
+                            <li class="login_box_li1">
+                                <a href="#">
+                                    <img class="login_wx" src="../images/weixinv2.png"/>
+                                    <span>微信</span>
+                                </a>
+                            </li>
+                            <li class="login_box_li2">
+                                <a href="#" class="clear">
+                                    <img class="login_qq" src="../images/qqv2.png"/>
+                                    <span>QQ</span>
+                                </a>
+                            </li>
+                            <li class="login_box_li3">
+                                <a href="#"  class="clear">
+                                    <img class="login_wb" src="../images/weibov2.png"/>
+                                    <span class="clear">微博</span>
+                                </a>
+                            </li>
+                            <li class="login_box_li4">
+                                <a href="#" class="clear">
+                                    <img class="login_card" src="../images/cardv2.png"/>
+                                    <span>合作卡</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login_bj"></div>
+        <!--尾部-->
+        <div id="footer">
+            <p>24小时客户服务电话(免长途费)：4007-999-999 途牛呼叫中心位于南京来电将统一显示为 025-86859999</p>
+            <ul class="footer_1 clear">
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">Investor Relations</a>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+                <li>
+                    <a href="#">投诉建议</a>
+                </li>
+                <li>
+                    <a href="#">广告服务</a>
+                </li>
+                <li>
+                    <a href="#">旅游券</a>
+                </li>
+                <li>
+                    <a href="#" class="recruit">途牛招聘</a>
+                </li>
+                <li>
+                    <a href="#">隐私保护</a>
+                </li>
+                <li>
+                    <a href="#">免责声明</a>
+                </li>
+                <li>
+                    <a href="#">旅游度假资质</a>
+                </li>
+                <li>
+                    <a href="#">供应商合作</a>
+                </li>
+                <li>
+                    <a href="#">用户协议</a>
+                </li>
+                <li>
+                    <a href="#">网站地图</a>
+                </li>
+            </ul>
+            <ul class="footer_2 clear">
+                <li>
+                    <a href="#">团队博客</a>
+                <li>
+                    <a href="#">网站联盟</a>
+                </li>
+                <li>
+                    <a href="#">UEIP</a>
+                </li>
+                <li>
+                    <a href="#">帮助中心</a>
+                </li>
+            </ul>
+            <ul class="footer_3 clear">
+                <li>Copyright &copy</li>
+                <li>2006-2014</li>
+                <li>
+                    <a href="#">途牛旅游网 Tuniu.com</a>&nbsp|&nbsp
+                </li>
+                <li>
+                    <a href="#">营业执照</a>&nbsp|&nbsp
+                </li>
+                <li>
+                    <a href="#">ICP证: 苏B2-20130006</a>&nbsp
+                </li>
+                <li>
+                    <a href="#">上海旅游网</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+		<script src="../js/jquery-3.2.1.js"></script>
+		<script src="../js/login.js"></script>		
+</body>
+</html>

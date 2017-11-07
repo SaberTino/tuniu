@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>邮轮</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/03-youlun.css">
+	<link rel="stylesheet" href="../css/header.css"/>
+	<link rel="stylesheet" href="../css/footer.css">
+	<style>
+	
+	</style>
+</head>
+<body>
+	<header id="header">
+	</header>
+	<!-- 轮播 -->
+	<div id="banner">
+		<ul class="clear imag" data-img="move">
+		<!-- <li> -->
+		<!--	 <a href="#"> -->
+		<!--		 <img src="../images/03-youlun/1.jpeg" alt=""/> -->
+		<!--	 </a> -->
+		<!-- </li> -->
+		</ul>
+        <!--<div class="left"></div>
+        <div class="right"></div> -->
+		<ul class="origin clear"  data-load="point">
+		    <li></li>
+		    <li></li>
+		    <li></li>
+		    <li></li>
+		    <li></li>
+		    <li></li>
+		    <li></li>
+		</ul>
+	</div>
+	<!-- 爆款推荐 -->
+	<div id="recom" class="clear">			
+		<h3>&nbsp;&nbsp爆款推荐</h3>			
+		<!--<ul>
+			<li>
+				<a href="#">放松之旅</a>
+			</li>
+			<li>
+				<p>满意度：94%</p>
+				<p>出发城市：上海</p>
+			</li>				
+			<li>
+				<a href="#">
+					<img src="../images/03-youlun/11.JPG" alt="">
+				</a>
+			</li>
+			<li>
+				￥00.00
+			</li>
+			<li>
+				<a href="#">途牛包船10月25日</a>
+			</li>
+		</ul>-->
+	</div>
+	<!-- 日历 邮程 -->
+	<div id="kalendar" class="clear">
+		<div class="left">
+			<div class="clear">
+				<a class="a_a"></a>
+				<h3>邮轮航线</h3>
+			</div>
+			<ul class="clear">
+				<li>日本</li>
+				<li>东南亚</li>
+				<li>地中海</li>
+			</ul>
+			<ul class="clear">
+				<li>三峡&西沙</li>
+				<li>南极</li>
+				<li>加勒比海</li>
+			</ul>
+			<div class="clear">
+				<a class="a_b"></a>
+				<h3>出发港口</h3>
+			</div>
+			<ul class="clear">
+				<li>上海</li>
+				<li>天津</li>
+				<li>厦门</li>
+				<li>广州</li>
+				<li>青岛</li>
+				<li>香港</li>
+				<li>深圳</li>
+				<li>重庆</li>
+				<li>宜昌</li>
+			</ul>
+			<div class="clear">
+				<a class="a_c"></a>
+				<h3>出发日期</h3>
+			</div>
+			<ul class="clear">
+				<li>9月</li>
+				<li>10月</li>
+				<li>11月</li>
+				<li>12月</li>
+				<li>18年1月</li>
+				<li>18年2月</li>
+				<li>18年4月</li>
+				<li>18年5月</li>
+			</ul>
+			<div class="clear">
+				<a class="a_d"></a>
+				<h3>轮船公司</h3>
+			</div>
+			<ul class="clear">
+				<li>歌诗达邮轮</li>
+				<li> 公主邮轮</li>
+				<li> 皇家加勒比游轮</li>
+				<li>天海邮轮</li>
+				<li>地中海邮轮</li>
+				<li>丽星邮轮</li>
+				<li>星梦邮轮</li>
+				<li>夸克邮轮</li>
+				<li>诺唯真游轮</li>
+				<li>庞洛邮轮</li>
+				<li>长江海外游轮</li>
+				<li>总统游轮</li>
+				<li>世纪游轮</li>
+				
+			</ul>
+			<div>
+				<img src="../images/03-youlun/ship_link_bg2.png" alt="">
+			</div>
+		</div>
+		<div id="box">
+			<div  class="font_a">
+				<div class="font">
+					<div><诺唯真邮轮喜悦号上海-长崎-上海4晚5日></div>
+					<div>11月02日 错峰出游</div>
+				</div>
+				<div>
+					<img src="../images/03-youlun/cal2.png" alt="">
+				</div>
+				<ul class="clear">
+					<li>按航线查看:</li>
+					<li>日本</li>
+					<li>长江三峡&西沙</li>
+					<li>多瑙河</li>
+					<li>阿拉斯加</li>
+					<li>波罗的海</li>
+					<li>地中海</li>
+					<li>加勒比海</li>
+					<li>中东</li>
+					<li>南极</li>
+				</ul>
+			</div>
+			<label for="goTime"></label>
+		
+			<div id="calendar" class="calendar"></div>
+			<label for="goTime" class="weekday">
+				<p id="month"></p>
+			</label>
+			<div id="current">当前日期</div>
+		</div>
+	</div>
+	<!-- 邮轮日本航线 -->
+	<div id="japan" class="clear">
+		<ul class="clear nav">
+			<li>
+				<h3>&nbsp;&nbsp邮轮日本航线</h3>
+			</li>
+			<ul class="clear">
+				<li>
+					<a>途牛包船</a>
+				</li>
+				<li>
+					<a>歌诗达</a>
+				</li>
+				<li>
+					<a>皇家加勒比</a>
+				</li>
+				<li>
+					<a>公主</a>
+				</li>
+				<li>
+					<a>诺唯真</a>
+				</li>
+				<li>
+					<a>天海&丽星</a>
+				</li>
+			</ul>
+		</ul>
+		<div class="content clear content_one">
+		</div>
+		<div class="content-two clear content_two">
+		</div>
+		<div class="content-two clear content_three">
+		</div>
+		<div class="content-two clear content_four">
+		</div>
+		<div class="content-two clear content_five">
+		</div>
+		<div class="content-two clear content_six">
+		</div>
+	</div>
+	<!-- 邮轮远洋航线 -->
+	<div id="ocean" class="clear ">
+		<ul class="clear nav">
+			<li>
+				<h3>&nbsp;&nbsp邮轮远洋航线</h3>
+			</li>
+			<ul class="clear">
+				<li>
+					<a>欧洲•地中海</a>
+				</li>
+				<li>
+					<a>东南亚</a>
+				</li>
+				<li>
+					<a>欧洲河轮</a>
+				</li>
+				<li>
+					<a>远洋船票</a>
+				</li>
+				<li>
+					<a>美洲•加勒比海</a>
+				</li>
+				<li>
+					<a>澳新•中东•极地</a>
+				</li>
+			</ul>
+		</ul>
+		<!--<div  class="content clear">•
+			<div>
+				<a href="">
+					<img src="" alt="">
+				</a>
+			</div>
+			<ul>
+				<li>
+					<a href="#">放松之旅</a>
+				</li>
+				<li>
+					<p>满意度：94%</p>
+					<p>出发城市：上海</p>
+				</li>				
+				<li>
+					<a href="#">
+						<img src="../images/03-youlun/11.JPG" alt="">
+					</a>
+				</li>
+				<li>
+					￥00.00
+				</li>
+				<li>
+					<a href="#">途牛包船10月25日</a>
+				</li>
+			</ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+		</div>-->
+		<div class="content clear content_one" >
+		</div>
+		<div class="content clear content_two">
+		</div>
+		<div class="content clear content_three">
+		</div>
+		<div class="content clear content_four">
+		</div>
+		<div class="content clear content_five">
+		</div>
+		<div class="content clear content_six">
+		</div>
+	</div>
+	<!-- 邮轮国内航线 -->
+	<div id="internal">
+		<ul class="clear nav">
+			<li>
+				<h3>&nbsp;&nbsp邮轮国内航线</h3>
+			</li>
+			<ul class="clear">
+				<li>
+					<a>特别推荐</a>
+				</li>
+				<li>
+					<a>全年预售</a>
+				</li>
+				<li>
+					<a>世纪&黄金邮轮</a>
+				</li>
+				<li>
+					<a>暑假优选</a>
+				</li>
+			</ul>
+		</ul>
+		<div class="content clear content_one">
+		<!--<div>
+				<a href="">
+					<img src="" alt="">
+				</a>
+			</div>
+			<ul>
+				<li>
+					<a href="#">放松之旅</a>
+				</li>
+				<li>
+					<p>满意度：94%</p>
+					<p>出发城市：上海</p>
+				</li>				
+				<li>
+					<a href="#">
+						<img src="../images/03-youlun/11.JPG" alt="">
+					</a>
+				</li>
+				<li>
+					￥00.00
+				</li>
+				<li>
+					<a href="#">途牛包船10月25日</a>
+				</li>
+			</ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+		</div>
+		<div id="inter-two" class="content-two clear">
+			<ul>
+				<li>
+					<a href="#">放松之旅</a>
+				</li>
+				<li>
+					<p>满意度：94%</p>
+					<p>出发城市：上海</p>
+				</li>				
+				<li>
+					<a href="#">
+						<img src="../images/03-youlun/11.JPG" alt="">
+					</a>
+				</li>
+				<li>
+					￥00.00
+				</li>
+				<li>
+					<a href="#">途牛包船10月25日</a>
+				</li>
+			</ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+			<ul></ul>
+		</div>-->
+		</div>
+		<div class="content-two clear content_two">
+		</div>
+		<div class="content-two clear content_three">
+		</div>
+		<div class="content-two clear content_four">
+		</div>
+	</div>
+	<!-- 邮轮公司 -->
+	<div id="company">
+		<h3>&nbsp;&nbsp邮轮公司</h3>
+		<div class="clear">
+			<ul class="ul">
+				<li>
+					<div>
+						<img src="../images/03-youlun/12.jpg" alt="">
+					</div>
+					<ul>
+						<li><img src="../images/03-youlun/16.png" alt=""></li>
+						<li>歌诗达邮轮</li>
+						<li>
+							<a href="">●&nbsp;大西洋号</a>
+						</li>
+						<li>
+							<a href="">●&nbsp;赛琳娜号</a>
+						</li>
+						<li>
+							<a href="">●&nbsp;幸运号</a>
+						</li>					
+					</ul>
+				</li>
+			</ul>
+			<ul class="ul">
+				<li>
+					<div>
+						<img src="../images/03-youlun/13.jpg" alt="">
+					</div>
+					<ul>
+						<li><img src="../images/03-youlun/17.jpg" alt=""></li>
+						<li>公主邮轮</li>
+						<li>
+							<a href="">●&nbsp;盛世公主号</a>
+						</li>
+						<li>
+							<a href="">●&nbsp;太阳公主号</a>
+						</li>
+						<li>
+							<a href="">●&nbsp;黄金公主号</a>
+						</li>					
+					</ul>
+				</li>
+			</ul>
+			<ul class="ul">
+				<li>
+					<div>
+						<img src="../images/03-youlun/14.jpg" alt="">
+					</div>
+					<ul>
+						<li>
+							<img src="../images/03-youlun/18.png" alt="">
+						</li>
+						<li>皇家加勒比邮轮</li>
+						<li>
+							<a href="">
+								●&nbsp;海洋航行者号
+							</a>
+						</li>
+						<li>
+							<a href="">
+								●&nbsp;海洋水手号
+							</a>
+						</li>
+						<li>
+							<a href="">
+								●&nbsp;海洋量子号
+							</a>
+						</li>					
+					</ul>
+				</li>
+			</ul>
+			<ul class="ul">
+				<li>
+					<div>
+						<img src="../images/03-youlun/15.jpeg" alt="">
+					</div>
+					<ul>
+						<li><img src="../images/03-youlun/19.png" alt=""></li>
+						<li>挪威真邮轮</li>
+						<li>
+							<a href="">
+								●&nbsp;喜悦号
+							</a>
+						</li>
+						<li>
+							<a href="">
+								●&nbsp;爱彼号
+							</a>
+						</li>
+						<li>
+							<a href="">
+								●&nbsp;珠宝号
+							</a>
+						</li>					
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 介绍航线 问题 游记 -->
+	<div id="strategy" class="clear">
+		<div class="start" class="clear">
+			<h3>【航线介绍】</h3>
+			<div class="clear">
+				<ul class="u">
+					<li>
+						<a href="">日本航线介绍</a>
+					</li>
+					<li>
+						<a href="">地中海航线介绍</a>
+					</li>
+					<li>
+						<a href="">多瑙河航线介绍</a>
+					</li>
+					<li>
+						<a href="">加勒比航线介绍</a>
+					</li>
+				</ul>
+				<ul class="u2">
+					<li>
+						<a href="">东南亚航线介绍</a>
+					</li>
+					<li>
+						<a href="">西沙航线介绍</a>
+					</li>
+					<li>
+						<a href="">阿拉斯加航线介绍</a>
+					</li>
+					<li>
+						<a href="">波罗的航线介绍</a>
+					</li>
+				</ul>
+			</div>
+			<h3>【常见问题】</h3>
+			<div  class="clear">
+				<ul>
+					<li>
+						<a href="">游轮上有什么好玩的？</a>
+					</li>
+					<li>
+						<a href="">邮轮旅游适合那些人？</a>
+					</li>
+					<li>
+						<a href="">邮轮旅游前的准备？</a>
+					</li>
+					<li>
+						<a href="">游轮上右那些联络方式？</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="">邮轮票件包含了那些费用？</a>
+					</li>
+					<li>
+						<a href="">邮轮上需要付小费码？</a>
+					</li>
+					<li>
+						<a href="">孩子在游轮上能玩什么？</a>
+					</li>
+					<li>
+						<a href="">邮轮区分等级吗？</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tegy clear">
+			<h3>【精彩游记】</h3>
+			<ul class="clear">
+				<li><img src="../images/03-youlun/23.jpeg" alt=""></li>
+				<li><img src="../images/03-youlun/20.jpg" alt=""></li>
+				<li><img src="../images/03-youlun/22.jpg" alt=""></li>
+				<li><img src="../images/03-youlun/24.jpg" alt=""></li>
+			</ul>
+			<div><img src="../images/03-youlun/21.jpeg" alt="">	</div>		
+		</div>
+	</div>
+	<footer id="footer"></footer>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/03-youlun.js"></script>
+ 	<script>
+	</script>
+</body>
+</html>

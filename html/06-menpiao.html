@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>门票</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/06-menpiao.css">
+	<link rel="stylesheet" href="../css/header.css"/>
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+	<header id="header"></header>
+	<div id="main">
+	<!---------------------轮播&&侧边框----------------------------->
+		<div id="ticket-banner">
+			<div id="zuo-kuang">
+				<div>
+					<p class="tubiao"></p>当季精选
+				</div>
+				<ul>
+					<li><a href="JavaScript:;">上海迪士尼</a></li>
+					<li><a href="JavaScript:;">淹城野生动物园</a></li>
+					<li><a href="JavaScript:;">横店影视城</a></li>
+					<li><a href="JavaScript:;">恐龙园</a></li>
+					<li><a href="JavaScript:;">银杏湖</a></li>
+					<li><a href="JavaScript:;">同里</a></li>
+					<li><a href="JavaScript:;">天目湖山水园</a></li>
+					<li><a href="JavaScript:;">东方盐湖城</a></li>
+					<li><a href="JavaScript:;">灵山大佛</a></li>
+				</ul>
+				<div>
+					<p class="tubiao2"></p>周边城市
+				</div>
+				<ul>
+					<li><a href="JavaScript:;">杭州</a></li>
+					<li><a href="JavaScript:;">常州</a></li>
+					<li><a href="JavaScript:;">苏州</a></li>
+					<li><a href="JavaScript:;">泰州</a></li>
+					<li><a href="JavaScript:;">扬州</a></li>
+					<li><a href="JavaScript:;">台州</a></li>
+					<li><a href="JavaScript:;">温州</a></li>
+				</ul>
+				<div>
+					<p class="tubiao3"></p>热门城市
+				</div>
+				<ul>
+					<li><a href="JavaScript:;">上海</a></li>
+					<li><a href="JavaScript:;">广州</a></li>
+					<li><a href="JavaScript:;">北京</a></li>
+					<li><a href="JavaScript:;">杭州</a></li>
+					<li><a href="JavaScript:;">成都</a></li>
+					<li><a href="JavaScript:;">昆明</a></li>
+					<li><a href="JavaScript:;">南京</a></li>
+					<li><a href="JavaScript:;">深圳</a></li>
+					<li><a href="JavaScript:;">西安</a></li>
+					<li><a href="JavaScript:;">天津</a></li>
+					<li><a href="JavaScript:;">长沙</a></li>
+					<li><a href="JavaScript:;">厦门</a></li>
+					<li><a href="JavaScript:;">武汉</a></li>
+					<li><a href="JavaScript:;">香港</a></li>
+
+					<li><a href="JavaScript:;">更多城市>></a></li>
+				</ul>
+				<div>
+					<p class="tubiao4"></p>游玩主题
+				</div>
+				<ul>
+					<li><a href="JavaScript:;">赏花田园</a></li>
+					<li><a href="JavaScript:;">名胜风光</a></li>
+					<li><a href="JavaScript:;">古镇园林</a></li>
+					<li><a href="JavaScript:;">家庭亲子</a></li>
+					<li><a href="JavaScript:;">主题乐园</a></li>
+					<li><a href="JavaScript:;">演出表演</a></li>
+				</ul>
+			</div>
+			<div id="you-banner">
+				<div id="banner">
+					<ul id="banner-img" >
+						<li>
+							<a href="">
+								<img src="../images/06_menpiao/you-banner1.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="../images/06_menpiao/you-banner2.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="../images/06_menpiao/you-banner3.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="../images/06_menpiao/you-banner4.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="../images/06_menpiao/you-banner1.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="slide" id="toLeft"></a>
+					<a href="#" class="slide" id="toRight"></a>
+					<ul id="indicators">
+						<li style="background:#0aa1ed"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+
+			
+			</div>
+		</div>
+		<!--*--------------------身边景点----------------------->
+		<div class="around ">
+			<h2>身边景点</h2>
+			<ul class="tabs" id="jd">
+				<li class="active"><a  href="javascript:;">上海</a></li>
+				<li><a  href="javascript:;">杭州</a></li>
+				<li><a  href="javascript:;">宁波</a></li>
+				<li><a  href="javascript:;">台州</a></li>
+				<li><a  href="javascript:;">绍兴</a></li>
+				<li><a  href="javascript:;">嘉兴</a></li>
+			</ul>
+
+				<p><a href="">更多景点&gt;&gt;</a></p>
+				<div style="border-bottom: 2px solid red;"></div>
+				<div class="column">
+
+					<div class="right-area">
+						<div id="content-1" class="active">
+							<ul data-img="content" id="floor1">
+								<!-- 			第一块		 -->
+<!-- 								<li class="clear"> -->
+<!-- 									<div class="col" data-img="content" ontouchstart="this.classList.toggle('hover');"> -->
+<!-- 										<div class="container"> -->
+<!-- 											<div class="front" style="background-image: url(../images/06_menpiao/4.jpg)"> -->
+<!-- 												<div class="inner"> -->
+<!-- 													<p>杭州</p> -->
+<!-- 													<span>¥5555</span> -->
+<!-- 												</div> -->
+<!-- 											</div> -->
+<!-- 											<div class="back"> -->
+<!-- 												<div class="inner"> -->
+<!-- 													<p>Lorem ipsum, 上有天堂下有苏杭,啊啊啊,西湖美景六月天呐</p> -->
+<!-- 												</div> -->
+<!-- 											</div> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<!-- 								</li> -->
+<!-- 							 -->
+								
+							</ul>
+					</div>
+				</div>
+		</div>
+		<!--*--------------------热门目的地----------------------->
+		<div class="around clear">
+			<h2>热门目的地</h2>
+			<div style="border-bottom: 2px solid red;"></div>
+			<div class="column">
+				<ul class="area" id="floor2">
+					<li class="double hot-area"><a href="" class="img-contain"><img src="../images/06_menpiao/a1.jpeg" alt=""/></a></li>
+					<li class="double hot-area"><a href="" class="img-contain"><img src="../images/06_menpiao/a2.jpeg" alt=""/></a></li>
+					<li class="double hot-area"><a href="" class="img-contain"><img src="../images/06_menpiao/a3.jpeg" alt=""/></a></li>
+					<li class="double hot-area"><a href="" class="img-contain"><img src="../images/06_menpiao/a4.jpeg" alt=""/></a></li>
+					<li class="double hot-area"><a href="" class="img-contain"><img src="../images/06_menpiao/a5.jpeg" alt=""/></a></li>
+					<li class="double hot-area"><a href="" class="img-contain"><img src="../images/06_menpiao/a6.jpeg" alt=""/></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--*--------------------境外景点----------------------->
+		<div class="around clear">
+				<h2>境外景点</h2>
+				<ul class="tabs" >
+					<li class="active"><a data-toggle="tab" href="#content1">美国</a></li>
+					<li><a data-toggle="tab" href="#content2">欧洲</a></li>
+					<li><a data-toggle="tab" href="#content3">日本</a></li>
+					<li><a data-toggle="tab" href="#content4">新加坡</a></li>
+					<li><a data-toggle="tab" href="#content5">澳洲</a></li>
+					<li><a data-toggle="tab" href="#content6">泰国</a></li>
+				</ul>
+				<p><a href="">更多景点&gt;&gt;</a></p>
+				<div style="border-bottom: 2px solid red;"></div>
+			<div class="tour-item">
+					<div id="content1" class="active">
+						<ul>
+							<!-- 			第一块		 -->
+							<li class="clear">
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container">
+										<div class="front" style="background-image: url(../images/06_menpiao/jd-1.png)">
+											<div class="inner">
+												<p>纽约</p>
+												<span>¥55555</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>纽约市（City of New York，简称NYC），位于美国纽约州东南部大西洋沿岸，是美国第一大城市及第一大港。</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<!-- 			第二块		 -->
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container">
+										<div class="front" style="background-image: url(../images/06_menpiao/jd-11.png)">
+											<div class="inner">
+												<p>洛杉矶</p>
+												<span>¥65555</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>洛杉矶，位于美国加利福尼亚州西南部。是加州第一大城市也是全美第二大城市，常被称为“天使之城”。</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<!-- 			第三块		 -->
+								<div class="col" ontouchstart="this.classList.toggle('hover');">
+									<div class="container">
+										<div class="front" style="background-image: url(../images/06_menpiao/jd-12.png)">
+											<div class="inner">
+												<p>华盛顿</p>
+												<span>¥75555</span>
+											</div>
+										</div>
+										<div class="back">
+											<div class="inner">
+												<p>华盛顿是美国的政治中心，因此经济色彩不浓，是大多数美国联邦政府机关与各国驻美国大使馆的所在地。</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="content2">
+						<!-- 			第一块		 -->
+						<li class="clear">
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-2.png)">
+										<div class="inner">
+											<p>英国</p>
+											<span>¥15555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第二块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-21.png)">
+										<div class="inner">
+											<p>法国</p>
+											<span>¥25555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第三块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-22.jpg)">
+										<div class="inner">
+											<p>德国</p>
+											<span>¥35555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+					<div id="content3">
+						<!-- 			第一块		 -->
+						<li class="clear">
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-3.png)">
+										<div class="inner">
+											<p>东京</p>
+											<span>¥8555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第二块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-31.png)">
+										<div class="inner">
+											<p>大阪</p>
+											<span>¥8055</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第三块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-32.png)">
+										<div class="inner">
+											<p>奈良</p>
+											<span>¥7555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+					<div id="content4">
+						<!-- 			第一块		 -->
+						<li class="clear">
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-4.png)">
+										<div class="inner">
+											<p>新加坡</p>
+											<span>¥6555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第二块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-41.png)">
+										<div class="inner">
+											<p>Diligord</p>
+											<span>Lorem ipsum</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第三块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-42.png)">
+										<div class="inner">
+											<p>Diligord</p>
+											<span>Lorem ipsum</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+					<div id="content5">
+						<!-- 			第一块		 -->
+						<li class="clear">
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-5.png)">
+										<div class="inner">
+											<p>墨尔本</p>
+											<span>¥13555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第二块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-51.png)">
+										<div class="inner">
+											<p>悉尼</p>
+											<span>¥14555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第三块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-52.png)">
+										<div class="inner">
+											<p>多伦多</p>
+											<span>¥15555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+					<div id="content6">
+						<!-- 			第一块		 -->
+						<li class="clear">
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-6.png)">
+										<div class="inner">
+											<p>曼谷</p>
+											<span>¥5555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第二块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-61.png)">
+										<div class="inner">
+											<p>清迈</p>
+											<span>¥5455</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<!-- 			第三块		 -->
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="container">
+									<div class="front" style="background-image: url(../images/06_menpiao/jd-62.png)">
+										<div class="inner">
+											<p>芭提雅</p>
+											<span>¥7555</span>
+										</div>
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+				</div>
+		</div>
+		<!--*--------------------合作景区----------------------->
+		<div class="around clear">
+			<h2>合作景区</h2>
+			<div style="border-bottom: 2px solid red;"></div>
+			<div class="column">
+				<ul class="area3">
+					<li class="double2"><a href=""><img src="../images/06_menpiao/hezuo1.png" alt=""/></a></li>
+					<li class="double2"><a href=""><img src="../images/06_menpiao/hezuo2.png" alt=""/></a></li>
+					<li class="double2"><a href=""><img src="../images/06_menpiao/hezuo3.png" alt=""/></a></li>
+					<li class="double2"><a href=""><img src="../images/06_menpiao/hezuo4.png" alt=""/></a></li>
+					<li class="double2"><a href=""><img src="../images/06_menpiao/hezuo5.png" alt=""/></a></li>
+					<li class="double2"><a href=""><img src="../images/06_menpiao/hezuo6.png" alt=""/></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<h3>所有门票主题分类</h3>
+			<hr>
+			<ul>
+				<li><a href="">激情滑雪</a></li>
+				<li><a href="">浪漫圣诞</a></li>
+				<li><a href="">名胜风光</a></li>
+				<li><a href="">境外精选</a></li>
+				<li><a href="">电话WIFI</a></li>
+				<li><a href="">赏花田园</a></li>
+				<li><a href="">古镇园林</a></li>
+				<li><a href="">主题乐园</a></li>
+				<li><a href="">家庭亲子</a></li>
+				<li><a href="">演出表演</a></li>
+				<li><a href="">城市生活</a></li>
+				<li><a href="">拜佛祈福</a></li>
+				<li><a href="">新年元旦</a></li>
+				<li><a href="">万圣狂欢</a></li>
+			</ul>
+			<h3>热门省(直辖市)门票</h3>
+			<hr>
+			<ul>
+				<li><a href="">北京</a></li>
+				<li><a href="">上海</a></li>
+				<li><a href="">香港</a></li>
+				<li><a href="">贵州</a></li>
+				<li><a href="">台湾</a></li>
+				<li><a href="">西藏</a></li>
+				<li><a href="">天津</a></li>
+				<li><a href="">陕西</a></li>
+				<li><a href="">云南</a></li>
+				<li><a href="">河南</a></li>
+				<li><a href="">山西</a></li>
+				<li><a href="">湖南</a></li>
+				<li><a href="">四川</a></li>
+				<li><a href="">宁夏</a></li>
+				<li><a href="">安徽</a></li>
+				<li><a href="">重庆</a></li>
+				<li><a href="">山东</a></li>
+				<li><a href="">江苏</a></li>
+				<li><a href="">广西</a></li>
+				<li><a href="">江西</a></li>
+				<li><a href="">河北</a></li>
+				<li><a href="">吉林</a></li>
+				<li><a href="">浙江</a></li>
+				<li><a href="">湖北</a></li>
+				<li><a href="">福建</a></li>
+				<li><a href="">广东</a></li>
+				<li><a href="">辽宁</a></li>	
+			</ul>
+			<h3>热门城市门票</h3>
+			<hr>
+			<ul>
+				<li><a href="">济南</a></li>
+				<li><a href="">杭州</a></li>
+				<li><a href="">成都</a></li>
+				<li><a href="">承德</a></li>
+				<li><a href="">无锡</a></li>
+				<li><a href="">洛阳</a></li>
+				<li><a href="">威海</a></li>
+				<li><a href="">桂林</a></li>
+				<li><a href="">厦门</a></li>
+				<li><a href="">日照</a></li>
+				<li><a href="">苏州</a></li>
+				<li><a href="">沈阳</a></li>
+				<li><a href="">嘉兴</a></li>
+				<li><a href="">舟山</a></li>
+				<li><a href="">拉萨</a></li>
+				<li><a href="">郴州</a></li>
+				<li><a href="">运城</a></li>
+				<li><a href="">金山</a></li>
+				<li><a href="">武隆</a></li>
+				<li><a href="">镇江</a></li>
+				<li><a href="">丽江</a></li>
+				<li><a href="">酉阳</a></li>
+				<li><a href="">赤峰</a></li>
+				<li><a href="">襄阳</a></li>
+				<li><a href="">韶关</a></li>
+				<li><a href="">龙岩</a></li>
+				<li><a href="">雅安</a></li>
+				<li><a href="">青岛</a></li>
+				<li><a href="">陵水</a></li>
+				<li><a href="">清远</a></li>
+				<li><a href="">绍兴</a></li>
+				<li><a href="">玉林</a></li>
+				<li><a href="">琼海</a></li>
+				<li><a href="">孝感</a></li>
+				<li><a href="">甘孜</a></li>
+				<li><a href="">焦作</a></li>
+				<li><a href="">绵阳</a></li>
+				<li><a href="">崇明</a></li>
+				<li><a href="">六安</a></li>
+				<li><a href="">信阳</a></li>
+				<li><a href="">惠州</a></li>
+				<li><a href="">丽水</a></li>
+				<li><a href="">台州</a></li>
+				<li><a href="">阿坝</a></li>
+				<li><a href="">昆明</a></li>
+				<li><a href="">银川</a></li>
+				<li><a href="">长春</a></li>
+				<li><a href="">武汉</a></li>
+				<li><a href="">扬州</a></li>
+				<li><a href="">珠海</a></li>
+				<li><a href="">岳阳</a></li>
+				<li><a href="">包头</a></li>
+				<li><a href="">海口</a></li>
+				<li><a href="">汉中</a></li>
+				<li><a href="">广州</a></li>
+				<li><a href="">九江</a></li>
+				<li><a href="">泰安</a></li>
+				<li><a href="">南宁</a></li>
+				<li><a href="">荆州</a></li>
+				<li><a href="">万盛</a></li>
+				<li><a href="">徐州</a></li>
+				<li><a href="">柳州</a></li>
+				<li><a href="">密云</a></li>
+				<li><a href="">北海</a></li>
+				<li><a href="">朝阳</a></li>
+				<li><a href="">三明</a></li>
+				<li><a href="">烟台</a></li>
+				<li><a href="">梧州</a></li>
+				<li><a href="">永川</a></li>
+				<li><a href="">丰都</a></li>
+				<li><a href="">潍坊</a></li>
+				<li><a href="">江津</a></li>
+				<li><a href="">长沙</a></li>
+			
+				
+				
+			</ul>
+		</div>
+	</div>
+	<div id="footer"></div>
+	<script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
+	<script src="../js/06-menpiao.js" type="text/javascript"></script>
+	<script>
+	function menpiaoBanner() {
+		var show = $("banner");
+		var ul = $("banner-img");
+		var toLeft = $("toLeft");
+		var toRight = $("toRight");
+		var indicators = $("indicators");
+		var zuo = 0;//记录左边距
+		var target = 0;//记录第几张
+		var timer = null;//自动播放的定时器
+		var timer1 = null;//点击时的定时器
+		var index = 0;
+		timer = setInterval(autoPlay, 2000);//每2秒进行一次滑动
+		function autoPlay() {
+			if (target <= -400) {//
+				zuo = 0;
+				target = -100;
+			} else {
+				target -= 100;
+			}
+			slide(target);//滑动速度
+			getIndex();
+		}
+
+		function slide(tar) {
+			clearInterval(timer1);
+			timer1 = setInterval(autoPlay, 30);
+			function autoPlay() {
+				if (zuo == tar) {
+					clearInterval(timer1);
+				} else {
+					var speed = (tar - zuo) / 7;
+					speed = (speed >= 0) ? Math.ceil(speed) : Math.floor(speed);//向下取整
+					zuo = zuo + speed;
+					ul.style.left = zuo + "%";
+				}
+			}
+		}
+
+		//设置左右边框按钮
+		toRight.onclick = function () {
+			if (target <= -400) {
+				zuo = 0;
+				target = -100;
+			} else {
+				target -= 100;
+			}
+			slide(target);
+			getIndex();
+		};
+
+		toLeft.onclick = function () {
+			if (target > -100) {
+				zuo = -400;
+				target = -300;
+			} else {
+				target += 100;
+			}
+			slide(target);
+			getIndex();
+		};
+		//设置小圆点
+		var lie = indicators.getElementsByTagName("li");
+		for (var j = 0; j < lie.length; j++) {
+			var li = lie[j];
+			li.index = j;
+			li.onclick = function () {
+				target = -(this.index * 100);
+				slide(target);
+				getIndex();
+			};
+		}
+		function getIndex() {
+			i = -(target / 100);
+			i == 4 ? (i = 0) : i;
+			var lie = indicators.getElementsByTagName("li");
+			for (var li of lie) {
+				li.style.background = "#ccc";
+			}
+			lie[i].style.background = "#0aa1ed";
+		}
+
+		function $(id) {
+			return document.getElementById(id);
+		}
+
+		show.onmouseover = function () {
+			clearInterval(timer);
+		};
+		show.onmouseout = function () {
+			timer = setInterval(autoPlay, 2000);
+		};
+	}menpiaoBanner();
+
+	</script>
+</body>
+</html>

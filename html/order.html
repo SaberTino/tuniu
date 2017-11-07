@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单页</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<header id="header">
+		<img src="../images/order/logo.png">
+		<img src="../images/order/step.png">
+	</header>
+
+	<!-- 警告框 -->
+	<div id="info">
+		<span class="icon1"></span>
+		<span>温馨提示：国内航班购票、值机、安检须使用同一有效乘机身份证件（含国内护照）。</span>
+	</div>
+
+	<!-- 订单主体 -->
+	<section id="section">	
+		<!-- 左侧详情页 -->
+		<div class="left-content">	
+			<table></table>
+			<!-- 交通信息 -->
+			<div class="content show" data-toggle="translation">
+				<h2 class="title">
+					<span class="icon2 icon2-1"></span> 交通信息
+				</h2>
+				<div class="translation-top">
+					<ul>
+						<li>
+							<p>青岛-西安</p>
+							<p class="date">2017-10-15</p>
+						</li>
+						<li>
+							<p>中国东方航空</p>
+							<p class="num">MU2733</p>
+						</li>
+						<li>
+							<p>咸阳</p>
+							<p class="time">07:15</p>
+						</li>
+						<li>
+							<p class="bg"></p>
+							<p class="lastTime">2小时10分钟</p>
+						</li>
+						<li>
+							<p>流亭</p>
+							<p class="time">09:25</p>
+						</li>
+						<li>
+							<p>经济舱</p>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>
+							<p>西安-青岛</p>
+							<p class="date">2017-10-18</p>
+						</li>
+						<li>
+							<p>山东航空</p>
+							<p class="num">SC4697</p>
+						</li>
+						<li>
+							<p>流亭</p>
+							<p class="time">06:40</p>
+						</li>
+						<li>
+							<p class="bg"></p>
+							<p class="lastTime">2小时10分钟</p>
+						</li>
+						<li>
+							<p>咸阳</p>
+							<p class="time">08:50</p>
+						</li>
+						<li>
+							<p>经济舱</p>
+						</li>
+				</div>
+			</div>
+			<!-- 酒店信息 -->
+			<div class="content clear show" data-toggle="hotel">
+				<h2 class="title">
+					<span class="icon2 icon2-2"></span> 酒店信息（青岛）
+				</h2>
+				<div class="hotel">
+					<img src="../images/order/hotel.jpg">
+					<a href="javascript:;">青岛盈客佳驿商务酒店</a>
+					<p>2017-10-15入住，2017-10-18退房的酒店（3晚）</p>
+					<i class="map"></i><span>地图</span>
+				</div>
+				<div class="hotel-content">
+					<a href="javascript:;">标准双床房-无早</a>
+					<ul>
+						<li>床型 : --</li>
+						<li>早餐 : --</li>
+						<li>宽带 : 免费无线</li>
+						<li>间数 :  
+							<select>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select> 间
+						</li>
+					</ul>			
+				</div>
+			</div>
+			<!-- 保险方案 -->
+			<div class="content" data-toggle="insurance">
+				<h2 class="title">
+					<span class="icon2 icon2-3"></span> 保险方案
+				</h2>
+				<ul class="insurance">
+					<li>
+						<p>意外险</p>
+					</li>
+					<li>
+						<a href="javascript:;">新华“乐游神州”保障方案一（4~5天）</a>
+					</li>
+					<li>
+						<span>￥40</span>
+						<span>/人</span>
+					</li>
+					<li>
+						<span class="choose-box" data-toggle="ins1">
+							<span class="chosen">√</span>
+						</span>
+					</li>
+				</ul>
+				<ul class="insurance inShow">
+					<li>
+					</li>
+					<li>
+						<a href="javascript:;">新华“乐游神州”保障方案二（4~5天）</a>
+					</li>
+					<li>
+						<span>￥32</span>
+						<span>/人</span>
+					</li>
+					<li>
+						<span class="choose-box" data-toggle="ins2">
+							<span class="chosen">√</span>
+						</span>
+					</li>
+				</ul>
+				<ul class="insurance inShow">
+					<li>
+					</li>
+					<li>
+						<a href="javascript:;">平安“安心游”境内保障方案一（4~5天）</a>
+					</li>
+					<li>
+						<span>￥50</span>
+						<span>/人</span>
+					</li>
+					<li>
+						<span class="choose-box" data-toggle="ins3">
+							<span class="chosen">√</span>
+						</span>
+					</li>
+				</ul>
+				<ul class="insurance" data-toggle="ins4">
+					<li>
+						<p>取消险</p>
+					</li>
+					<li>
+						<a href="javascript:;">太平洋旅程取消险方案2</a>
+					</li>
+					<li>
+						<span>￥15</span>
+						<span>/人</span>
+					</li>
+					<li>
+						<span class="choose-box">
+							<span class="chosen">√</span>
+						</span>
+					</li>
+				</ul>
+				<div class="isShow" data-toggle="isShow"><span>更多保险</span> <span class="arrowDown"></span></div>
+			</div>
+			<!-- 优惠方案 -->
+			<div class="content" data-toggle="onSale">
+				<h2 class="title">
+					<span class="icon2 icon2-4"></span> 优惠方案
+				</h2>
+				<ul class="discount clear">
+					<li>优惠券</li>
+					<li>如果您有优惠券号或者账户中已绑定了优惠券，请<a href="javascript:;"> 登录 </a>后使用</li>
+				</ul>
+				<ul class="discount clear">
+					<li>套餐优惠</li>
+					<li><a href="javascript:;">【大好河山等你来玩】国内自助双人立减50元</a></li>
+					<li><span>-￥50</span></li>
+					<li>
+						<span class="choose-box" data-toggle="onsale">
+							<span class="chosen">√</span>
+						</span>
+					</li>
+				</ul>
+				<ul class="discount clear">
+					<li>券类优惠</li>
+					<li>旅游券 账户总余额：￥0，本次可用：¥0</li>
+					<li>本次使用 : <input type="text" placeholder="输入金额"></li>
+				</ul>
+				<ul class="discount clear">
+					<li>合作卡</li>
+					<li>
+						<p>绑定</p>
+					</li>
+				</ul>
+				<ul class="discount clear">
+					<li>返券优惠</li>
+					<li><a href="javascript:;">订国内自由行长线送5元当地玩乐优惠券:1张</a></li>
+				</ul>
+			</div>
+			<!-- 联系人信息 -->
+			<div class="content" data-toggle="connector">
+				<h2 class="title">
+					<span class="icon2 icon2-5"></span> 联系人信息
+				</h2>
+				<div class="tourist-mes">
+					<span>*</span>
+					<span>姓名 : </span>
+					<input type="text" placeholder="如 : 张三">
+					<span></span>
+				</div>
+				<div class="tourist-mes phone-mes">
+					<span>*</span>
+					<span>联系电话 : </span>
+					<input type="text" placeholder="0086">
+					<input type="text">
+					<span></span>
+				</div>
+			</div>
+			<!-- 出游人信息 -->
+			<div class="content" data-toggle="tourist">
+				<h2 class="title">
+					<span class="icon2 icon2-6"></span> 出游人信息
+				</h2>
+				<div class="info-mes">
+					<p>· 请确保您填写的信息真实准确，否则会影响您的顺利出行。</p>
+					<p>· 大于2周岁不满12周岁的儿童不可使用出生证明，请使用身份证、户口簿等，乘机请携带填写的相应证件。</p>
+				</div>
+				<div class="tourist-info">
+					<div class="tourist-num">
+						<p>第一位</p>
+						<p>成人</p>
+					</div>
+					<div class="tourist-information">
+						<div>
+							<span>*</span>
+							<span>中文姓名 : </span>
+							<input type="text" placeholder="请与证件保持一致">
+							<span></span>
+						</div>
+						<div>
+							<span>*</span>
+							<span>证件类型 : </span>
+							<select>
+								<option value="1" selected>身份证</option>
+								<option value="2">护照</option>
+								<option value="3">军官证</option>
+								<option value="4">台胞证</option>
+								<option value="5">回乡证</option>
+								<option value="6">户口簿</option>
+								<option value="7">出生证明</option>
+							</select>
+							<input type="text" placeholder="证件号码" class="idcard-mes">
+							<span></span>
+						</div>
+						<div>
+							<span>*</span>
+							<span>手机号码 : </span>
+							<input type="text" placeholder="0086" class="phone-before">
+							<input type="text" class="phone-after">
+							<span></span>
+						</div>
+						<p>因机票订票需要，除12岁(不含)以下儿童、70岁(含)以上老人外，所有出游人需填写手机号</p>
+					</div>
+					<span>清空</span>
+				</div>
+				<div class="tourist-info tourist-info2">
+					<div class="tourist-num">
+						<p>第二位</p>
+						<p>成人</p>
+					</div>
+					<div class="tourist-information">
+						<div>
+							<span>*</span>
+							<span>中文姓名 : </span>
+							<input type="text" placeholder="请与证件保持一致">
+							<span></span>
+						</div>
+						<div>
+							<span>*</span>
+							<span>证件类型 : </span>
+							<select>
+								<option value="1" selected>身份证</option>
+								<option value="2">护照</option>
+								<option value="3">军官证</option>
+								<option value="4">台胞证</option>
+								<option value="5">回乡证</option>
+								<option value="6">户口簿</option>
+								<option value="7">出生证明</option>
+							</select>
+							<input type="text" placeholder="证件号码" class="idcard-mes">
+							<span></span>
+						</div>
+						<div>
+							<span>*</span>
+							<span>手机号码 : </span>
+							<input type="text" placeholder="0086" class="phone-before">
+							<input type="text" class="phone-after">
+							<span></span>
+						</div>
+					</div>
+					<span>清空</span>
+				</div>
+				<div class="tour-warning">
+					<i></i>
+					<span>本产品不支持孕妇或者80周岁(含)以上的老人出游，18周岁以下的未成年人必须有成年人陪同出游，敬请谅解！</span>
+				</div>
+			</div>
+		</div>
+		<!-- 右侧订单页 -->
+		<div class="right-content" data-toggle="right-content">
+			<div class="right-tittle">
+				<i></i>
+				<span>青岛双飞4日自助游</span>
+				<p>编号：210157514</p>
+			</div>
+			<div class="right-content">
+				<table></table>
+				<ul class="tour">
+					<li>
+						<span>出发城市</span>
+						<span>西安</span>
+					</li>
+					<li>
+						<span>出发日期</span>
+						<span>10-19周四出发 -- 10-22周日返回</span>
+					</li>
+					<li>
+						<span>出发人数</span>
+						<span>2 成人</span>
+					</li>
+				</ul>
+				<div data-toggle="price-item">
+					<ul class="price-item">
+						<li>
+							<span>必选产品</span>
+							<span>￥1905</span>
+							<p>包含交通、酒店、行程套餐的费用</p>
+						</li>
+					</ul>
+				</div>
+				<div class="price">
+					<span>总价</span>
+					<span data-toggle="addPrice">￥1905</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div>
+			<input type="checkbox">
+			<span>我已阅读并同意</span>
+		</div>
+		<p class="submit">提交订单</p>
+	</footer>
+</body>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/order.js"></script>
+</html>

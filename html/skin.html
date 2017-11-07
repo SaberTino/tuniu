@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>涂牛用户登录</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <!--引入自定义的longin.css-->
+    <link rel="stylesheet" href="../css/skin.css"/>
+</head>
+<body>
+    <div id="login">
+        <!--顶部LOGO-->
+        <div id="header_logo">
+            <a href="javascript:;">
+                <img src="../images/logo.png"/>
+            </a>
+        </div>
+        <!--中间用户登录-->
+        <div id="user_login">
+					<img src="../images/00-index/loading-72x72.gif" alt="">
+					<h1>登录成功</h1>
+					<p id="text">
+						<span>2</span>
+						<span>秒钟后自动跳转登录界面</span>
+					</p>
+					<p>
+						<a href="../index.html">点击直接跳转</a>
+					</p>
+					<div class="login_box">
+						<p>其它方式登录</p>
+						<ul class="login_box_ul clear">
+								<li class="login_box_li1">
+										<a href="#">
+												<img class="login_wx" src="../images/weixinv2.png"/>
+												<span>微信</span>
+										</a>
+								</li>
+								<li class="login_box_li2">
+										<a href="#" class="clear">
+												<img class="login_qq" src="../images/qqv2.png"/>
+												<span>QQ</span>
+										</a>
+								</li>
+								<li class="login_box_li3">
+										<a href="#"  class="clear">
+												<img class="login_wb" src="../images/weibov2.png"/>
+												<span class="clear">微博</span>
+										</a>
+								</li>
+								<li class="login_box_li4">
+										<a href="#" class="clear">
+												<img class="login_card" src="../images/cardv2.png"/>
+												<span>合作卡</span>
+										</a>
+								</li>
+						</ul>
+					</div>
+        </div>
+				<script>
+					var span=document.getElementById("text").children[0];
+					var timer=setInterval(function(){
+						var n=parseInt(span.innerHTML);
+						if(n>1){
+							n--;
+							span.innerHTML=n;
+						}else{
+							location="../index.html";
+						}
+					},1000);
+				</script>
+        <div class="login_bj"></div>
+        <!--尾部-->
+        <div id="footer">
+            <p>24小时客户服务电话(免长途费)：4007-999-999 途牛呼叫中心位于南京来电将统一显示为 025-86859999</p>
+            <ul class="footer_1 clear">
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">Investor Relations</a>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+                <li>
+                    <a href="#">投诉建议</a>
+                </li>
+                <li>
+                    <a href="#">广告服务</a>
+                </li>
+                <li>
+                    <a href="#">旅游券</a>
+                </li>
+                <li>
+                    <a href="#" class="recruit">途牛招聘</a>
+                </li>
+                <li>
+                    <a href="#">隐私保护</a>
+                </li>
+                <li>
+                    <a href="#">免责声明</a>
+                </li>
+                <li>
+                    <a href="#">旅游度假资质</a>
+                </li>
+                <li>
+                    <a href="#">供应商合作</a>
+                </li>
+                <li>
+                    <a href="#">用户协议</a>
+                </li>
+                <li>
+                    <a href="#">网站地图</a>
+                </li>
+            </ul>
+            <ul class="footer_2 clear">
+                <li>
+                    <a href="#">团队博客</a>
+                <li>
+                    <a href="#">网站联盟</a>
+                </li>
+                <li>
+                    <a href="#">UEIP</a>
+                </li>
+                <li>
+                    <a href="#">帮助中心</a>
+                </li>
+            </ul>
+            <ul class="footer_3 clear">
+                <li>Copyright &copy</li>
+                <li>2006-2014</li>
+                <li>
+                    <a href="#">途牛旅游网 Tuniu.com</a>&nbsp|&nbsp
+                </li>
+                <li>
+                    <a href="#">营业执照</a>&nbsp|&nbsp
+                </li>
+                <li>
+                    <a href="#">ICP证: 苏B2-20130006</a>&nbsp
+                </li>
+                <li>
+                    <a href="#">上海旅游网</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

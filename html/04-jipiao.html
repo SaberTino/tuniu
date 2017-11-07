@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>机票</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/04-jipiao.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/header.css"/>
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+	<header id="header"></header>
+	<nav></nav>
+	<div id="banner">
+		<ul class="clear imag" data-img="move">
+			<li>
+				<a href="#">
+					<img src="../images/04-jipiao/Cii-TFga5TiIOjh0AAWWhV-RZXcAAEISQFZUrIABZad81.jpeg" alt=""/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../images/04-jipiao/Cii-VVnbTSeIM2SaAAQ7KHbSD_4AAB_egEwe5YABDtA26.jpeg" alt=""/>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../images/04-jipiao/Cii-VVnPUJ2IO7_DABWCqAp73OoAABxGACs55kAFYLA199.png" alt=""/>
+				</a>
+			</li>
+		</ul>
+        <!--<div class="left"></div>
+        <div class="right"></div> -->
+		<ul class="origin clear"  data-load="point">
+		    <li></li>
+		    <li></li>
+		    <li></li>
+		</ul>
+		<div id="ticket">
+			<ul>
+				<li>
+					<p>机票</p>
+					<hr>
+					<!--  点击机票生成的内容 -->
+					<div id="content-1">
+						<ul class="clear">					
+							<li>
+								<a href="javascript:;">国内机票</a>
+							</li>
+							<li><a href="javascript:;">国际港澳台机票</a></li>
+							<li>
+								<div></div>
+								<a href="">出票状态查询</a>
+							</li>
+							<li>
+								<div></div>
+								<a href="">退票改签</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="checkbox"value="1">单程
+								<input type="checkbox" value="1">往程
+							</li>
+							<li class="clear">
+								<ul class="city_click">
+									<li class="city">
+										&nbsp;&nbsp;&nbsp;出发&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="武汉">
+										<a href="javascript:;"></a>
+										<table class="table">
+										<thead>
+											<tr>
+												<td colspan="3">Top 37 热门城市</td>
+												<td>×</td>
+											</tr>
+										</thead>
+										<tbody>	
+											<tr>
+												<td>武汉</td>
+												<td>深圳</td>
+												<td>长沙</td>
+												<td>南京</td>
+												<td>重庆</td>
+											</tr>
+											<tr>
+												<td>武汉</td>
+												<td>深圳</td>
+												<td>长沙</td>
+												<td>南京</td>
+												<td>重庆</td>
+											</tr>
+											<tr>
+												<td>武汉</td>
+												<td>深圳</td>
+												<td>长沙</td>
+												<td>南京</td>
+												<td>重庆</td>
+											</tr>
+											<tr>
+												<td>武汉</td>
+												<td>深圳</td>
+												<td>长沙</td>
+												<td>南京</td>
+												<td>重庆</td>
+											</tr>
+											<tr>
+												<td>武汉</td>
+												<td>深圳</td>
+												<td>长沙</td>
+												<td>南京</td>
+												<td>重庆</td>
+											</tr>
+											<tr>
+												<td>武汉</td>
+												<td>深圳</td>
+												<td>长沙</td>
+												<td>南京</td>
+												<td>重庆</td>
+											</tr>
+											<tr>
+												<td>济南</td>
+												<td>河口</td>
+											</tr>
+											</tbody>
+											<tfoot>	
+											<tr>
+												<td colspan="5">更多城市，敬请期待</td>
+											</tr>
+											</tfoot>
+										</table>
+									</li>
+									<li>
+										&nbsp;&nbsp;&nbsp;到达&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="重庆">	
+										<a href="javascript:;"></a>
+									</li>
+								</ul>
+								<ul>
+									<li></li>
+								</ul>
+								<ul class="kalendar">
+									<li>
+										&nbsp;&nbsp;&nbsp;出发日期&nbsp;&nbsp;&nbsp;&nbsp;
+										<input class="birth"/>
+									</li>
+									<li>
+										&nbsp;&nbsp;&nbsp;返回日期&nbsp;&nbsp;&nbsp;&nbsp;
+										<input class="birth">
+									</li>
+								</ul>
+							</li>
+							<li class="clear">
+								<div>可实时搜索28万条国内国际航线</div>
+								<a href="javascript:;"></a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<img src="../images/04-jipiao/1.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>火车票</p>
+					<hr>
+					<!--  点击机票生成的内容 -->
+					<div id="content-2">
+						<ul class="clear">					
+							<li>
+								<a href="">站站搜索</a>
+							</li>
+							<li><a href="">车次搜索</a></li>
+							<li>
+								<a href="">车站搜索</a>
+							</li>
+							<li>
+								<a href="">出票状态查询</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="">退票申请</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="clear">
+								<ul>
+									<li>
+										&nbsp;&nbsp;&nbsp;出发&nbsp;<input type="text"><a href="#"></a>
+									</li>
+									<li>
+										&nbsp;&nbsp;&nbsp;到达&nbsp;<input type="text">	
+										<a href="#"></a>
+									</li>
+								</ul>
+								<ul>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul>
+									<li>
+										<input class="birth" />
+									</li>
+								</ul>
+							</li>
+							<li class="clear">
+								<div>可实时搜索28万条国内火车线</div>
+								<a href=""></a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="../images/04-jipiao/1.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>酒店</p>
+					<hr>
+				</li>
+				<li>
+					<p>门票</p>
+					<hr>
+					<div id="content-4">
+						<ul class="clear">					
+							<li>
+								<a href="">门票</a>
+							</li>
+							<li><a href="">一日游</a></li>
+						</ul>
+						<ul>
+							<li>
+								<input type="text">
+							</li>					
+							<li>
+								<a href=""></a>
+							</li>
+							<li>
+								<ul class="clear">
+									<li>热门城市</li>
+									<li>北京</li>
+									<li>上海</li>
+									<li>成都</li>
+									<li>三亚</li>
+									<li>广州</li>
+									<li>重庆</li>
+									<li>深圳</li>
+									<li>西安</li>
+									<li>杭州</li>
+									<li>厦门</li>
+									<li>武汉</li>
+									<li>大连</li>
+									<li>全部</li>
+								</ul>
+							</li>	
+							<li>
+								<ul class="clear">
+									<li>当季主体</li>
+									<li>一日游</li>
+									<li>必游景点</li>
+									<li>迪士尼</li>
+									<li>方特</li>
+									<li>文化古迹</li>
+									<li>温泉</li>
+									<li>主题乐园</li>
+									<li>全部</li>
+								</ul>
+							</li>	
+							<li>
+								<ul class="clear">
+									<li>本地最热</li>
+									<li>故宫</li>
+									<li>颐和园</li>
+									<li>北京欢乐谷</li>
+									<li>八达岭长城</li>
+									<li>古北水镇</li>
+									<li>圆明园</li>
+									<li>北京野生动物园</li>
+									<li>水立方</li>
+								
+								</ul>
+							</li>	
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>度假</p>
+				</li>
+				<li>
+					<p>车车</p>
+					<hr>
+					<!--  点击机票生成的内容 -->
+					<div id="content-5">
+						<ul class="clear">					
+							<li>
+								<a href="">国内机票</a>
+							</li>
+							<li><a href="">国际港澳台机票</a></li>
+							<li>
+								<div></div>
+								<a href="">出票状态查询</a>
+							</li>
+							<li>
+								<div></div>
+								<a href="">退票改签</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<input type="radio"value="1">单程
+								<input type="radio" value="1">往程
+							</li>
+							<li class="clear">
+								<ul>
+									<li>
+										&nbsp;&nbsp;&nbsp;出发&nbsp;<input type="text"><a href="#"></a>
+									</li>
+									<li>
+										&nbsp;&nbsp;&nbsp;到达&nbsp;<input type="text">	
+										<a href="#"></a>
+									</li>
+								</ul>
+								<ul>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul>
+									<li>
+										<input class="birth" />
+									</li>
+									<li>
+										<input class="birth">
+									</li>
+								</ul>
+							</li>
+							<li class="clear">
+								<div>可实时搜索28万条国内国际航线</div>
+								<a href=""></a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<img src="../images/04-jipiao/1.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>团购</p>
+					<hr>
+					<!--  点击团购生成的内容 -->
+					<div id="content-6">
+						<ul class="clear">
+							<li>
+								<ul class="clear">
+									<li>
+										<input type="text">
+									</li>
+									<li>
+										<input type="text">
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="clear">
+									<li>布丁</li>
+									<li>99连锁</li>
+									<li>速八</li>
+									<li>锦江之星</li>
+									<li>格力豪泰</li>
+								</ul>
+							</li>
+							<div></div>
+						</ul>
+						<ul class="clear">
+							<li>便捷查找酒店</li>
+							<li><a href="javascript:;">热门商圈</a>
+								<ul class="clear">
+									<li>西湖灵隐度假景区</li>
+									<li>留下体育场路</li>
+									<li>凤起路延安路</li>
+									<li>教工路景芳河</li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">区域</a>
+								<ul class="clear">
+									<li>西湖灵隐度假景区</li>
+									<li>留下体育场路</li>
+									<li>凤起路延安路</li>
+									<li>教工路景芳河</li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">地铁</a>
+								<ul class="clear">
+									<li>西湖灵隐度假景区</li>
+									<li>留下体育场路</li>
+									<li>凤起路延安路</li>
+									<li>教工路景芳河</li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">车站</a>
+								<ul class="clear">
+									<li>西湖灵隐度假景区</li>
+									<li>留下体育场路</li>
+									<li>凤起路延安路</li>
+									<li>教工路景芳河</li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">旅游</a>
+								<ul class="clear">
+									<li>西湖灵隐度假景区</li>
+									<li>留下体育场路</li>
+									<li>凤起路延安路</li>
+									<li>教工路景芳河</li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">医院</a>
+								<ul class="clear">
+									<li>西湖灵隐度假景区</li>
+									<li>留下体育场路</li>
+									<li>凤起路延安路</li>
+									<li>教工路景芳河</li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">高校</a>
+								<ul class="clear">
+									<li>西湖灵隐度假景区</li>
+									<li>留下体育场路</li>
+									<li>凤起路延安路</li>
+									<li>教工路景芳河</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="clear">
+							<li>热门分类</li>
+							<li>周边休闲</li>
+							<li>国内游</li>
+						</ul>
+						<div><img src="../images/04-jipiao/1.png" alt=""></div>
+					</div>
+				</li>
+				<li>
+					<p>自由行</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="plane">
+		<h1>航班信息</h1>
+	</div>
+	<div id="inform" class="clear">
+		<h1>国际机票</h1>
+	</div>
+	<div id="scen">
+		<h1>风景</h1>
+		<ul class="clear">
+			
+		</ul>
+	</div>
+	<footer id="footer"></footer>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/04-jipiao.js"></script>
+</body>
+</html>
