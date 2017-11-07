@@ -1,0 +1,659 @@
+body{
+    width:100%;
+    height:100%;
+    position: relative;
+    background:#151515;
+    font-family: "lora-regular", serif;
+    color: #fff;
+}
+/***************************导航***************************/
+nav{
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left:232px;
+    width:222px;
+    background-color:#000;
+    color:#fff;
+}
+
+/*导航标题*/
+nav .navTitle{
+    min-width:220px;
+    min-height:66px;
+}
+nav .navTitle span{
+    float:left;
+    width:40px;
+    height:40px;
+    margin:13px 0 0 20px;
+    color: #df5b91;
+    cursor: pointer;
+    line-height:45px;
+    text-align: center;
+}
+nav .navTitle a{
+    float:left;
+    width:92px;
+    height:40px;
+    margin:8px 0 0 20px;
+    background:url(../images/team/logo.png) no-repeat center;
+    background-size:92px 40px;
+    color:transparent;
+}
+
+/*导航列表*/
+.navList{
+    transition:all .3s linear;
+    height:0;
+    overflow:hidden;
+    padding:0 30px 0;
+}
+.show{
+    padding:24px 30px 42px;
+    height:190px;
+}
+nav .navList a{
+    display:block;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 15px;
+    font-weight:bold;
+    line-height:20px;
+    padding:11px 0;
+    color:#8c8686;
+    transition:all .3s linear;
+}
+nav .navList a:hover{
+    color: #df5b91;
+}
+nav .navList .active a{
+    color: #df5b91;
+}
+nav .navList li{
+    position:relative;
+    left:0;
+    transition:all .3s linear;
+}
+nav .navList li:hover{
+    color:#ff0077;
+    left:15px;
+}
+/***************************头部***************************/
+#info{
+    width:100%;
+    height:100%;
+    background:#fff url(../images/team/intro-bg.jpg) no-repeat center bottom fixed;
+    background-size:cover;
+    /*filter: blur(5px);*/
+}
+#info .content{
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+    padding-top:236px;
+    background:#111111;
+    opacity:.85;
+    padding-bottom:75px;
+}
+#info .content p:nth-child(1){
+    font-size:50px;
+    color:#ff0077;
+    font-weight:bold;
+    animation:change2 3s linear;
+}
+#info .content p:nth-child(2){
+    font-size:84px;
+    font-weight:bold;
+    margin-top:20px;
+    animation:change 5s linear infinite;
+}
+@keyframes change{
+    0%{ color:#fff;}
+    20%{color:#00cc33;}
+    40%{color:#ffff00;}
+    60%{color: #65cccb;}
+    80%{color: #fd80ff;}
+}
+@keyframes change2{
+    0%{  transform:rotateY(90deg);}
+    100%{transform:rotateY(0deg);}
+}
+#info .content p:nth-child(3){
+     font-size:17px;
+ }
+#info .content>a{
+    display:block;
+    position:relative;
+    width:165px;
+    height:66px;
+    margin:40px auto;
+    padding:0 42px 0 36px;
+    font-size:15px;
+    font-weight:bold;
+    line-height:66px;
+    color:#fff;
+    border:3px solid rgba(204, 170, 170, 0.25);
+    transition: all .3s linear;
+}
+#info .content>a>i{
+    position:relative;
+    left:10px;
+    top:-4px;
+}
+#info .content>a:hover{
+    border-color:#ff0077;
+}
+#info .infoList{
+    width:400px;
+    margin:180px auto 0;
+    text-align:center;
+    overflow:hidden;
+
+}
+#info .infoList li{
+    float:left;
+    margin:0 20px;
+}
+#info .infoList>li>a{
+    color:#fff;
+    font-size:20px;
+    transition: all .3s linear;
+}
+
+#info .infoList>li>a:hover{
+    color:#ff0077;
+}
+
+/***************************主体信息楼层1***************************/
+#sessionOne,#member{
+    width:100%;
+    background:#fff;
+    padding-top:160px;
+	padding-bottom:70px;
+    color:#000;
+}
+#sessionOne>p,#sessionTwo>p,#member>p{
+    width:660px;
+    margin:0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+#sessionOne>p:first-child,#sessionTwo>p:first-child,#member>p:first-child{
+    color:#ff0077;
+    font-size:16px;
+}
+#sessionOne>p:nth-child(2),#sessionTwo>p:nth-child(2),#member>p:nth-child(2){
+    color:#313131;
+    font-size:36px;
+    margin-top:10px;
+    animation:change 5s linear infinite;
+}
+#sessionOne .intOne,#sessionTwo .intOne,#member .intOne{
+    width:700px;
+    margin:50px auto 0;
+    overflow:hidden;
+}
+#sessionOne .intOne img{
+    margin-top:30px;
+    float:left;
+    width:108px;
+    height:108px;
+    border-radius:54px;
+    /*background:url(../images/team/logo-2.png);*/
+}
+#sessionOne .intOne>span{
+    float:left;
+    padding-left:50px;
+    width:540px;
+    font-size:20px;
+    color:#888;
+    line-height:30px;
+}
+#sessionOne #Project{
+    width:850px;
+    overflow:hidden;
+    margin:0 auto;
+}
+#sessionOne #Project .intLeft,#Project .intRight{
+    padding:0 25px;
+    box-sizing: border-box;
+}
+#sessionOne #Project .intLeft{
+    float:left;
+    width:425px;
+    margin-top:30px;
+}
+#sessionOne #Project .intLeft h3,#Project .intRight h3{
+    font-size:18px;
+}
+#sessionOne #Project>.intLeft>.general,#Project .intRight>.general{
+    display: block;
+    font-size:17px;
+    padding-top:20px;
+    line-height:30px;
+    color:#6e6e6e;
+}
+#sessionOne #Project>.intLeft h6{
+    margin-top:20px;
+}
+#sessionOne #Project>.intLeft h6,#Project>.intLeft p{
+    font-size:15px;
+    padding-top:10px;
+}
+#sessionOne #Project>.intLeft p{
+    color:#6e6e6e;
+}
+#sessionOne #Project .intRight{
+    float:left;
+    width:425px;
+	overflow:hidden;
+    margin-top:30px;
+}
+#sessionOne #Project .intRight H6{
+    font-size:15px;
+    margin-top:30px;
+}
+#sessionOne #Project .intRight .progress{
+    position:relative;
+    width:346px;
+    height:7px;
+    background:#a1a1a1;
+    margin-top:20px;
+}
+#sessionOne #Project .intRight .progress span{
+    position:absolute;
+    background:#313131;
+    padding:5px 8px;
+    color:#fff;
+    border-radius: 3px;
+    left:-20px;
+    bottom:23px;
+}
+#sessionOne #Project .intRight .progress span:after{
+    position: absolute;
+    left:50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #313131;
+    content: "";
+}
+#sessionOne #Project .intRight .progress .bar{
+    width:0;
+    background:#313131;
+    height:7px;
+}
+#sessionOne #Project .btn{
+	width:570px;
+	margin:0 auto;
+	padding-top:100px;
+	overflow:hidden;
+}
+#sessionOne #Project .btn a{
+	float:left;
+	width:250px;
+	height:48px;
+	text-align:center;
+	line-height:48px;
+	font-size:14px;
+	border:3px solid #313131;
+	transition:all .2s linear;
+}
+#sessionOne #Project .btn a:last-child{
+	float:right;
+	background:#1f1f1f;
+	color:#fff;
+}
+#sessionOne #Project .btn a:first-child:hover{
+	border-color:#ff0077;
+	color:#ff0077;
+}
+
+
+/***************************主体信息楼层二***************************/
+#sessionTwo{
+	background:#ebebeb;
+	padding:150px 0;
+	text-align:center;
+	overflow:hidden;
+}
+#sessionTwo .intOne,#member .intOne{
+	margin-top:30px;
+}
+#sessionTwo .intOne>span,#member .intOne>span{
+    width:540px;
+    font-size:20px;
+    color:#888;
+}
+#sessionTwo .work{
+	font-size:26px;
+	color:#ff0077;
+	margin-top:50px;
+}
+#sessionTwo .dateBar{
+	width:940px;
+	margin:40px auto 0;
+	overflow:hidden;
+	color:#888;
+}
+#sessionTwo .dateWork{
+    position:relative;
+	float:left;
+	width:330px;
+	padding: 15px 90px 0 0;
+	box-sizing:border-box;
+	text-align:right;
+	#background:red;
+    font-size:16px;
+    transform-origin:360px 165px;
+    transform:rotateY(90deg);
+}
+/*项目安排部分*/
+#sessionTwo .dateBar .anim1{
+    animation: loading 1s linear both;
+}
+#sessionTwo .dateBar .anim2{
+    animation: loading 1s linear .2s both;
+}
+#sessionTwo .dateBar .anim3{
+    animation: loading 1s linear .4s both;
+}
+#sessionTwo .dateBar .anim4{
+    animation: loading 1s linear .6s both;
+}
+@keyframes loading{
+    0%{
+        transform:rotateY(90deg);
+    }
+    100%{
+        transform:rotateY(0deg);
+    }
+}
+#sessionTwo .dateWork .icon{
+    position:absolute;
+    right:-27px;
+    top:0;
+    width:60px;
+    height:60px;
+    background:#313131;
+    border-radius:30px;
+    color:#fff;
+    text-align:center;
+    line-height:60px;
+}
+#sessionTwo .dateWork .icon i{
+    font-size:20px;
+}
+#sessionTwo .dateWork h3,#sessionTwo .dateInt h4{
+    width:0px;
+    overflow:hidden;
+	font-size:20px;
+	color:#313131;
+    margin-bottom:10px;
+    transition: all .5s linear;
+}
+#sessionTwo .dateWork h3{
+    width:250px;
+}
+#sessionTwo .dateInt{
+	float:left;
+	width:610px;
+	box-sizing:border-box;
+	#background:green;
+	font-size:17px;
+	text-align:left;
+	padding:20px 0 20px 55px;
+	border-left:2px solid #ddd;
+}
+#sessionTwo .dateInt p{
+	border-top:4px solid #ddd;
+	width:53px;
+	background: rgba(0, 0, 0, 0.2);
+	margin:20px 0;
+}
+#sessionTwo .dateInt span{
+    display:block;
+    transform-origin: 50% 50%;
+    transform: rotateY(0deg) scale(1);
+}
+@keyframes loadingTwo{
+    0%{
+        transform: rotateY(0deg) scale(0);
+    }
+    50%{
+        transform: rotateY(180deg) scale(.5);
+    }
+    100%{
+        transform: rotateY(360deg) scale(1);
+    }
+}
+@keyframes loadingThree{
+    0%{
+        transform: rotateZ(0deg) scale(0);
+    }
+    100%{
+        transform: rotateZ(360deg) scale(1);
+    }
+}
+/***************************成员展示***************************/
+/* #member{
+	overflow:hidden;
+}
+#member .memberBox{
+	width:1100px;
+	margin:100px auto 0;
+    overflow:hidden;
+}
+#member .memberBox .m1{
+	float:left;
+	position:relative;
+    transition:all .3s linear;
+}
+#member .memberBox .m1 .name{
+	position:absolute;
+    text-align:center;
+    width:550px;
+    left:0;
+    top:50%;
+    z-index:100
+}
+#member .memberBox .m1 .name a{
+	font-size:33px;
+	font-weight:bold;
+	color:#fff;
+}
+#member .memberBox .m1 .name span{
+	display:block;
+	color:rgba(255,255,255,.6)
+}
+#member .memberBox .m1 .bgcolor{
+	background:#000;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	opacity: .7;
+    #display:none;
+    transition:all .2s linear;
+}
+.show{
+    display:block;
+}
+#member .memberBox .m2 img{
+    width:550px;
+    height:550px;
+} */
+
+#member{
+    width:100%;
+}
+#member .memberBox{
+    overflow:hidden;
+    width:1100px;
+    margin:0 auto;
+}
+
+#member .memberBox .imgBox{
+    position: relative;
+    width:550px;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+#member .memberBox .imgBox a{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    transition: all .3s linear;
+}
+#member .memberBox .imgBox .memberMsg{
+    position:absolute;
+    left:-10%;
+    top:50%;
+    width:120px;
+    margin-left:-50px;
+    margin-top:-50px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+#member .memberBox .imgBox .move{
+    left:50%;
+}
+#member .memberBox .imgBox .memberMsg span{
+    float:left;
+    width:120px;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.6);
+    font-size:17px;
+}
+#member .memberBox .imgBox .memberMsg span.titleMsg{
+    font-size:35px;
+    font-weight: bold;
+    color:#fff;
+    margin-bottom:20px;
+}
+#member .memberBox .imgBox a:hover{
+    background:#000;
+    opacity: .8;
+}
+#member .memberBox .goin img{
+    transition: all .3s linear;
+    transform:scale(1.1);
+
+}
+
+#member .memberBox img{
+    transition: all .3s linear;
+    transform:scale(1);
+    width:550px;
+    height:550px;
+}
+#member .memberBox .imgBox:nth-child(1) img,#member .memberBox .imgBox:nth-child(5) img{
+    width:550px;
+    height:800px;
+}
+#member .memberBox .left{
+   float:left;
+}
+#member .memberBox .right{
+    float:right;
+}
+
+
+
+
+.bgBox{
+    display:none;
+    transition: all .3s linear;
+    position: absolute;
+    left:0;
+    top:0;
+    background:#000;
+    opacity: .9;
+    width:100%;
+    height:100%;
+}
+.curtain{
+    opacity: .9;
+    background:#0b0b0b;
+}
+.introduction{
+    max-width:550px;
+    position: relative;
+    top:71%;
+    margin:0 auto;
+}
+.introduction img{
+    width:550px;
+    height:366px;
+    opacity:1;
+}
+.introduction .contain{
+    max-width:550px;
+    padding:30px 40px 50px;
+    box-sizing: border-box;
+    background:#fff;
+}
+.introduction .contain h3{
+    font-size:17px;
+    margin-bottom:20px;
+    color:#000;
+}
+.introduction .contain span{
+    font-size:14px;
+    color:#6e6e6e;
+}
+.introduction .button{
+    float:left;
+    height:72px;
+    width:275px;
+    color:#fff;
+    font-size:17px;
+    background:#000;
+    text-align: center;
+    line-height: 72px;
+    transition:all .3s ease-in-out;
+}
+.introduction .button:hover{
+    background:#cc005f;
+}
+.introduction .btn1{
+    width:274px;
+    border-right:1px solid rgba(200, 200, 200, 0.1);
+}
+
+
+#footer{
+    width:100%;
+    height:92px;
+}
+.footerBox{
+    width:1000px;
+    margin:0 auto;
+}
+.footerBox .footerLeft{
+    width:900px;
+    float:left;
+    padding:30px 0;
+}
+.footerBox .footerLeft span{
+    float:left;
+    margin-left:150px;
+    font-size:14px;
+    color:#6e6e6e;
+}
+.returnTop{
+    position: fixed;
+    bottom:0;
+    right:0;
+    padding:35px;
+    color:#fff;
+    background:#9D2D61;
+    cursor: pointer;
+    font-size:17px;
+}
+

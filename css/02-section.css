@@ -1,0 +1,239 @@
+/*此文件包含国内自助主体模块样式*/
+
+#section{
+	margin-top:20px;
+	width:100%;
+}
+
+#section>.sectionContent{
+	width:1200px;
+	margin:0 auto;
+	height:455px;
+}
+
+#section>.sectionContent>h2{
+	width:245px;
+	height:35px;
+	float:left;
+}
+
+#section>.sectionContent>.sectionTitle{
+	height:35px;
+	border-bottom:3px solid #E3E3ED;
+}
+
+#section>.sectionContent>.sectionTitle>li{
+	width:48px;
+	height:38px;
+	padding-top:8px;
+	float:left;
+	margin-right:10px;
+	box-sizing:border-box;
+}
+
+#section>.sectionContent>.sectionTitle>li.more{
+	padding-top:12px;
+	width:90px;
+	float:right;
+}
+
+#section>.sectionContent>.sectionTitle>li.more>a{
+	width:90px;
+	font-size:13px;
+	color:#999;
+}
+
+#section>.sectionContent>.sectionTitle>li.more:hover a{
+	color:#f80;
+}
+
+#section>.sectionContent>.sectionTitle>li>a{
+	display:inline-block;
+	width:48px;
+	height:22px;
+	color:#666;
+	font-size:15px;
+	text-align:center;
+	line-height:22px;
+	border-radius:3px;
+}
+
+.activeL{
+	border-bottom:3px solid #b0cfe1;
+}
+
+.activeA{
+	background:#b0cfe1;
+}
+
+#section>.sectionContent>.sectionLeft{
+	width:225px;
+	height:390px;
+	margin-right:5px;
+	float:left;
+	margin-top:10px;
+	position:relative;
+}
+
+#section>.sectionContent>.sectionLeft>.place{
+	display:flex;
+	flex-wrap:wrap;
+	width:200px;
+}
+
+#section>.sectionContent>.sectionLeft>.place>li{
+	width:225px;
+	height:25px;
+	border:1px dashed #ccc;
+	margin-top:15px;
+	position:relative;
+}
+
+#section>.sectionContent>.sectionLeft>.place>li:hover{
+	background:#fff7fe;
+	border:1px solid #f60;
+}
+
+#section>.sectionContent>.sectionLeft>.place>li>a{
+	display:inline-block;
+	color:#000;
+	width:215px;
+	height:30px;
+	font-size:15px;
+	line-height:25px;
+	padding-left:10px;
+	z-index:10;
+}
+
+#section>.sectionContent>.sectionLeft>.place>li>span{
+	position:absolute;
+	left:130px;
+	top:1px;
+	color:#4b4b4b;
+	cursor:pointer;
+}
+
+#section>.sectionContent>.sectionLeft>div{
+	position:absolute;
+	bottom:25px;
+}
+
+#section>.sectionContent>.sectionRight{
+	width:970px;
+	float:left;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	padding-left:10px;
+	box-sizing:border-box;
+	margin-top:15px;
+}
+
+#section>.sectionContent>.sectionRight>li{	
+	height:200px;
+}
+
+#section>.sectionContent>.sectionRight>li>div{
+	height:140px;
+	width:220px;
+	overflow:hidden;
+	position:relative;
+}
+
+#section>.sectionContent>.sectionRight>li>div>.inText{
+	width:220px;
+	position:absolute;
+	height:0;
+	background:#808080;
+	color:#fff;
+	opacity:0;
+	bottom:0;
+	font-size:10px;
+	transition:all .5s linear;
+}
+
+#section>.sectionContent>.sectionRight img{
+	width:230px;
+	height:150px;
+	transition:all .5s linear;
+}
+
+#section>.sectionContent>.sectionRight>li>div:hover img{
+	transform:scale(1.1);
+	opacity:.8;
+}
+
+#section>.sectionContent>.sectionRight>li>div:hover .inText{
+	opacity:.7;
+	height:45px;
+}
+
+
+#section>.sectionContent>.sectionRight>li>p{
+	height:30px;
+	line-height:30px;
+	padding-top:5px;
+	box-sizing:border-box;
+}
+
+#section>.sectionContent>.sectionRight>li>p>span{
+	color:#f60;
+	font-size:13px;
+}
+
+#section>.sectionContent>.sectionRight>li>p>span.money{
+	color:#f60;
+	font:bold 18px "Microsoft yahei";
+}
+
+#section>.sectionContent>.sectionRight>li>p>span.satisfaction{
+	color:#999;
+	float:right;
+}
+
+#section>.superGo{
+	height:250px;
+}
+
+#section>.superGo>h2{
+	height:38px;
+	background:url(../images/02-zizhuyou/arrow.png) no-repeat 0 30px;
+	background-size:120px;
+}
+
+#section>.superGo>.superGoTitle>li{
+	width:80px;
+	margin-right:20px;
+}
+
+#section>.superGo>.superGoTitle>li>a{
+	width:80px;
+}
+
+#section>.superGo>.superGoLeft{
+	height:200px;
+}
+#section>.hotSale{
+	height:270px;
+	margin-top:10px;
+}
+
+#section>.hotSale>.hotSalePic{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

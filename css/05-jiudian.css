@@ -1,0 +1,219 @@
+		/*	此页面主体部分位于轮播之后	*/
+		#main{width:1200px;margin:0 auto; margin-top:150px}
+		
+		
+		/*---------------------轮播框架----------------------*/
+		
+		.user_callback #user_pic{position:relative;overflow:hidden;height:600px;width:100%;z-index:2;}
+        /*------------------------轮播列表-------------------*/
+		.user_callback #user_pic ul{width:990px;height:285px;position:relative;top:20px;left:300px;}
+		.user_callback #user_pic ul li{position:absolute;}
+		.user_callback #user_pic ul img{position:relative;top:0;left:0;}
+		/*-------------------轮播图+层叠---------------------*/
+		.user_callback #user_pic ul .user_pic1{top:-285px;left:-231px;z-index:0;}
+		.user_callback #user_pic ul .user_pic2{top:-23px;left: -99.5px;z-index:2;}
+		.user_callback #user_pic ul .user_pic3{top: 66px;left: 68px;z-index:3;}
+		.user_callback #user_pic ul .user_pic4{top:110px;left:247.5px;z-index:4;}
+		.user_callback #user_pic ul .user_pic5{top:110px;left:495px;z-index:3;}
+		.user_callback #user_pic ul .user_pic6{top:66px;left:695.5px;z-index:2;}
+		.user_callback #user_pic ul .user_pic7{top:-23px;left:852px;z-index:1;}
+		.user_callback #user_pic ul .user_pic8{top:-285px;left:1000px;z-index:0;}
+		/*----------------轮播链接设置----------------------*/
+		.user_callback #user_pic ul .user_pic1 a{width:216.5px;height:248px;}
+		.user_callback #user_pic ul .user_pic2 a{width:225.5px;height:259px;}
+		.user_callback #user_pic ul .user_pic3 a{width:247.5px;height:285px;}
+		.user_callback #user_pic ul .user_pic4 a{width:247.5px;height:285px;}
+		.user_callback #user_pic ul .user_pic5 a{width:247.5px;height:285px;}
+		.user_callback #user_pic ul .user_pic6 a{width:247.5px;height:285px;}
+		.user_callback #user_pic ul .user_pic7 a{width:225.5px;height:259px;}
+		.user_callback #user_pic ul .user_pic8 a{width:216.5px;height:248px;}
+		/*-----------------轮播图鼠标悬停的背景------------------*/
+		.user_callback #user_pic ul li:hover{background:#fff;}
+		/*--------------轮播透明度设置---------------------- */
+		.user_callback #user_pic ul li.user_pic1{opacity:0.2;}
+		.user_callback #user_pic ul li.user_pic2{opacity:0.6;}
+		.user_callback #user_pic ul li.user_pic3{opacity:0.8;}
+		.user_callback #user_pic ul li.user_pic4{opacity:1;}
+		.user_callback #user_pic ul li.user_pic5{opacity:1;}
+		.user_callback #user_pic ul li.user_pic6{opacity:0.8;}
+		.user_callback #user_pic ul li.user_pic7{opacity:0.6;}
+		.user_callback #user_pic ul li.user_pic8{opacity:0.2;}
+		/*----------------轮播图片设置----------------------*/
+		.user_callback #user_pic ul li.user_pic1 img{width:216.5px;height:248px;}
+		.user_callback #user_pic ul li.user_pic2 img{width:225.5px;height:259px;}
+		.user_callback #user_pic ul li.user_pic3 img{width:230.5px;height:264px;}
+		.user_callback #user_pic ul li.user_pic4 img{width:247.5px;height:285px;}
+		.user_callback #user_pic ul li.user_pic5 img{width:247.5px;height:285px;}
+		.user_callback #user_pic ul li.user_pic6 img{width:230.5px;height:264px;}
+		.user_callback #user_pic ul li.user_pic7 img{width:225.5px;height:259px;}
+		.user_callback #user_pic ul li.user_pic8 img{width:216.5px;height:248px;}
+		/*----------------轮播按钮设置   样式中带*的意为兼容所有inline----------------------*/
+		.user_callback #user_pic span{display:inline-block;*display:inline;*zoom:1;width:80px;height:80px;
+			position:absolute;top:160px;z-index:30;cursor:pointer;opacity:0.7;}
+
+		.user_callback #user_pic:hover span{opacity:1;}
+		.user_callback #user_pic span img{width:80px;height:80px;display:block;}
+		.user_callback #user_pic span.prev{background:url(../images/05-jiudian/banner-button.png) no-repeat;
+			position:absolute;top:250px;left:5px;display:inline-block; width:60px;height:60px;}
+
+		.user_callback #user_pic span.next{background:url(../images/05-jiudian/banner-button.jpg) no-repeat;
+			position:absolute;top:250px;right:5px;display:inline-block;width:60px;height:60px;}
+
+		.user_callback #user_pic span.prev:hover{background:url(../images/05-jiudian/banner-button2.png) no-repeat;}
+		.user_callback #user_pic span.next:hover{background:url(../images/05-jiudian/banner-button2.jpg) no-repeat;}
+		.user_callback{background:url(../images/05-jiudian/lb-bg.png) no-repeat;background-size:cover; overflow:hidden;}
+		
+	/*-----------------------------酒店搜索框------------------------------*/
+		.hotel_form{position:absolute;top:600px;left:500px; z-index:10;}
+		/*.hotel_form{margin:0px 0px 0px 0px opacity: 0.7;}*/
+		.reservation{padding:10px 10px;float:left;width:500px;background: #2A2E33;
+			box-shadow: 1px 15px 25px -5px;top:400px;left:400px;}
+		.reservation ul li{float: left;list-style:none;}
+		.reservation ul li.left{margin-left:15px;}
+		.reservation ul li.span1_of_1{width: 40%;margin-left:5px;}
+
+		.reservation ul li.span1_of_3{width: 10%;margin-left:20px;padding-top:15px;}
+		.reservation h5{font-size: 15px;color: #FFD700;text-transform: capitalize;
+			margin-bottom: 6px;}
+		select {width: 100%;color: #858585;font-size: 10px;padding: 8px;outline: none;
+			background: #fff;border: 1px solid #DFDFDF;border-radius: 9px;}
+		select option{border:1px solid #DFDFDF;outline: none;transition: all 0.3s ease-in-out;}
+		/*.book_date input[type="text"]{width:100%;color: #858585;font-size:10px;padding:8px 30px;*/
+			/*outline: none;border: 1px solid #DFDFDF;box-shadow: inset 0 0 2px rgb(236, 236, 236);*/
+			/*border-radius: 9px;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.date_btn{margin:15px 0px 0px 0px;}
+		.date_btn form input[type="submit"] {text-transform:capitalize;width:90%;
+			background:#FFD700;color: #2A2E33;padding: 8px;border: none;font-size: 14px;
+			transition: 0.5s all;outline: none;cursor: pointer;
+			font-weight:bold;border-radius:9px;}
+		.date_btn form input[type="submit"]:hover{background: #00CCFF;}
+			/*-----------------轮播底部-----------------------------	*/
+		.hb_bottom{width:100%;height:50px; background:#222624;opacity:0.6;
+			position:absolute;left:0px;top:720px;}
+		.hb_bottom ul{text-align:center;margin:10px 40px 5px 300px;}
+		.hb_bottom li{margin-left:100px;float:left;font-size:20px;color:#fff;font-weight:bold;}
+		/*----------------------------轮播广告--------------------*/
+		#adv{width:1200px;height:120px;position:absolute;left:50px;top:800px;overflow:hidden;}
+		#adv-show{position:absolute;width:500%;height:120px;}
+		.adv-lb{float:left;}
+		.adv-lb img{width:1200px;height:120px;}
+
+		/*------------------------标题栏设置=&&=亦可楼层定位---------------------------------------		*/
+		.floortit{margin-top: 0px; padding-top: 15px; font: bold 32px/47px "Microsoft Yahei";
+			 text-align: center; cursor: default; }
+		.floortit b {display:block;font: 22px "Arial";color:#999;}
+		
+		/*-----------------------发现·当季游玩-----------------------------		*/
+		ul.tabs{text-align:center;margin: 20px 0px 10px 290px;}
+		.tabs li{ float:left;width:100px;height:30px;font-size:20px;padding-right:5px}
+		.tabs>.active{
+			border-radius:10px;
+			background: #2DBB55;
+			opacity: .6;
+		}
+		#tour-item{
+			/*margin: 0px auto;*/
+			width:1200px;height:300px;background:#fff;position:relative;
+			display:flex;justify-content:space-between;flex-wrap:wrap;}
+		#tour-item>.active{
+			z-index:10;
+		}
+		#tour-item>div {
+			width:1200px;height:300px;
+			position: absolute;
+			top: 0px;
+		}
+		#tour-item>div>img{
+			width:380px;height:280px;
+			margin:10px 5px 0px 10px;
+		}
+
+		/*-----------------------手风琴特色推荐----------------------------*/
+		.fold_wrap{width:1200px;height:260px;margin:40px auto 0 auto;overflow:hidden;}
+		.fold_wrap li{float:left;width:130px;height:260px;position:relative;overflow:hidden;cursor:pointer;}
+		.fold_wrap li .mask_b{position:absolute;overflow:hidden;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,.3);_background:#B2B2B2;}
+		.fold_wrap li.active .mask_b{background:none;}
+		.fold_wrap li .mask_b h4{color:#fff;width:30px;margin:0 auto;display:block;font:30px/30px Microsoft Yahei;position:relative;padding:30px 0 0 0;}
+		.fold_wrap li.big{width:322px;}
+		.fold_wrap li .adv_intro{ width:92%; height:40px; padding:5px 4%; position:absolute;
+			left:0; bottom:0px;background:#37D; color:#FFF; overflow:hidden;font-size:15px}
+
+		.adv_intro_show{bottom:0 !important; transition:bottom 0.3s linear 0.3s;}
+
+		.pic_auto{width:100%;height:100%;}
+		.pic_auto1{background:url(../images/05-jiudian/20150120_ifold1.jpg) no-repeat center 0;}
+		.pic_auto2{background:url(../images/05-jiudian/20150120_ifold2.jpg) no-repeat center 0;}
+		.pic_auto3{background:url(../images/05-jiudian/20150120_ifold3.jpg) no-repeat center 0;}
+		.pic_auto4{background:url(../images/05-jiudian/20150120_ifold4.jpg) no-repeat center 0;}
+		.pic_auto5{background:url(../images/05-jiudian/20150120_ifold5.jpg) no-repeat center 0;}
+		.pic_auto6{background:url(../images/05-jiudian/20150120_ifold6.jpg) no-repeat center 0;}
+		.pic_auto7{background:url(../images/05-jiudian/20150120_ifold7.jpg) no-repeat center 0;}
+
+		/*-------------------------------探索当季热门---------------------*/
+		#v-contain{width:1200px;position:relative;margin:0 auto;}
+		#v-contain>ul{display:flex;justify-content:space-between;flex-wrap:wrap;}
+		#v-contain li{background-color:#e8e8e8;margin-bottom:15px;}
+		#v-contain li:nth-child(1){width:390px;height:250px;}
+		#v-contain li:nth-child(2){width:795px;height:250px;}
+		#v-contain li:nth-child(3),#v-contain li:nth-child(4),
+		#v-contain li:nth-child(5),#v-contain li:nth-child(7)
+		{width:390px;height:250px;}
+		#v-contain li:nth-child(6){width:800px;height:250px;}
+
+		/*--------------------探索当季热门===公共样式----------------------------		*/
+		.img-contain {position:absolute;height:250px;width:390px;margin:5px 5px 10px 0px;
+			overflow:hidden;cursor:pointer;}
+		.img-contain2{position:absolute;height:250px;width:795px;margin:5px 5px 10px 0px;
+			overflow:hidden;text-shadow:1px 1px 5px #000;cursor:pointer;}
+		.img-contain img{width:400px;height:260px;transition:transform 2s ease;}
+		.img-contain2 img{width:795px;height:260px;transition:transform 2s ease;}
+		.adhotel{color:#fff;text-align:center;font-size:20px;font-weight:900;}
+		.adhotel .btn:hover{border:1px solid #FFFFFF;opacity:1}		
+		#v-contain li:hover img{transform:scale(1.2);}
+		
+		/*---------------     第一块	----------------------------*/
+		.adhotel-1{position:absolute;top:45px;left:95px;width:200px;text-shadow:1px 1px 5px #000;}
+		.adhotel-1 .btn{position:absolute;top:100px;left:40px;
+			width:130px;height:40px;line-height:40px;opacity:0}
+		/*---------------     第二块	----------------------------*/	
+		.adhotel-2{position:absolute;top:45px;left:680px;width:200px;text-shadow:1px 1px 5px #000;}
+		.adhotel-2 .btn{position:absolute;top:100px;left:40px;
+			width:130px;height:40px;line-height:40px;opacity:0}		
+		/*---------------     第三块	----------------------------*/
+		.adhotel-3{position:absolute;top:320px;left:95px;width:200px;text-shadow:1px 1px 5px #000;}
+		.adhotel-3 .btn{position:absolute;top:100px;left:40px;
+			width:130px;height:40px;line-height:40px;opacity:0}
+		/*---------------     第四块	----------------------------*/
+		.adhotel-4{position:absolute;top:320px;left:495px;width:200px;text-shadow:1px 1px 5px #000;}
+		.adhotel-4 .btn{position:absolute;top:115px;left:40px;
+			width:130px;height:40px;line-height:40px;opacity:0}
+		/*---------------     第五块	----------------------------*/
+		.adhotel-5{position:absolute;top:320px;left:910px;width:200px;text-shadow:1px 1px 5px #000;}
+		.adhotel-5 .btn{position:absolute;top:100px;left:40px;
+			width:130px;height:40px;line-height:40px;opacity:0}
+		/*---------------     第六块	----------------------------*/	
+		.adhotel-6{position:absolute;top:580px;left:300px;width:200px;text-shadow:1px 1px 5px #000;}
+		.adhotel-6 .btn{position:absolute;top:100px;left:40px;
+			width:130px;height:40px;line-height:40px;opacity:0}		
+		/*---------------     第七块	----------------------------*/	
+		.adhotel-7{position:absolute;top:580px;left:910px;width:200px;text-shadow:1px 1px 5px #000;}
+		.adhotel-7 .btn{position:absolute;top:100px;left:40px;
+			width:130px;height:40px;line-height:40px;opacity:0}
+			
+		/*-------------------------热门酒店品牌----------------------------*/
+		.hotel-brand a{float:left;margin:20px 0px 10px 23px}
+		.hotel-brand p{text-align:center;font-size:20px}
+	

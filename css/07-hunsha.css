@@ -1,0 +1,600 @@
+a{
+	color:#fff;
+}
+/* 第一部分 */
+div.main{
+	width:1200px;
+	margin:0 auto;
+}
+/* 第一部分**********左边栏 */
+div.leftCont{
+	height:278px;
+	width:215px;
+	float:left;
+	background-color:rgb(35, 39, 49);
+}
+div.leftCont>ul{
+	width:215px;
+	height:279px;
+}
+div.leftCont>ul li{
+	width:195px;
+	height:68px;
+	padding:0 10px 1px;
+	position:relative;
+}
+
+
+div.leftCont>ul  li .arrow {
+    top: 25px;
+    right: 10px;
+    color: #6E899A;
+    font-size: 12px;
+    position: absolute;
+}
+
+
+/*******左边导航推荐********/
+.navmask {
+    background:#fff;
+    padding: 0px;
+    border: 1px solid #EAEAEA;
+    width: 795px;
+    height:278px;
+    left:215px;
+    top:0;
+    position: absolute;
+    z-index: 30;
+    display:none;
+    box-sizing:border-box;
+}
+.navmask .nav_hot_item{
+    width:170px;
+    margin-left:22px;
+    margin-bottom:17px;
+    float:left;
+    position:relative;
+}
+.navmask>.nav_hot_pic {
+    text-align:center;
+    width:180px;
+    height:100px;
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+}
+.navmask>.navtit{
+    padding:0 31px 10px 20px;
+}
+.navmask .nav_hot_tit{
+    text-align:center;
+}
+.navmask .nav_hot_tit a{
+    color:#333;
+}
+
+.navmask>.navtit dt{
+    width: 65px;
+    float:left;
+    font-weight:bold;
+}
+.navmask>.navtit dd{
+    float:left;
+    width:675px;
+}
+.navmask dl dd a{
+    padding-right:8px;
+    padding-left:5px;
+    margin-bottom:10px;
+    border-right:1px solid rgb(238,238,238);
+    display:inline-block;
+    color:#333;
+}
+
+
+/*************************************/
+
+
+div.leftCont>ul li .name{
+	left: 10px;
+    width: 184px;
+    height: 20px;
+    text-align: left;
+    color:#6E899A;
+    line-height: 20px;
+	padding-top: 15px;
+    padding-left: 11px;
+    font-size: 14px;
+    font-weight: bold;
+	border-top-color: rgb(40, 43, 52);
+    border-top-width: 1px;
+    border-top-style: solid;
+    position: absolute;
+}
+div.leftCont>ul li .items {
+    left: 10px;
+    top: 36px;
+    width: 184px;
+    height: 33px;
+    color: rgb(204, 204, 204);
+    line-height: 16px;
+    overflow: hidden;
+    padding-left: 11px;
+    font-size: 12px;
+    position: absolute;
+}
+div.leftCont>ul li .items>a {
+    color: rgb(255, 255, 255);
+    padding-right: 10px;
+    font-size: 12px;
+}
+/* 第一部分*******轮播 */
+#banner{
+    width:795px;
+    height:278px;
+    overflow:hidden;
+    position:relative;
+	float:left
+}
+#banner ul.banner-img{
+    position:absolute;
+}
+#banner ul.banner-img>li{float:left;width:795px;}
+#banner ul.banner-img img{
+    width:795px;
+    height:280px;
+}
+#banner a.ck-slide{
+	/* 绝对定位，位置偏移，宽高，倒角，透明度 */
+	position:absolute;
+	top:110px;
+	width:35px;
+	height:70px;
+	border-radius:5px;
+	opacity:0.15;
+} 
+#banner a.ck-left{
+	background:#000 url(../images/07-hunsha/arrow-left.png) no-repeat center center ;
+	left:5px;
+}
+#banner a.ck-right{
+	background:#000 url(../images/07-hunsha/arrow-right.png) no-repeat center center ;
+	right:5px;
+}
+#banner a.ck-slide:hover{
+	opacity:0.3;
+}
+
+#banner a.ck-slide:hover{
+    opacity:0.3;
+}
+#banner ul.indicators{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    margin-left:-34px;
+}
+#banner ul.indicators li{
+    width:12px;
+    height:12px;
+    background:#C9DEEF;
+    border-radius:50%;
+    float:left;
+    margin-right:5px;
+    transition:all .2s linear;
+}
+#banner ul.indicators li:hover,#banner ul.indicators li.hover{
+    cursor:pointer;
+    background-color:#0AA1ED;
+}
+/********第一部分右边栏 *****/
+.rightCont{
+	width: 190px;
+    height: 278px;
+	float:left;
+}
+.rightCont>a{
+	display:inline-block;
+	width: 190px;
+}
+/***************第二部分---明星首选*******************/
+/****************第二部分上半部分**********/
+#groupStar{
+	width:1200px;
+	margin:0 auto;
+	margin-top:30px;
+	height:300px; 
+}
+#groupStar h2 {
+    width: 130px;
+    height: 37px;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+	line-height:37px;
+	border-bottom:2px solid #B5B5B5;
+}
+#groupStar ul {
+    width: 1070px;
+	margin:5px 0;
+    padding: 5px 0;
+	border-bottom:2px solid #B5B5B5;
+    float: left;
+}
+#groupStar ul li {
+    height: 22px;
+    line-height: 22px;
+    margin-right: 10px;
+    float: left;
+}
+
+#groupStar ul li.on>a ,#groupStar ul li:hover>a{
+    border-radius: 20px;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 10px;
+    padding-left: 10px;
+	font-size: 14px;
+    display: block;
+    background: #ff709c;
+	color:#fff;
+}
+
+#groupStar .adrecommend{
+	width: 100%;
+    height: 130px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#groupStar .adrecommend .recommend_top{
+	width: 380px;
+    margin-left: 15px;
+    float: left;
+}
+#groupStar .adrecommend .recommend_top .pic{
+	width: 190px;
+    height: 130px;
+    overflow: hidden;
+    float: left;
+}
+#groupStar .adrecommend .recommend_top .pic img{
+    transition:all .5s linear;
+}
+#groupStar .adrecommend .recommend_top .pic:hover img{
+    transform:scale(1.2);
+}
+#groupStar .adrecommend .recommend_top .des {
+    background: #458DD9;
+    width: 190px;
+    height: 130px;
+    float: left;
+}
+#groupStar .adrecommend .recommend_top .des .name {
+    margin: 0px auto;
+    width: 160px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 5px;
+    font-size: 16px;
+    border-bottom: #fff 1px solid;
+    display: block;
+	color:#fff;
+}
+#groupStar .adrecommend .recommend_top .des .dest {
+    margin: 0px auto;
+    width: 160px;
+    height: 75px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 5px;
+    font-size: 12px;
+    display: block;
+	color:#fff;
+}
+#groupStar .adrecommend .recommend_top .des .dest:hover {
+    color:#ff709c;
+}
+/****************第二部分下半部分**********/
+ .recommend {
+    width: 380px;
+    margin-left: 15px;
+    float: left;
+}
+.recommend .line {
+    height: 30px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.recommend .line a.name {
+	display: block;
+    width: 380px;
+    line-height: 30px;
+    overflow: hidden;
+    float: left;
+    color:#000;
+}
+ span.price {
+    width: 85px;
+    text-align: right;
+    color: rgb(255, 136, 0);
+    line-height: 30px;
+  /* 
+  
+  
+  float: left; */
+    display: block;
+}
+ span.price em {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/***************背景****************/
+#groupRoman{
+	width:1200px;
+	margin:0 auto;
+	height:300px;
+	box-sizing:border-box;
+}
+#groupRoman h2 {
+    width: 1200px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+	line-height:36px;
+/*	border-bottom:2px solid #B5B5B5;*/
+}
+#bj{
+	width:1200px;
+	height:264px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+#bj>img{
+	position:relative;
+	z-index:100;
+	transition:all 2s linear;
+}
+/**************第三部分---海外旅拍***********************/
+/**************第四部分---唯美国内旅拍***********************/
+/**************第五部分---定制海外婚礼***********************/
+#groupSea,#groupInner,#groupWed {
+    margin: 0 auto;
+	margin-top:30px;
+    width: 1200px;
+	height:300px;
+    position: relative;
+	box-sizing:border-box;
+}
+#groupSea>h2 ,
+#groupInner>h2,
+#groupWed>h2{
+    width: 130px;
+    height: 37px;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+	line-height:37px;
+	border-bottom:2px solid #B5B5B5;
+}
+#groupSea>ul ,
+#groupInner>ul,
+#groupWed>ul{
+    width: 1070px;
+    margin: 5px 0;
+	padding:5px 0;
+    float: left;
+	border-bottom:2px solid #B5B5B5;
+}
+#groupSea>ul li,
+#groupInner>ul li,
+#groupWed>ul li {
+    height: 22px;
+    line-height: 22px;
+    margin-right: 10px;
+    float: left;
+}
+#groupSea>ul li:last-child ,
+#groupInner>ul li:last-child,
+#groupWed>ul li:last-child{
+    height: 22px;
+    line-height: 22px;
+    float: right;
+}
+#groupSea>ul li>a ,
+#groupInner>ul li>a,
+#groupWed>ul li>a{
+    height: 22px;
+    color: #333;
+    line-height: 22px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#groupSea>ul>li.on>a,
+#groupInner>ul>li.on>a,
+#groupWed>ul>li.on>a
+{
+    border-radius: 20px;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 10px;
+    padding-left: 10px;
+	font-size: 14px;
+    display: block;
+	background: #ff709c;
+    color:#fff;
+}
+#groupSea ul li:last-child a:hover,
+#groupInner ul li:last-child a:hover,
+#groupWed ul li:last-child a:hover{
+	color:orange;
+}
+/**************第三部分---海外旅拍***********************/
+/**************第四部分---唯美国内旅拍***********************/
+/**************第五部分---定制海外婚礼***********************/
+#tabs1,#tabs2,#tabs3{
+	width:1200px;
+	height:264px;
+	position:relative;
+	top:38px;
+}
+ .left-ad {
+    width: 237px;
+	height:262px;
+    float: left;
+    position: relative;
+	top:-43px;
+	overflow:hidden;
+}
+.left-ad img{
+	transition:all 1s linear;
+	width:237px;
+	height:262px;
+}
+.left-ad:hover img{
+	transform:scale(1.1);
+}
+ .left-ad .whitemask {
+    background:#fff;
+	opacity:.75;
+    left: 40px;
+    width: 160px;
+    height: 50px;
+    bottom: 15%;
+    color:#000;
+    position: absolute;
+}
+ .left-ad .whitemask .tit {
+    margin: 0 auto;
+    width: 120px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom-color: rgb(51, 51, 51);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+	color:#000;
+}
+
+.item {
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+	margin-left: 18px;
+    float: left;
+    position: relative;
+	top:-22px;
+    box-shadow: 0 2px 8px #ddd;
+	overflow:hidden;
+}
+.item .pic {
+    width: 220px;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+}
+ .item .pic .sta {
+    left: 0;
+    width: 210px;
+    height: 30px;
+    bottom: 0;
+    color: #fff;
+	background:#333;
+	opacity:.5;
+    line-height: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+}
+ .item .name{
+	height:70px;
+	overflow: hidden;
+ }
+ .item .name a{
+	display:block;
+    height:96px;
+    color:#333;
+    line-height: 20px;
+    overflow: hidden;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+.item:hover .pic .picmask {
+    height: 130px;
+    opacity: 0.3;
+}
+ .item .pic .picmask {
+    background: #333;
+    left: 0;
+    width: 220px;
+    height: 30px;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.3;
+}
+
+ .item:hover .pic .words {
+    display: block;
+}
+.item .pic img {
+    transition:all 1s linear;
+	width:250px;
+	height:150px;
+}
+.item:hover .pic img {
+    transform:scale(1.3);
+}
+.item .pic .words {
+    padding: 8px;
+    border-radius: 10px;
+    left: 22px;
+    top: 19px;
+    width: 159px;
+    height: 56px;
+    color:#fff;
+    line-height: 20px;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+}
+/*电梯样式*/
+.elevator{
+    margin-top: 35px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background-color: #918888;
+    left: 10px;
+    top:160px;
+}
+.left_list{ display: block; list-style:none }
+.lift_item {
+    border-top: 1px solid #b1aaaa;
+    transition: background-color .1s;
+    transition:all .3s linear;
+}
+.lift_btn {
+    overflow: hidden;
+    display: block;
+    width: 50px;
+    padding: 10px 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #fefefe;
+    transition: color .1s;
+}
+.lift_item:hover, .lift_item_on {
+    position: relative;
+    border-bottom: 1px solid #ff709c;
+    margin-bottom: -1px;
+    border-color: #ff709c;
+    background-color:#ff709c;
+}

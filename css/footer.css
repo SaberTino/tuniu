@@ -1,0 +1,221 @@
+.trav_sev{
+			padding: 20px 0px;
+			clear: both;
+			background:rgb(245, 245, 245) url("../images/footer/2017-09-21_020006.png") no-repeat 310px 5px;
+		}
+		ul.ts_box{
+			margin:0px auto;
+			width:990px;
+			padding:0;
+			list-style:none;
+		}
+		.ts_box li.trav_l_first {
+			width: 250px;
+		}
+		.ts_box li {
+			padding-bottom: 20px;
+			margin-right: 20px;
+			border-right-color: rgb(216, 216, 216);
+			border-right-width: 1px;
+			border-right-style: dotted;
+			float: left;
+			overflow:hidden;
+		}
+		dl{
+			margin:0px;
+			padding:0px;
+		}
+		.ts_box li .trav_l dt.tl_tt {
+			width: auto;
+			line-height: 35px;
+			font-size: 14px;
+			font-weight: 700;
+			margin-bottom: 10px;
+			float: none;
+		}
+		li.trav_l_first .trav_l dd.tl_w a{
+			width:65px;
+			color:rgb(153,153,153);
+			display:inline-block;
+			line-height:1.5;
+		    font-size:12px;
+			text-decoration:none;
+		}
+		a{
+			text-decoration:none;	
+			color:rgb(153,153,153);
+		}
+		dd.tl_w {
+		   width: 240px;
+		   line-height:1.5;
+		   font-size:12px;
+		   margin:0;
+		   padding:0;
+		}
+		p {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.ts_box li {
+			width: 150px;
+			padding-bottom: 20px;
+			margin-right: 20px;
+			border-right-color: rgb(216, 216, 216);
+			border-right-width: 1px;
+			border-right-style: dotted;
+			float: left;
+		}
+		.ts_box li .trav_l {
+			width: 140px;
+			margin-left: 45px;
+		}
+		.tl_cont a{
+			width:auto;
+			color: rgb(153, 153, 153);
+			display: inline-block;
+		}
+		li.trav_l_last{
+			border:none;
+		}
+		li.trav_l_last img{
+			margin-top:10px;
+		}
+		.three_trav {
+			background-color: rgb(96, 202, 110);
+		}
+		.thr_trav {
+			margin: 0px auto;
+			width: 990px;
+			height: 62px;
+			background: url(../images/footer/thr_sun.jpg) no-repeat 0 0;
+			position: relative;
+		}
+		.thr_trav .tn_text {
+			font: 12px/20px arial, sans-serif;
+			right: 25px;
+			bottom: 32px;
+			color: rgb(255, 255, 255);
+			position: absolute;
+			font-stretch: normal;
+			opacity: 0.8;
+		}
+		.thr_trav .tn_phone {
+			font: bold 20px/32px arial, sans-serif;
+			right: 25px;
+			bottom: 5px;
+			color: rgb(255, 255, 255);
+			position: absolute;	
+			font-stretch: normal;
+		}
+		.fourImgs {
+			margin: 10px auto 0px;
+			width: 100%;
+			overflow: hidden;
+		}
+		.fourImgs ul {
+			width: 1000px;
+			height:65px;
+			list-style: none;
+			margin:0 auto;
+		}
+		.fourImgs li {
+			border: 1px solid rgb(216, 216, 216);
+			width: 238px;
+			height: 58px;
+			margin-right: 10px;
+			float: left;
+		}
+		.fourImgs img {
+			display: block;
+		}
+		.img_place {
+			margin: 10px auto 0px;
+			border: 1px solid rgb(216, 216, 216);
+			width: 988px;
+		}
+		.img_place img {
+			display: block;
+		}
+		.tn_footer {
+			margin: 10px auto;
+			width: 1000px;
+			color: rgb(119, 119, 119);
+			line-height: 1.9;
+			font-size: 12px;
+		}
+		#TN-24 {
+			line-height: 1.9;
+		}
+		.tn_footer p {
+			text-align: center;
+			line-height: 1.9;
+		}
+		.thr_img {
+			margin: 0 auto 0px;
+			width: 600px;
+			overflow: hidden;
+		}
+		.thr_img ul {
+			width: 1000px;
+		}
+		.thr_img li {
+			border: 1px solid rgb(216, 216, 216);
+			width: 175px;
+			margin-right: 10px;
+			float: left;
+			list-style:none;
+		}
+		.thr_img li a {
+			display: block;
+			text-decoration:none;
+			color:#777777;
+		}
+		.slide_order {
+			margin: 5px 0px 0px;
+			color: rgb(153, 153, 153);
+		}
+		.tn_footer .trav_corp {
+			margin: 10px 0px 0px;
+			height: 47px;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+		}
+		.slide_order {
+			margin: 5px 0px 0px;
+			color: rgb(153, 153, 153);
+		}
+		.slide_order span {
+			width: 60px;
+			height: 22px;
+			overflow: hidden;
+			float: left;
+			display: block;
+		}
+		.w_940 {
+			width: 940px;
+			height: 22px;
+			overflow: hidden;
+			position: relative;
+		}
+		.slide_order ul {
+			top: 0px;
+			position: absolute;
+			height: 22px;
+			overflow: hidden;
+			float: left;
+			display: block;
+			margin-top:0;
+			width:5000px;
+			padding:0px;
+			transition:all 1s linear;
+		}
+		.fl {
+			float: left;
+		}
+		.slide_order ul li {
+			float: left;
+			list-style:none;
+			overflow:hidden;
+		}

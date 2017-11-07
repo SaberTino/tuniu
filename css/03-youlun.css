@@ -1,0 +1,1102 @@
+/*此文件只针对html/03-youlun.html有效*/
+body{
+	background:#fff;
+}
+#japan h3,#ocean h3,#internal h3 {
+	border-left: 4px solid #34ce6c;
+	margin-bottom: 12px;
+	float:left;
+	font-weight: normal;
+	font-size: 24px;
+}
+#recom h3,#company h3{
+	border-left: 4px solid #34ce6c;
+	margin-bottom: 12px;
+	font-weight: normal;
+	font-size: 24px;
+}
+.nav ul li a{
+	cursor: pointer;
+}
+.nav ul li a:hover{
+	color: #34ce6c;
+}
+
+.content ul li:nth-child(5) a:hover{
+	color:#FF7218;
+	border-bottom:1px solid #FF7218;
+}
+.content-two ul li:nth-child(5) a:hover{
+	color:#FF7218;
+	border-bottom:1px solid #FF7218;
+}
+.content-two ul>li:nth-child(2),
+.content ul>li:nth-child(2){
+    background: #000;
+    width: 270px;
+    height: 40px;
+    line-height: 19px;
+    opacity: .5;
+}
+
+.content-two ul>li:nth-child(3),
+.content ul>li:nth-child(3) {
+
+	height: 203px;
+    width: 270px;
+    overflow: hidden;
+}
+.content img:hover{
+	transform:scale(1.1);
+}
+.content-two img:hover{
+	transform:scale(1.1);
+}
+.content-two img,
+.content img{
+	transition: all .5s linear;
+}
+.content>div>div{
+    width:270px;
+	height:493px;
+	overflow:hidden;
+}
+/*轮播样式   banner*/
+#banner{
+    position:relative;
+	height:412px;
+	width:100%;
+	overflow:hidden;
+}
+#banner>ul.imag{
+    position:absolute;
+}
+#banner .imag>li{
+    float:left;
+}
+#banner ul.origin{
+	position:absolute;
+	top: 381px;
+    left: 600px;
+}
+#banner .origin>li{
+    float:left;
+	width:10px;
+	height:10px;
+	border:1px solid red;
+	border-radius:50%;
+	margin-left:15px;
+}
+#banner .origin>li:hover{
+	background:red;
+}
+#banner .left{
+    position:absolute;
+	width:40px;
+	height:50px;
+	background:red;
+	top:184px;
+	left:122px;
+}
+#banner .right{
+    position:absolute;
+	width:40px;
+	height:50px;
+	background:red;
+	top:184px;
+	right:122px;
+}
+ #banner .origin li{
+	cursor: pointer;
+}
+
+
+/*爆款推荐  recom*/
+
+#recom img:hover{
+	transform:scale(1.1);
+}
+
+#recom img{
+	transition: all .5s linear;
+}
+.content>div>div{
+    width:270px;
+	height:493px;
+	overflow:hidden;
+}
+
+
+
+#recom{
+	width:1200px;
+	height:310px;
+	margin:20px auto;
+}
+
+#recom>ul{
+	float:left;
+	width:284px;
+	height:248px;
+	position:relative;
+	border: 1px solid transparent;
+}
+#recom>ul:hover{
+	border: 1px solid #30CF69;
+}
+#recom>ul>li{
+	margin-left:7px;
+}
+#recom>ul img{
+	width:270px;
+}
+#recom>ul>li:nth-child(1){
+	position:absolute;
+	background:red;
+	top:0px;
+	left:185px;
+	z-index:10;
+	width:70px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-radius:0 0 8px 8px;
+	margin-top:7px;
+}
+#recom>ul>li:nth-child(1) a{
+	color:#ffffff;
+}
+#recom>ul>li:nth-child(2) p{
+	color:#fff;
+	margin-left:10px;
+}
+#recom>ul>li:nth-child(2){
+	position:absolute;
+	top:135px;
+	z-index:10;
+}
+#recom>ul>li:nth-child(3){
+	margin-top:7px;
+	width:270px;
+	height:203px;
+	overflow:hidden;
+}
+
+#recom>ul>li:nth-child(4){
+	position:absolute;
+	width: 270px;
+    height: 35px;
+    top: 175px;
+    line-height: 35px;
+    font-size: 28px;
+    color: #FF7237;
+	background:#fff;
+}
+#recom>ul>li:nth-child(5){
+	width:270px;
+	height:60px;
+	top:196px;
+	margin-bottom:7px;
+}
+#recom>ul:nth-child(2){
+	margin-left:5px;
+}
+#recom>ul:nth-child(2)~ul{
+	margin-left:16px;
+}
+
+#recom ul li:nth-child(5) a:hover{
+	color:#FF7218;
+	border-bottom:1px solid #FF7218;
+}
+
+/*日历          kalendar*/
+
+#kalendar{
+	width:1200px;
+	height:487px;
+	margin:0 auto;
+}
+#kalendar div>a{
+	float:left;
+}
+#kalendar div>h3{
+	float:left;
+	margin-left:5px;
+	font-size: 15px;
+    color: #42b312;
+}
+#kalendar>div>ul li{
+	font-size: 14px;
+    color: #666;
+    margin: 0 10px 2px 0;
+	cursor: pointer;
+}
+#kalendar div>ul li:hover{
+    color:#FF7218;   
+}
+#kalendar div.left img{
+	margin-top:60px;
+}
+#kalendar div>div.clear{
+
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#kalendar div.left{
+	padding: 10px 10px 0px;
+	border: 1px solid #dbdbdb;
+	
+}
+
+#kalendar div>.a_a{
+	background-image:url(../images/03-youlun/icon.png);
+	display:block;
+	width:17px;
+	height:17px;
+	background-position:0 412px;
+}
+#kalendar div>.a_b{
+	background-image:url(../images/03-youlun/icon.png);
+	display:block;
+	width:16px;
+	height:22px;
+	background-position:0 444px;
+}
+#kalendar div>.a_c{
+	background-image:url(../images/03-youlun/icon.png);
+	display:block;
+	width:17px;
+	height:17px;
+	background-position:0 468px;
+}
+#kalendar div>.a_d{
+	background-image:url(../images/03-youlun/icon.png);
+	display:block;
+	width:17px;
+	height:17px;
+	background-position:0 497px;
+}
+
+#kalendar>div.left{
+	float:left;
+}
+#kalendar>#box{
+	float:right;
+}
+
+#kalendar>div.left{
+	width:300px;
+	height:464px;
+}
+#kalendar>#box{
+	width:878px;
+	height:495px;
+}
+
+#kalendar  div.left li{
+	float:left;
+}
+
+#box div.font_a{
+	position:relative;
+}
+#box div>div.font{
+	position:absolute;
+	top: 22px;
+    left: 366px;
+	width:334px;
+}
+#box div>div.font div{
+	height:20px;
+	cursor: pointer;
+	animation:change 4s linear infinite;
+	font-size:14px;
+}
+#box ul{
+	position:absolute;
+	top:91px;
+	left:0px;
+	background:#42B312;
+	width: 891px;
+	height:38;
+	line-height:38px;
+	padding-top:5px;
+}
+ #box ul li{
+	float:left;
+	cursor: pointer;
+	font-size: 16px;
+    margin-left: 10px;
+	color:#fff;
+	padding:0 10px;
+}
+
+/************************************/
+#box{
+	position:relative;
+	width:226px;
+	height:34px;
+	line-height:34px;
+}
+
+#box p{
+    width: 60px;
+    height: 30px;
+    z-index: 10;
+    position: absolute;
+    top: 78px;
+    left: 40px;
+    line-height: 30px;
+    font-size: 26px;
+	animation:change 4s linear infinite;
+}
+
+#box>input{
+	padding-left:65px;
+	font-size:13px;
+	height:25px;
+	outline:none;
+	width:160px;
+	position:absolute;
+	top:0;
+	left:0;
+	line-height:25px;
+}
+
+#box #goTime{
+	font-size:13px;
+	font-weight:bold;
+	color:#808080;
+	cursor:text;
+	padding-left:80px;
+	width:145px;
+}
+
+#box>.weekday{
+	display:inline-block;
+	width:60px;
+	height:30px;
+	z-index:10;
+	position:absolute;
+	top: 210px;
+    right:856px;
+	line-height:30px;
+	text-align:center;
+	color:#808080;
+}
+/*********************************日历样式******************************/
+.calendar{
+	width:830px;
+	height:334px;
+	background:#fff;
+	position:absolute;
+	top:134px;
+	z-index:10;
+	left:60px;
+}
+#current{
+	position: relative;
+    cursor: pointer;
+    top: -343px;
+    left: 11px;
+    width: 41px;
+    font-size: 20px;
+    color: red;
+}
+#current:hover{
+	color:#42B312;
+}
+.calendar .calendar-title-box{
+	position:relative;
+	width:100%;
+	height:36px;
+/*	text-align:center;*/
+	font:bold 15px "Microsoft yahei";
+/*	border-bottom: 1px solid #ddd;*/
+	line-height:36px;
+/*	background:#ccffcc;*/
+}
+
+.calendar .prev-month{
+	position:absolute;
+	top: -95px;
+    left: -59px;
+	display:inline-block;
+	border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #42B312;
+	cursor:pointer;
+	opacity:.5;
+}
+
+.calendar .next-month{
+	position:absolute;
+	    top: 68px;
+    right: 828px;
+	display:inline-block;
+	border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid #42B312;
+	cursor:pointer;
+	opacity:.5;
+}
+.calendar .prev-month:hover{
+	opacity:1;
+}
+
+.calendar .next-month:hover{
+	opacity:1;
+}
+
+.calendar-table{
+  width:760px;
+  border-collapse:collapse;
+  text-align:center;
+} 
+
+.calendar-table tr{
+  height:30px;
+  line-height:30px;
+}
+
+.calendar-table td{
+	height:50px;
+	font-size:17px;
+	cursor:default;
+	transition:all .2s linear;
+	box-sizing:border-box;
+	border: 2px solid #F6F6F6;
+}
+.calendar-table th{
+	border: 2px solid #F6F6F6;
+	font-size: 15px;
+	color:#42B312;
+}
+
+.calendar-table td:hover{
+	transform:scale(1.1);
+	background:#ccff00;
+	opacity: 0.1;
+}
+
+.calendar-table td.currentDay{
+	background:#ccff00;
+	opacity: 0.5;
+}
+
+.calendar-table td.currentMonth{
+	opacity:1;
+}
+
+.otherMonth{
+	opacity:.3;
+}
+
+.choose{
+	background:#66ffcc;
+	opacity: 0.1;
+}
+.calendar-body-head{
+	width:820px;
+	height:300px;
+	z-index: 55;
+	position:absolute;
+	top:0;
+}
+#calendarTitle{
+	width: 663px;
+    height: 28px;
+    font-size: 99px;
+    color: #666;
+    opacity: 0.2;
+    margin-top: 168px;
+    margin-left: 100px;
+}
+
+
+
+
+/*     邮轮日本航线   japen     */
+#japan{
+	width:1200px;
+	margin:20px auto;
+	height:563px;
+	overflow:hidden;
+}
+
+#japan>.nav ul{
+	float:right;
+}
+#japan>.nav ul>li{
+	float:left;
+	font-size:16px;
+	margin-left:40px;
+}
+/******************/
+#japan>.content>div{
+	float:left;
+	width:285px;
+	height:542px;
+}
+#japan>.content ul{
+	float:left;
+	width:284px;
+	height: 248px;
+	position:relative;
+	border: 1px solid transparent;
+}
+#japan>.content ul:hover{
+	border: 1px solid #30CF69;
+}
+#japan>.content ul>li{
+	margin-left:7px;
+}
+#japan>.content img{
+	width:270px;
+}
+
+#japan>.content ul>li:nth-child(1){
+	position:absolute;
+	background:red;
+	top:0px;
+	left:185px;
+	z-index:10;
+	width:70px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-radius:0 0 8px 8px;
+	margin-top:7px;
+}
+#japan .content ul>li:nth-child(1) a{
+	color:#ffffff;
+}
+#japan>.content ul>li:nth-child(2) p{
+	color:#fff;
+	margin-left:10px;
+}
+#japan>.content ul>li:nth-child(2){
+	position:absolute;
+	top:135px;
+	z-index:10;
+}
+#japan>.content ul>li:nth-child(3){
+	margin-top:7px;
+}
+
+#japan>.content ul>li:nth-child(4){
+	position:absolute;
+	width: 270px;
+    height: 35px;
+    top: 175px;
+    line-height: 35px;
+    font-size: 28px;
+    color: #FF7237;
+	background:#fff;
+}
+#japan>.content ul>li:nth-child(5){
+	width:270px;
+	height:60px;
+	top:196px;
+	margin-bottom:7px;
+}
+#japan>.content ul{
+    margin-left:19px;
+	margin-bottom:10px;
+}
+/*     内容2         */
+.content-two{
+display:none;
+}
+
+#japan>.content-two div{
+	float:left;
+	width:285px;
+	height:542px;
+	background:red;
+}
+#japan>.content-two ul{
+	float:left;
+	width:284px;
+	height: 248px;
+	position:relative;
+	border: 1px solid transparent;
+}
+#japan>.content-two ul:hover{
+	border: 1px solid #30CF69;
+}
+#japan>.content-two ul>li{
+	margin-left:7px;
+}
+#japan>.content-two img{
+	width:270px;
+}
+#japan .content-two {
+    width:1200px;
+}
+#japan>.content-two ul>li:nth-child(1){
+	position:absolute;
+	background:red;
+	top:0px;
+	left:185px;
+	z-index:10;
+	width:70px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-radius:0 0 8px 8px;
+	margin-top:7px;
+}
+#japan .content-two ul>li:nth-child(1) a{
+	color:#ffffff;
+}
+#japan>.content-two ul>li:nth-child(2) p{
+	color:#fff;
+	margin-left:10px;
+}
+#japan>.content-two ul>li:nth-child(2){
+	position:absolute;
+	top:135px;
+	z-index:10;
+}
+#japan>.content-two ul>li:nth-child(3){
+	margin-top:7px;
+}
+
+#japan>.content-two ul>li:nth-child(4){
+	position:absolute;
+	width: 270px;
+    height: 35px;
+    top: 176px;
+    line-height: 35px;
+    font-size: 28px;
+    color: #FF7237;
+	background:#fff;
+}
+#japan>.content-two ul>li:nth-child(5){
+	width:270px;
+	height:60px;
+	top:196px;
+	margin-bottom:7px;
+}
+#japan>.content-two ul{
+	margin-bottom:10px;
+}
+#japan>.content-two ul:nth-child(2),
+#japan>.content-two ul:nth-child(3),
+#japan>.content-two ul:nth-child(4),
+#japan>.content-two ul:nth-child(6),
+#japan>.content-two ul:nth-child(7),
+#japan>.content-two ul:nth-child(8){
+	margin-left:18px;
+}
+
+
+
+
+
+/*邮轮远洋航线   ocean  */
+
+#ocean{
+	width:1200px;
+	margin:20px auto;
+	height:563px;
+	overflow:hidden;
+}
+
+#ocean>.nav ul{
+	float:right;
+}
+#ocean>.nav ul>li{
+	float:left;
+	font-size:16px;
+	margin-left:40px;
+}
+/******************/
+#ocean>.content>div{
+	float:left;
+	width:285px;
+	height:542px;
+}
+#ocean>.content ul{
+	float:left;
+	width:284px;
+	height: 248px;
+	position:relative;
+	border: 1px solid transparent;
+}
+#ocean>.content ul:hover{
+	border: 1px solid #30CF69;
+}
+#ocean>.content ul>li{
+	margin-left:7px;
+}
+#ocean>.content img{
+	width:270px;
+	transition: all .5s linear;
+}
+#ocean>.content img:hover{
+	transform:scale(1.1);
+}
+#ocean .content {
+    width:1200px;
+	display:block;
+	overflow:hidden;
+	height:580px;
+}
+#ocean>.content ul>li:nth-child(1){
+	position:absolute;
+	background:red;
+	top:0px;
+	left:185px;
+	z-index:10;
+	width:70px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-radius:0 0 8px 8px;
+	margin-top:7px;
+}
+#ocean .content ul>li:nth-child(1) a{
+	color:#ffffff;
+}
+#ocean>.content ul>li:nth-child(2) p{
+	color:#fff;
+	margin-left:10px;
+}
+#ocean>.content ul>li:nth-child(2){
+	position:absolute;
+	top:135px;
+	z-index:10;
+}
+#ocean>.content ul>li:nth-child(3){
+	margin-top:7px;
+}
+
+#ocean>.content ul>li:nth-child(4){
+	position:absolute;
+	width: 270px;
+    height: 35px;
+    top: 175px;
+    line-height: 35px;
+    font-size: 28px;
+    color: #FF7237;
+	background:#fff;
+}
+#ocean>.content ul>li:nth-child(5){
+	width:270px;
+	height:60px;
+	top:196px;
+	margin-bottom:7px;
+}
+#ocean>.content ul{
+    margin-left:19px;
+	margin-bottom:10px;
+}
+
+
+/*邮轮国内航线   ocean          */
+
+
+#internal{
+	width:1200px;
+	margin:20px auto;
+	height:563px;
+	overflow:hidden;
+}
+
+#internal>.nav ul{
+	float:right;
+}
+#internal>.nav ul>li{
+	float:left;
+	font-size:16px;
+	margin-left:40px;
+}
+/******************/
+#internal>.content>div{
+	float:left;
+	width:285px;
+	height:542px;
+}
+#internal>.content ul{
+	float:left;
+	width:284px;
+	height:248px;
+	position:relative;
+	border: 1px solid transparent;
+}
+#internal>.content ul:hover{
+	border: 1px solid #30CF69;
+}
+#internal>.content ul>li{
+	margin-left:7px;
+}
+#internal>.content img{
+	width:270px;
+}
+#internal .content {
+    width:1200px;
+	display:block;
+	overflow:hidden;
+}
+#internal>.content ul>li:nth-child(1){
+	position:absolute;
+	background:red;
+	top:0px;
+	left:185px;
+	z-index:10;
+	width:70px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-radius:0 0 8px 8px;
+	margin-top:7px;
+}
+#internal .content ul>li:nth-child(1) a{
+	color:#ffffff;
+}
+#internal>.content ul>li:nth-child(2) p{
+	color:#fff;
+	margin-left:10px;
+}
+#internal>.content ul>li:nth-child(2){
+	position:absolute;
+	top:135px;
+	z-index:10;
+}
+#internal>.content ul>li:nth-child(3){
+	margin-top:7px;
+}
+
+#internal>.content ul>li:nth-child(4){
+	position:absolute;
+	width: 270px;
+    height: 35px;
+    top: 175px;
+    line-height: 35px;
+    font-size: 28px;
+    color: #FF7237;
+	background:#fff;
+}
+#internal>.content ul>li:nth-child(5){
+	width:270px;
+	height:60px;
+	top:196px;
+	margin-bottom:7px;
+}
+#internal>.content ul{
+    margin-left:19px;
+	margin-bottom:10px;
+}
+/*     内容2         */
+#internal>.content-two{
+display:none;
+}
+
+#internal>.content-two div{
+	float:left;
+	width:285px;
+	height:542px;
+	background:red;
+}
+#internal>.content-two ul{
+	float:left;
+	width:284px;
+	height: 248px;
+	position:relative;
+	border: 1px solid transparent;
+}
+#internal>.content-two ul:hover{
+	border: 1px solid #30CF69;
+}
+#internal>.content-two ul>li{
+	margin-left:7px;
+}
+#internal>.content-two img{
+	width:270px;
+}
+#internal .content-two {
+    width:1200px;
+}
+#internal>.content-two ul>li:nth-child(1){
+	position:absolute;
+	background:red;
+	top:0px;
+	left:185px;
+	z-index:10;
+	width:70px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-radius:0 0 8px 8px;
+	margin-top:7px;
+}
+#internal .content-two ul>li:nth-child(1) a{
+	color:#ffffff;
+}
+#internal>.content-two ul>li:nth-child(2) p{
+	color:#fff;
+	margin-left:10px;
+}
+#internal>.content-two ul>li:nth-child(2){
+	position:absolute;
+	top:135px;
+	z-index:10;
+}
+#internal>.content-two ul>li:nth-child(3){
+	margin-top:7px;
+}
+
+#internal>.content-two ul>li:nth-child(4){
+	position:absolute;
+	width: 270px;
+    height: 35px;
+    top: 175px;
+    line-height: 35px;
+    font-size: 28px;
+    color: #FF7237;
+	background:#fff;
+}
+#japen>.content-two ul>li:nth-child(5){
+	width:270px;
+	height:60px;
+	top:196px;
+	margin-bottom:7px;
+}
+#japen>.content-two ul{
+	margin-bottom:10px;
+}
+#internal>.content-two ul:nth-child(2),
+#internal>.content-two ul:nth-child(3),
+#internal>.content-two ul:nth-child(4),
+#internal>.content-two ul:nth-child(6),
+#internal>.content-two ul:nth-child(7),
+#internal>.content-two ul:nth-child(8){
+	margin-left:18px;
+}
+/* 邮轮公司       company */
+#company {
+	width:1200px;
+	margin:20px auto;
+}
+#company>div>ul{
+	float:left;
+}
+#company>div>ul>li{
+	position:relative;
+}
+#company  ul ul{
+	position:absolute;
+	z-index:10;
+    top: 260px;
+    left: 0;
+	height:100px;
+	overflow:hidden;
+	background:#fff;
+	width:298px;
+	opacity: 0.5;
+}
+
+#company  ul:nth-child(1)~ul{
+	margin-left:2px;
+}
+#company  ul ul>li:nth-child(2){
+	font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+	margin-top: 5px;
+}
+#company  ul ul>li:nth-child(2)~li{
+	color: #555;
+    font-size:15px;
+    margin-bottom: 10px;
+}
+#company  ul ul>li{
+	text-align:center;
+}
+
+/*  介绍航线 问题 游记           strategy*/
+@keyframes change{
+	0%{color:#ff0000}
+	20%{color:#6600ff}
+	40%{color:#00ff00}
+	60%{color:#660066}
+	80%{color:#330000}
+	100%{color:#cc0000}
+}
+#strategy div.start li a{
+	animation:change 4s linear infinite;	
+}
+#strategy{
+	width:1200px;
+	margin:20px auto;
+	background:#fff;
+}
+
+#strategy div.start{
+	width:400px;
+	height:370px;
+}
+#strategy div.start li{
+	width:180px;
+	margin-bottom:10px;
+}
+#strategy div.start ul{
+	float:left;
+}
+#strategy  h3{
+	border-left: 4px solid #34ce6c;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	font-weight: normal;
+	font-size: 22px;
+}
+#strategy>div{
+	float:left;
+}
+#strategy div.tegy ul{
+	width:600px;
+	height:325px;
+	float:left;
+}
+#strategy div.tegy div{
+	float:left;
+}
+#strategy div.tegy ul li{
+	float:left;
+	padding:2px;
+}
+/**********   添加属性    ***************/
+#japan .display{
+	display:block;
+}
+#ocean .display{
+	display:block;
+}
+.hover{
+	height:25px;
+	border-bottom:3px solid #30CF69;
+}
+
+.hoverColor{
+	color:#30CF69;
+}
+
+#recom ul>li:nth-child(2){
+    background: #000;
+    width: 270px;
+    height: 39px;
+    line-height: 19px;
+    opacity: .5;
+}
+ #kalendar #box .kalendar{
+	background:#fff;
+	border-radius:5px 5px 0 0;
+	color:#42B312;
+}
+.banner_hover{
+	background:red;
+}

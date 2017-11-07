@@ -1,0 +1,265 @@
+
+/*头部*/
+div#login {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+div#header_logo{
+    padding: 20px 0 20px 130px;
+}
+div#header_logo img{
+    width: 150px;
+    height: 41px;
+}
+/*中间*/
+div#user_login{
+    border: 1px solid #EDEDED;
+    float: right;
+    background: #ffffff;
+    margin: 50px 90px 0 0;
+}
+ul.list_box{
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #EBEBEB;
+}
+li.list_box1,li.list_box2{
+    width: 196px;
+    height: 27px;
+    margin: auto 0;
+    display: inline-block;
+}
+li.list_box1{
+    border-right:1px solid #EBEBEB;
+}
+li.list_box1 a{
+    color:green;
+}
+
+p.kong{
+    width: 341px;
+    height: 41px;
+    margin: 0 auto 10px auto;
+	line-height:40px; 
+	background:rgba(255,0,0,0.5);
+	visibility:hidden;
+}
+p.kong span{
+	display:inline-block;
+	color:#CD0000;
+	font-size:14px;
+	font-weight:500;
+}
+p.kong img{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	margin-left:10px;
+}
+ul.user_login1_box1{
+    width: 340px;
+    border:1px solid #DDDDDD;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+li.user_login1_box1_1{
+    float: left;
+    margin-left: 10px;
+}
+li.user_login1_box1_1 input{
+    width: 200px;
+}
+li.user_login1_box1_2{
+    float: right;
+    margin-right: 10px;
+}
+li.user_login1_box1_2 a{
+    color: green;
+}
+
+div.upwd_box {
+     width: 340px;
+     margin: 10px auto;
+     border: 1px solid #DDDDDD;
+ }
+div.upwd_box input{
+    width: 300px;
+    height: 41px;
+    margin-left: 10px;
+}
+div.verify {
+    width: 340px;
+    margin: 0px auto;
+    border: 1px solid #DDDDDD;
+}
+div.verify input{
+    width: 148px;
+    height: 41px;
+    margin-left: 10px;
+}
+div.verify canvas{
+	vertical-align:middle;
+}
+div.verify span{
+	cursor:pointer;
+}
+ul.phone_login{
+    width: 340px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+ul.phone_login li{
+    float:left;
+}
+ul.phone_login a.phone{
+    float: right;
+}
+a.phone img{
+    width: 12px;
+    height: 16px;
+}
+div.user_login_footer{
+    width: 340px;
+    margin: 0 auto;
+}
+div.user_login_footer input{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background: #f80;
+    border-radius: 3px;
+	cursor:pointer;
+}
+div.f_upwd{
+    width: 340px;
+    margin: 0 auto 40px auto;
+}
+div.f_upwd>a{
+    float: left;
+    margin: 5px auto;
+}
+div.f_upwd p{
+    float: right;
+    margin: 5px auto;
+}
+div.f_upwd span{
+    color:#ff9e4c
+}
+div.login_box{
+    width: 340px;
+    margin: 0 auto;
+}
+div.login_box{
+    margin: 14px auto;
+    font-size: 14px;
+}
+div.login_box p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+ul.login_box_ul li{
+    width: 85px;
+    float: left;
+}
+div.login_box img.login_wx {
+    width: 19.28px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+}
+div.login_box img.login_qq{
+    width: 13px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+}
+div.login_box img.login_wb{
+    width: 19px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+}
+div.login_box img.login_card{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+}
+li.login_box_li1 span{
+    width: 39px;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+    line-height: 14px;
+}
+li.login_box_li2 span{
+    width: 39px;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+    line-height: 14px;
+}
+li.login_box_li3 span{
+    width: 39px;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+    line-height: 14px;
+}
+li.login_box_li4 span{
+    width: 50px;
+    float: left;
+    line-height: 14px;
+}
+div.login_bj{
+    width: 100%;
+    height: 560px;
+    background:url(../images/bj.jpg) center no-repeat;
+/*    background-size:100% 100%;*/
+}
+/*尾部*/
+div#footer{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+div#footer a{
+    color:#777;
+}
+div#footer p{
+  text-align: center;
+  color:#777;
+}
+div#footer a.recruit{
+    color: red;
+}
+ul.footer_1{
+    padding: 0 12px;
+}
+ul.footer_1 li{
+    float: left;
+    margin-right: 10px;
+}
+ul.footer_1 li a{
+    margin-right: 5px;
+}
+ul.footer_2{
+    width: 240px;
+    margin: 0 auto;
+}
+ul.footer_2 li{
+    float: left;
+    margin-right: 10px;
+}
+ul.footer_3{
+    width: 632px;
+    margin: 0 auto;
+    color: #777;
+}
+ul.footer_3 li{
+    float: left;
+    margin-right: 10px;
+}
+
