@@ -1,0 +1,3980 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>涂牛旅游网官网</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/00-index.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+	<header>
+		<div id="header_box">
+			<!-- 头部第一部分-->
+			<div class="header">
+				<ul class="header_ul">
+					<li class="header_list1">
+						<a href="html/login.html">登录</a>
+						<span>|</span>
+						<a href="html/register.html">注册</a>
+						<img src="images/registgift.gif">
+					</li>
+					<script>
+						$(function(){
+							var uname=sessionStorage.getItem("uname");
+							if(uname){
+								$(".header_list1").html(`您好：${uname} <a href="html/login.html" id="logout">退出</a>`);
+								$("#logout").click(function(){
+									sessionStorage.removeItem("uname");
+								})
+							}
+						})
+					</script>
+				</ul>
+				<ul class="header_ul2 ">
+					<li>
+						<a href="#">途牛招聘</a>
+					</li>
+					<li>
+						<a href="#">严选商城</a>
+					</li>
+					<li>
+						<a href="#">企业频道</a>
+					</li>
+					<li>
+						<a href="#">会员俱乐部</a>
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">网站地图</a>
+					</li>
+					<li>
+						<!--<img src="../images/logo0127.png"/>-->
+					</li>
+				</ul>
+			</div>
+			<!-- 头部第二部分-->
+			<div id="logo" >
+				<div class="logo_1">
+					<img src="images/logo0127.png"/>
+				</div>
+				<div class="site">
+					<div>
+						<a href="#">杭州站</a>
+					</div>
+					<img src="images/local_branch.png"/>
+				</div>
+				<div class="search_box">
+					<div class="btn1">
+					<span>
+					所有产品
+						</span>
+					</div>
+					<div class="btn2">
+						<input type="text" value="马尔代夫" name="search">
+						<ul class="search-result">
+							<!-- 后台动态生成 -->
+						</ul>
+					</div>
+					<div class="btn3">
+						<a href="#">美国</a>
+						<a href="#">三亚</a>
+					</div>
+					<div class="btn4">
+						<a href="#">
+							<img src="images/search.png"/>
+						</a>
+					</div>
+				</div>
+				<div class="seek">
+					<a href="#">高级搜索</a>
+				</div>
+				<div class="service_box">
+					<a>欢迎使用</a><br/>
+					<a>在线客服</a>
+					<a class="service_3" href="">24h客服服务电话</a>
+					<img src="images/tel.png" alt="">
+					<span>4007-999-999</span>
+				</div>
+			</div>
+			<!--头部第三部分-&#45;&#45;面包屑导航-->
+			<div id="nav1">
+				<ul>
+					<li>
+						<a href="javascript:;">首页</a>
+					</li>
+					<li>
+						<a href="html/02-zizhuyou.html">自助游</a>
+					</li>
+					<li>
+						<a href="html/03-youlun.html">邮轮</a>
+					</li>
+					<li>
+						<a href="html/04-jipiao.html">机票</a>
+					</li>
+					<li>
+						<a href="html/05-jiudian.html">酒店</a>
+					</li>
+					<li>
+						<a href="html/06-menpiao.html">门票</a>
+					</li>
+					<li>
+						<a href="html/07-hunsha.html">出游服务</a>
+					</li>
+					<li>
+						<a href="html/08-gonglue.html">攻略</a>
+					</li>
+					<li>
+						<a href="html/team.html">团队风采</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="tnMain">
+		<!-- 轮播主体 -->
+		<div class="tnBanner">
+			<!-- 轮播广告 图片 -->
+			<div class="tnActivitySlide">
+				<div class="activitySlide">
+					<ul class="bannerImg">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 轮播广告位中心 -->
+			<div class="bannerCenter">
+				<div class="bnCenter">
+					<!-- 轮播按钮 -->
+					<ul class="bannerInd clear">
+						<li class="current">华东华北游金秋</li>
+						<li>国内拼假玩双节</li>
+						<li>邮轮低至1399元</li>
+						<li>出境秋游2099元起</li>
+						<li>福地金华</li>
+						<li>秋高气爽坐邮轮</li>
+					</ul>
+					<!-- 手风琴 广告 -->
+					<div class="subjectSlide">
+						<ul class="subjectImg clear">
+							<li class="current">
+								<img src="images/00-index/nrzx.jpg" style="left:-100px">
+							</li>
+							<li>
+								<img src="images/00-index/Island.jpg">
+							</li>
+							<li>
+								<img src="images/00-index/Temai.jpg">
+							</li>
+							<li>
+								<img src="images/00-index/Youlun.jpg">
+							</li>
+							<li>
+								<img src="images/00-index/Shipin.jpg">
+							</li>
+							<li>
+								<img src="images/00-index/Drive.jpg">
+							</li>
+							<li>
+								<img src="images/00-index/shoufu.jpg">
+							</li>
+						</ul>	
+					</div>
+					<!-- 左右切换按钮 -->
+					<div class="common btnLeft"></div>
+					<div class="common btnRight"></div>
+				</div>
+				<!-- 左侧多级导航 -->
+				<div class="bnCatalog">
+					<!-- 一级导航 -->
+					<div class="catalogFirst">
+						<div class="firstTab selected">
+							<a href="javascript:;">
+								<span data-rel="tour"></span>
+								度假旅游
+							</a>
+						</div>
+						<div class="firstTab">
+							<a href="javascript:;">
+								<span data-rel="flight"></span>
+								机票
+							</a>
+						</div>
+						<div class="firstTab">
+							<a href="javascript:;">
+								<span data-rel="hotel"></span>
+								酒店
+							</a>
+						</div>
+						<div class="firstTab">
+							<a href="javascript:;">
+								<span data-rel="package"></span>
+								超级自由行
+							</a>
+						</div>
+						<div class="firstTab">
+							<a href="javascript:;">
+								<span data-rel="ticket"></span>
+								火车 汽车
+							</a>
+						</div>
+						<div class="firstTab">
+							<a href="javascript:;">
+								<span data-rel="cruise"></span>
+								游轮 签证
+							</a>
+						</div>
+						<div class="firstTab">
+							<a href="javascript:;">
+								<span data-rel="local"></span>
+								门票 玩乐
+							</a>
+						</div>
+					</div>
+					<!-- 旅游度假二级导航 -->
+					<div class="catalogSeconds">	
+						<!-- 亲子游 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">瓜果亲子游</a>
+									<a href="javascript:;">海岛</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">蜜月</a>
+									<a href="javascript:;">牛人专线</a>
+									<a href="javascript:;">周末</a>
+								</div>
+							</div>
+						</div>
+						<!-- 杭州周边游 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">杭州周边旅游</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">一日游</a>
+									<a href="javascript:;">二日游</a>
+									<a href="javascript:;">三日游</a>
+								</div>
+							</div>
+						</div>
+						<!-- 国内旅游 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">
+										国内旅游
+										<img src="images/00-index/Cii_NlmEMQyITN50AAABhovmKnwAAGLngP__mIAAAGe797.png" style="height:14px">
+									</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">云南</a>
+									<a href="javascript:;">海南</a>
+									<a href="javascript:;">四川</a>
+									<a href="javascript:;">内蒙古</a>
+								</div>
+							</div>
+						</div>
+						<!-- 马尔代夫 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">
+										马尔代夫
+										<img src="images/00-index/mysd.png" style="height:14px">
+									</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">阿雅达岛</a>
+									<a href="javascript:;">康迪玛岛</a>
+								</div>
+							</div>
+						</div>
+						<!-- 欧洲 美洲 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">欧洲</a>
+									<a href="javascript:;">美洲</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">瑞士</a>
+									<a href="javascript:;">法国</a>
+									<a href="javascript:;">美国</a>
+									<a href="javascript:;">加拿大</a>
+								</div>
+							</div>
+						</div>
+						<!-- 日本 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">
+										日本
+										<img src="images/00-index/leyuan.png" style="height:14px">
+									</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">东京</a>
+									<a href="javascript:;">大阪</a>
+									<a href="javascript:;">北海道</a>
+									<a href="javascript:;">冲绳</a>
+								</div>
+							</div>
+						</div>
+						<!-- 东南亚 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">东南亚</a>
+									<a href="javascript:;">南亚</a>
+									<a href="javascript:;">泰国</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">曼谷</a>
+									<a href="javascript:;">巴厘岛</a>
+									<a href="javascript:;">普吉岛</a>
+								</div>
+							</div>
+						</div>
+						<!-- 港澳台 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">香港</a>
+									<a href="javascript:;">澳门</a>
+									<a href="javascript:;">台湾</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">香港迪士尼乐园</a>
+									<a href="javascript:;">台北</a>
+								</div>
+							</div>
+						</div>
+						<!-- 澳新 中东非洲 -->
+						<div class="catalogSecond">
+							<div class="secondSection">
+								<div class="secondTitle">
+									<a href="javascript:;">澳新</a>
+									<a href="javascript:;">中东非洲</a>
+								</div>
+								<div class="secondNom">
+									<a href="javascript:;">新西兰</a>
+									<a href="javascript:;">斐济</a>
+									<a href="javascript:;">迪拜</a>
+									<a href="javascript:;">埃及</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 三级导航菜单 -->
+					<!-- 二级搜索导航 -->
+				</div>
+				<!-- 右侧边栏 -->
+				<div class="bnRightSide">
+					<!-- 右侧边栏 顶部 -->
+					<div class="rightTop clear">
+						<!-- 右侧边栏 顶部热点 -->
+						<div class="hotPoint">
+							<span class="hotNum">0</span>
+							<span class="hotPer">%</span>
+							<span class="hotTxt">满意度</span>
+						</div>
+						<p class="itemTxt firstItem">
+							出游人数：
+							<b>68800000+</b>
+						</p>
+						<p class="itemTxt">
+							点评人数：
+							<b>4600000+</b>
+						</p>
+					</div>
+					<!-- 右侧边栏 滚动列表 -->
+					<div class="rightSec">
+						<ul class="scrollList">
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										&lt;澳门4日自助游&gt;精选热销TOP酒店，品葡式美食，赏东西文化
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***789752</span>
+									<span>18分钟前预定</span>
+								</p>
+							</li>
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										&lt;八达岭长城1日游&gt;晚出发不起早，登长城做好汉，含特色自助午餐
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***192820</span>
+									<span>21分钟前预定</span>
+								</p>
+							</li>
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										&lt;上海迪士尼乐园3日自助游&gt;宿维也纳酒店（上海浦东机场南祝路店）
+											迪士尼门票1日/2日/野生动物园门票自选
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***005623</span>
+									<span>22分钟前预定</span>
+								</p>
+							</li>
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										[国庆]&lt;海南三亚国光豪生双飞5日自由行&lt;5星产品，三亚湾海景酒店，万人出游优选，畅享自由
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***789752</span>
+									<span>18分钟前预定</span>
+								</p>
+							</li>
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										&lt;普陀山2日游&gt;杭州上门接 纯玩无购物  宿岛上海边精品客栈免费WIFI  含早含矿泉水 全程高速直达
+											中途不拼载 游千步沙 领略佛教风景
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***053995</span>
+									<span>55分钟前预定</span>
+								</p>
+							</li>
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										&lt;精选上海自驾3日游&gt;宿上海富颐国际大酒店
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***789752</span>
+									<span>18分钟前预定</span>
+								</p>
+							</li>
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										&lt;双人报价套餐-夏季纳凉经典-临安龙井峡漂流-瑞晶石花洞-浙西三峡自驾2日游&gt;宿临安柳溪江假日酒店
+											门票自选
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***o94520</span>
+									<span>1小时前预定</span>
+								</p>
+							</li>
+							<li>
+								<p class="listTitle">
+									<a href="javascript:;">
+										&lt;澳门4日自助游&gt;精选热销TOP酒店，品葡式美食，赏东西文化
+									</a>
+								</p>
+								<p class="listInfo">
+									<span>用户***789752</span>
+									<span>18分钟前预定</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!-- 右侧边栏 阳光系列 img-->
+					<div class="rightThr">
+						<a href="javascript:;">
+							<img src="images/00-index/SunEnsure.png">
+						</a>
+					</div>
+					<!-- 右侧边栏 图文广告 -->
+					<div class="rightBtm">
+						<div class="btmImg">
+							<a href="javascript:;">
+								<img src="images/00-index/btm_title.jpg">
+							</a>
+						</div>
+						<div class="btmTitle">
+							<span>出游服务</span>
+						</div>
+						<div class="btmMain">
+							<div class="btmMainL fl">
+								<a href="javascript:;">
+									<img src="images/00-index/btm_qianzheng.png">
+									<span>签 证</span>
+								</a>
+								<a href="javascript:;">
+									<img src="images/00-index/btm_wifi.png">
+									<span>全球wifi</span>
+								</a>
+								<a href="javascript:;">
+									<img src="images/00-index/btm_shop.png">
+									<span>全 球 购</span>
+								</a>
+							</div>
+							<div class="btmMainR fr">
+								<a href="javascript:;">
+									<img src="images/00-index/btm_local.png">
+									<span>当地玩乐</span>
+								</a>
+								<a href="javascript:;">
+									<img src="images/00-index/btm_zuche.png">
+									<span>租车用车</span>
+								</a>
+								<a href="javascript:;">
+									<img src="images/00-index/btm_hunsha.png">
+									<span>婚纱旅拍</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<!-- 页面主体顶部 热门活动 特卖 隐藏 -->
+		<div class="mainTop">
+			<div class="wrap clear">
+				<div class="wrapLeft fl">
+					<div class="special">
+						<div class="layerHeader">
+							<ul class="tabs"> 
+								<li class="current">
+									<a href="javascript:;">
+										超值特卖	
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										超级自由行	
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										旅游分期
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										特价机票	
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										特价酒店
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										特价签证	
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										特价门票	
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										银行立减	
+									</a>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">更多&nbsp;&gt;</a>
+							</div>
+						</div>
+					</div>		
+					<div class="layerMain">
+						<ul class="layerBodyList">
+							<!-- 超值特卖 -->
+							<li class="layerBody current">
+								<ul class="tabList clear">
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/cztm_01.jpg">
+												<i class="indexIcon weiHuo"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProTime timer1">
+														<span class="indexD">　</span>天
+														<span class="indexH">　</span>时
+														<span class="indexM">　</span>分
+														 <span class="indexS" style="display: none"></span>
+													</p>
+													<p class="speProName">&lt;芽庄5日或6日游&gt;特价甩尾，杭州包机直飞，精品酒店连住，行程宽松悠闲，充足自由活动时间，2日自由活动</p>
+													<p class="speProPrice">
+														¥<em>1699</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<s>¥3087</s>
+														<span>6.8折</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/cztm_02.jpg">
+												<i class="indexIcon weiHuo"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProTime timer2">
+														<span class="indexD">　</span>天
+														<span class="indexH">　</span>时
+														<span class="indexM">　</span>分
+														<span class="indexS" style="display: none"></span>
+													</p>
+													<p class="speProName">&lt;马来西亚+邦咯湾5晚6日游&gt;杭州往返 2晚铂尔曼或太平洋 海鲜餐 肉骨茶 奶油虾等特色美食</p>
+													<p class="speProPrice">
+														¥<em>2729</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<s>¥4100</s>
+														<span>6.5折</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/cztm_03.jpg">
+												<i class="indexIcon miaoSha"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProTime timer3">
+														<span class="indexD">　</span>天
+														<span class="indexH">　</span>时
+														<span class="indexM">　</span>分
+														<span class="indexS" style="display: none"></span>
+													</p>
+													<p class="speProName">哈尔滨-东升雪谷-雪乡-亚布力-冰雪大世界双飞5日游</p>
+													<p class="speProPrice">
+														¥<em>2999</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<s>¥4999</s>
+														<span>5.6折</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/cztm_04.jpg">
+												<i class="indexIcon miaoSha"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProTime timer4">
+														<span class="indexD">　</span>天
+														<span class="indexH">　</span>时
+														<span class="indexM">　</span>分
+														<span class="indexS" style="display: none"></span>
+													</p>
+													<p class="speProName">日本东京-富士山-大阪6日游</p>
+													<p class="speProPrice">
+														¥<em>5799</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<s>¥6999</s>
+														<span>8.3折</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 超级自由行 -->
+							<li class="layerBody">
+								<ul class="tabList clear">
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii9EFZmltmIRu0dAALVD9Esk3gAAA5RQJFJmcAAtUn889_w400_h300_c0_t0.jpg">
+												<i class="indexIcon ziYou" style="width:55px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="hotel">
+														<span></span>机票 +
+														<span></span>酒店
+													</p>
+													<p class="speProName">香港维港璀璨夜时光 4日夜景游</p>
+													<p class="speProPrice">
+														¥<em>1945</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>上海出发</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-TFeIfSGINUi7AAa-kVS1LzAAAAMPAH9hN8ABr6p009_w400_h300_c0_t0.jpg">
+												<i class="indexIcon ziYou" style="width:55px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="hotel">
+														<span></span>机票 +
+														<span></span>酒店
+													</p>
+													<p class="speProName">丽江束河艳遇之都 4日文艺游</p>
+													<p class="speProPrice">
+														¥<em>1478</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>上海出发</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii9EFcPWDiIbYpBAAk_khnCK5cAADMLQPgMiAACT-q125_w400_h300_c0_t0.jpg">
+												<i class="indexIcon ziYou" style="width:55px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="hotel">
+														<span></span>机票 +
+														<span></span>酒店
+													</p>
+													<p class="speProName">厦门曾厝垵柔情里入眠 4日文艺游</p>
+													<p class="speProPrice">
+														¥<em>1135</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>上海出发</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii9EFZ80beIJS3vAANekdq7R74AABJqwEra6AAA16p208_w400_h300_c0_t0.jpg">
+												<i class="indexIcon ziYou" style="width:55px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="hotel">
+														<span></span>机票 +
+														<span></span>酒店
+													</p>
+													<p class="speProName">三亚天涯海角海岛时光 5日经典游</p>
+													<p class="speProPrice">
+														¥<em>976</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>上海出发</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 旅游分期 -->
+							<li class="layerBody">
+								<ul class="tabList clear">
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii_J1mf6R-Ia83EAAgvdrOXEoEAAAajALUGHUACC-O925_w400_h300_c1_t0.jpg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi">
+														灵活分期
+													</p>
+													<p class="speProName">&lt;巴厘岛6日游&gt;臻程牛人专线，途牛自营，杭州往返，希尔顿洲际君悦威斯汀，私密泳池VILLA，一栋一户，蓝梦出海（含海底漫步），阿勇河漂流，无购物，含WIFI</p>
+													<p class="speProPrice">
+														<span style="color:#666">首付</span>
+														¥<em>1227</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>月付¥203 x 24期</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii9EFadny2II5nTACnF0e6LVpoAABhgQEAoEkAKcXp126_w400_h300_c1_t0.jpg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi">
+														灵活分期
+													</p>
+													<p class="speProName"><泰国-曼谷-芭堤雅-沙美岛5晚6日或7日游>杭州直飞，锁定2晚湄南河畔华美达，2晚芭堤雅海边泳池酒店，半天Free，可选按摩2小时，B行程为国航5晚7天</p>
+													<p class="speProPrice">
+														<span style="color:#666">首付</span>
+														¥<em>665</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>月付¥113 x 24期</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii9EVkxQV-IYeGPAAf3EoRPZGYAALXgAHWmKAAB_cq468_w400_h300_c1_t0.jpg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi">
+														灵活分期
+													</p>
+													<p class="speProName">[春节]<新西兰南北岛11-12日游>纯玩，千人出行，浪漫观星，8菜1汤，入住梯卡坡，3晚皇后镇，天空缆车，萤火虫洞，玛塔，自由活动，金牌领队</p>
+													<p class="speProPrice">
+														<span style="color:#666">首付</span>
+														¥<em>4079</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>月付¥730 x 24期</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/67deb96592188ce220c30fb31b74e0d9_w400_h300_c1_t0.jpg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi">
+														灵活分期
+													</p>
+													<p class="speProName"><土耳其10或11日游>全程五星酒店 爱琴海滨 伊堡市区五星/土航直飞 内陆一段飞/可升热气球 洞穴 滑翔伞/A线仅3个购物店/B线加王子岛，邮储加薪卡专享</p>
+													<p class="speProPrice">
+														<span style="color:#666">首付</span>
+														¥<em>1289</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>月付¥215 x 24期</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 特价机票 -->
+							<li class="layerBody">
+								<ul class="tabList clear">
+									<li class="Pticket">
+										<div class="spePro  clear">
+											<a href="javascript:;">
+												<i class="arrowIcon"></i>
+												<p class="Pname">
+													中国东方航空
+												</p>
+												<div class="city">
+													<span>杭州</span>
+													<i></i>
+													<span>西安</span>
+												</div>
+												<p class="date">
+													日期：2017-10-17	
+												</p>
+												<p class="tPrice">
+													<span class="dc">单程：</span>
+													¥<em>310</em>
+													<i>起</i>
+													<span class="Tsale">2.4折</span>
+												</p>
+											</a>
+										</div>
+									</li>
+									<li class="Pticket">
+										<div class="spePro  clear">
+											<a href="javascript:;">
+												<i class="arrowIcon"></i>
+												<p class="Pname">
+													首都航空
+												</p>
+												<div class="city">
+													<span>杭州</span>
+													<i></i>
+													<span>北京</span>
+												</div>
+												<p class="date">
+													日期：2017-10-04		
+												</p>
+												<p class="tPrice">
+													<span class="dc">单程：</span>
+													¥<em>330</em>
+													<i>起</i>
+													<span class="Tsale">1.5折</span>
+												</p>
+											</a>
+										</div>
+									</li>
+									<li class="Pticket">
+										<div class="spePro  clear">
+											<a href="javascript:;">
+												<i class="arrowIcon"></i>
+												<p class="Pname">
+													东航
+												</p>
+												<div class="city">
+													<span>杭州</span>
+													<i></i>
+													<span>香港</span>
+												</div>
+												<p class="date">
+													日期：2017-12-08 至 2017-12-10	
+												</p>
+												<p class="tPrice">
+													<span class="dc">往返：</span>
+													¥<em>1067</em>
+													<i>起（含税）</i>
+												</p>
+											</a>
+										</div>
+									</li>
+									<li class="Pticket">
+										<div class="spePro  clear">
+											<a href="javascript:;">
+												<i class="arrowIcon"></i>
+												<p class="Pname">
+													东航
+												</p>
+												<div class="city">
+													<span>杭州</span>
+													<i></i>
+													<span>台北</span>
+												</div>
+												<p class="date">
+													日期：2018-01-24 至 2018-01-28		
+												</p>
+												<p class="tPrice">
+													<span class="dc">往返：</span>
+													¥<em>1168</em>
+													<i>起（含税）</i>
+												</p>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 特价酒店 -->
+							<li class="layerBody">
+								<ul class="tabList clear">
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii9EFknX0uIEjHcAAJVC24ZDckAAKyywN_Bu8AAlUj720_w400_h300_c1_t0.jpg">
+												<i class="indexIcon jiuDian"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProName">宋城千古情主题酒店（杭州西湖店）</p>
+													<p class="spec">舒适型/之江旅游度假区</p>
+													<p class="speProPrice">
+														¥<em>297</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale jdAdd">
+														<i>西湖区之江路148号</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-TFi80x2IeePVAALIZ8atTcsAAIG0wH8I0EAAsh_147_w400_h300_c1_t0.jpg">
+												<i class="indexIcon jiuDian"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProName">锦江之星（上海浦东机场二店）</p>
+													<p class="spec">二星级/浦东机场核心区</p>
+													<p class="speProPrice">
+														¥<em>370</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale jdAdd">
+														<i>浦东新区浦东国际机场机场大道850号</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-TlknUeWILR0CAAHWH1ZAxhEAAKaOAIgPvIAAdY3098_w400_h300_c1_t0.jpg">
+												<i class="indexIcon jiuDian"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProName">宜必思酒店（南京夫子庙店）</p>
+													<p class="spec">舒适型/夫子庙地区</p>
+													<p class="speProPrice">
+														¥<em>239</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale jdAdd">
+														<i>秦淮区中华路1-88号（江苏银行总部对面）</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-U1k1feyICre7AAF-p2kPjJsAALs9gDxgckAAX6_159_w400_h300_c1_t0.jpg">
+												<i class="indexIcon jiuDian"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="speProName">台北神旺大饭店(SAN WANT HOTEL)</p>
+													<p class="spec">豪华型/忠孝敦化商圈</p>
+													<p class="speProPrice">
+														¥<em>636</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale jdAdd">
+														<i>大安区忠孝东路四段172号</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 特价签证 -->
+							<li class="layerBody">
+								<ul class="tabList clear">
+									<li class="qianzheng">
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<div class="visaImg">
+													<img src="images/00-index/Cii-Tlffk2-IEuIIAAc5y3wnRV0AACjlgP05tsABznj474_w400_h300_c0_t0.jpg">
+												</div>
+												<div class="qzMess">
+													<p class="qz1">日本个人旅游签证</p>
+													<p class="qz2">
+														¥ <span>89</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li class="qianzheng">
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<div class="visaImg">
+													<img src="images/00-index/Cii-TFfg9mWIEuM7AATxutARAoUAACmmgEOT3cABPHS065_w400_h300_c0_t0.jpg">
+												</div>
+												<div class="qzMess">
+													<p class="qz1">英国个人旅游签证</p>
+													<p class="qz2">
+														¥ <span>1089</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li class="qianzheng">
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<div class="visaImg">
+													<img src="images/00-index/Cii9EViasCCIAIb5AAcX8RT5A4QAAHWugJ_yFUABxgJ747_w400_h300_c0_t0.jpg">
+												</div>
+												<div class="qzMess">
+													<p class="qz1">泰国个人旅游签证</p>
+													<p class="qz2">
+														¥ <span>279</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li class="qianzheng">
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<div class="visaImg">
+													<img src="images/00-index/Cii-TFffkl6IMkD2AAc5y3wnRV0AACjkQOH-YMABznj395_w400_h300_c0_t0.jpg">
+												</div>
+												<div class="qzMess">
+													<p class="qz1">日本个人旅游签证</p>
+													<p class="qz3">三个月单次，免机酒订单</p>
+													<p class="qz2">
+														¥ <span>299</span>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 特价门票 -->
+							<li class="layerBody">
+								<ul class="tabList clear">
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii_J1mvvKaIQQt-AAJ-tyKbgyQAAA5wwEc_tsAAn7P734_w640_h480_c1_t0.jpg">
+												<i class="indexIcon menPiao" style="width:50px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="ticketTit">
+														满意度：<span>96%</span>
+													</p>
+													<p class="speProName">东方盐湖城</p>
+													<p class="speProPrice">
+														<span style="color:#666">首付</span>
+														¥<em>30</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>1215人点评</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-T1kvh0qISfIsAAFq-CMCxHIAAK1CwK-PyAAAWsQ390_w640_h480_c1_t0.jpg">
+												<i class="indexIcon menPiao" style="width:50px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="ticketTit">
+														满意度：<span>97%</span>
+													</p>
+													<p class="speProName">中华恐龙园</p>
+													<p class="speProPrice">
+														¥<em>10</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>1.1万人点评</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-VVnDc8iIcU0lAA_8y2_tZhIAABdNQFQ4tMAD_zj751_w640_h480_c1_t0.jpg">
+												<i class="indexIcon menPiao" style="width:50px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="ticketTit">
+														满意度：<span>96%</span>
+													</p>
+													<p class="speProName">横店影视城</p>
+													<p class="speProPrice">
+														¥<em>30</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>3912人点评</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-TFjeH0uIRKhwAAPQGQ51ZnYAAI7ugO6DNAAA9Ax132_w640_h480_c1_t0.jpg">
+												<i class="indexIcon menPiao" style="width:50px"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="ticketTit">
+														满意度：<span>97%</span>
+													</p>
+													<p class="speProName">常州淹城野生动物园</p>
+													<p class="speProPrice">
+														<span style="color:#666">首付</span>
+														¥<em>90</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>2950人点评</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<!-- 银行立减 -->
+							<li class="layerBody">
+								<ul class="tabList clear">
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii9EFdfuMqIdANoAAHase0UjTQAAGidwNcbbgAAdrJ71_w400_h300_c0_t0.jpeg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi yhlj">
+														每1成人减600元, 最多优惠3600元
+													</p>
+													<p class="speProName"><巴厘岛5日或6日游>臻程牛人专线，途牛自营，南京往返，可选直飞，希尔顿洲际君悦威斯汀，私密泳池VILLA，一栋一户，蓝梦出海（含海底漫步），无购物，含WIFI</p>
+													<p class="speProPrice">
+														¥<em>6299</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>厦门国际银行</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/199c4703_w400_h300_c0_t0.jpg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi yhlj">
+														每1成人减600元, 最多优惠3600元
+													</p>
+													<p class="speProName"><俄罗斯莫斯科圣彼得堡7-9日游>MU直飞，SAPSAN高铁无夜火车，金环三镇或金环，克宫，冬宫，夏宫，庄园或拉多加湖</p>
+													<p class="speProPrice">
+														¥<em>7384</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>厦门国际银行</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-T1haId-IFMdYAAN5niz6Ts8AAF0pgMf6MUAA3m201_w400_h300_c0_t0.jpeg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi yhlj">
+														每1成人减600元, 最多优惠3600元
+													</p>
+													<p class="speProName"><日本东京-富士山-大阪6日游>自营牛人专线 日本旅游专家设计 特色蟹料理 东京大阪各1天自由 畅游东京迪士尼和大阪环球影城 市区酒店连住临地铁站 1晚纯正日式温泉</p>
+													<p class="speProPrice">
+														¥<em>6299</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>厦门国际银行</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="spePro clear">
+											<a href="javascript:;">
+												<img src="images/00-index/Cii-TFklWMKIakXOAGE8oKKDqQYAAKSYQCElmcAYTy4558_w400_h300_c0_t0.jpg">
+												<i class="indexIcon genTuan"></i>
+												<div class="speProMessBg"></div>
+												<div class="speProMess">
+													<i class="arrowIcon"></i>
+													<p class="fenqi yhlj">
+														每1成人减600元, 最多优惠3600元
+													</p>
+													<p class="speProName"><德国-法国-瑞士-意大利11-13日游>含服务费，欧洲快签避免二次往返北京，塞纳河观景餐，贡多拉，部分团期含捷克或荷兰游览及五渔村，铁力士雪山</p>
+													<p class="speProPrice">
+														¥<em>9999</em>
+														<i>起</i>
+													</p>
+													<p class="speProSale">
+														<i>厦门国际银行</i>
+													</p>
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrapRight fr">
+					<div class="modTit">
+						热门头条
+						<a href="javascript:;">
+							<img src="images/00-index/mod_tit.jpeg">
+						</a>
+					</div>
+					<div class="modBody">
+						<ul>
+							<li>
+								<a href="javascript:;">【国庆】国内游 多人预订享千元好礼</a>
+							</li>
+							<li>
+								<a href="javascript:;">【邮轮】订单满2万 赠轻奢品牌手链</a>
+							</li>
+							<li>
+								<a href="javascript:;">【立减】邮储+薪卡最高减1500元/单</a>
+							</li>
+							<li>
+								<a href="javascript:;">【发现】爆款好货出国嗨 2099元起</a>
+							</li>
+							<li>
+								<a href="javascript:;">【立减】浦发银行邮轮立减300元/单</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 页面主体 -->
+		<div class="mainBody">
+			<div class="wrap clear">
+				<div class="wrapLeft fl">
+					<!-- 当季热玩 -->
+					<div class="layerBox layerType1">
+						<div class="layerHeader" data-rel="rewan">
+							<h2 class="fl">当季热玩</h2>
+							<ul class="tabs"> 
+								<li>
+									<a href="javascript:;">出境短线</a>
+								</li>
+								<li>
+									<a href="javascript:;">出境长线</a>
+								</li>
+								<li>
+									<a href="javascript:;">出境自助</a>
+								</li>
+								<li>
+									<a href="javascript:;">海岛/游轮</a>
+								</li>
+								<li>
+									<a href="javascript:;">国内跟团</a>
+								</li>
+								<li>
+									<a href="javascript:;">国内自助</a>
+								</li>
+								<li>
+									<a href="javascript:;">周边/自驾</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mainLayerBody clear">
+							<div class="bodyLeft fl">
+								<a href="javascript:;"></a>
+								<ul class="guoqingSide">
+									<li>
+										<a href="javascript:;">当地玩乐 第2人半价</a>
+									</li>
+									<li>
+										<a href="javascript:;">国庆 趣玩乐园分会场</a>
+									</li>
+									<li>
+										<a href="javascript:;">国庆 玩美蜜月分会场</a>
+									</li>
+									<li>
+										<a href="javascript:;">国庆 舌尖之旅分会场</a>
+									</li>	
+								</ul>
+							</div>
+							<div class="bodyRight fr">
+								<ul class="tabList clear" data-rel="rewanList">
+									<img class="gif" src="images/00-index/loading-72x72.gif">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 国内旅游 -->
+					<div class="layerBox layerType2">
+						<div class="layerHeader" data-rel="guonei">
+							<h2 class="fl">国内旅游</h2>
+							<ul class="tabs">
+								<li>
+									<a href="javascript:;">精选</a>
+								</li>
+								<li>
+									<a href="javascript:;">云南</a>
+								</li>
+								<li>
+									<a href="javascript:;">三亚</a>
+								</li>
+								<li>
+									<a href="javascript:;">厦门/桂林</a>
+								</li>
+								<li>
+									<a href="javascript:;">四川/湖南</a>
+								</li>
+								<li>
+									<a href="javascript:;">北京</a>
+								</li>
+								<li>
+									<a href="javascript:;">新疆/西北</a>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">
+									更多产品&nbsp;&gt;
+								</a>
+							</div>
+						</div>
+						<div class="mainLayerBody clear">
+							<div class="bodyLeft fl">
+								<h4>热门景点玩法</h4>
+								<ul class="hotCity clear">
+									<li>
+										<a href="javascript:;">蜈支洲岛</a>
+									</li>
+									<li>
+										<a href="javascript:;">西双版纳</a>
+									</li>
+									<li>
+										<a href="javascript:;">张家界</a>
+									</li>
+									<li>
+										<a href="javascript:;">呼伦贝尔</a>
+									</li>
+									<li>
+										<a href="javascript:;">北海</a>
+									</li>
+									<li>
+										<a href="javascript:;">故宫</a>
+									</li>
+								</ul>
+								<h4>热门目的地</h4>
+								<ul class="hotCity clear">
+									<li>
+										<a href="javascript:;">三亚</a>
+									</li>
+									<li>
+										<a href="javascript:;">丽江</a>
+									</li>
+									<li>
+										<a href="javascript:;">四川</a>
+									</li>
+									<li>
+										<a href="javascript:;">内蒙古</a>
+									</li>
+									<li>
+										<a href="javascript:;">厦门</a>
+									</li>
+									<li>
+										<a href="javascript:;">北京</a>
+									</li>
+								</ul>
+								<a href="javascript:;">
+									<img src="images/00-index/G5.png">
+								</a>
+							</div>
+							<div class="bodyRight fr">
+								<ul class="tabList clear" data-rel="guoneiList">
+									<img class="gif" src="images/00-index/loading-72x72.gif">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 出境短线 -->
+					<div class="layerBox layerType2">
+						<div class="layerHeader" data-rel="duanyou">
+							<h2 class="fl">出境短线</h2>
+							<ul class="tabs">
+								<li>
+									<a href="javascript:;">精选</a>
+								</li>
+								<li>
+									<a href="javascript:;">东南亚</a>
+								</li>
+								<li>
+									<a href="javascript:;">日本</a>
+								</li>
+								<li>
+									<a href="javascript:;">泰国</a>
+								</li>
+								<li>
+									<a href="javascript:;">海岛</a>
+								</li>
+								<li>
+									<a href="javascript:;">越柬南亚</a>
+								</li>
+								<li>
+									<a href="javascript:;">港澳台</a>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">
+									更多产品&nbsp;&gt;
+								</a>
+							</div>
+						</div>
+						<div class="mainLayerBody clear">
+							<div class="bodyLeft fl">
+								<h4>热门目的地</h4>
+								<ul class="hotCity clear">
+									<li>
+										<a href="javascript:;">曼谷</a>
+									</li>
+									<li>
+										<a href="javascript:;">普吉岛</a>
+									</li>
+									<li>
+										<a href="javascript:;">巴厘岛</a>
+									</li>
+									<li>
+										<a href="javascript:;">日本</a>
+									</li>
+									<li>
+										<a href="javascript:;">东京</a>
+									</li>
+									<li>
+										<a href="javascript:;">新加坡</a>
+									</li>
+								</ul>
+								<a href="javascript:;">
+									<img src="images/00-index/D8.jpg">
+								</a>
+							</div>
+							<div class="bodyRight fr">
+								<ul class="tabList clear" data-rel="duanyouList">
+									<img class="gif" src="images/00-index/loading-72x72.gif">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 出境长线 -->
+					<div class="layerBox layerType2">
+						<div class="layerHeader" data-rel="changxian">
+							<h2 class="fl">出境长线</h2>
+							<ul class="tabs">
+								<li>
+									<a href="javascript:;">精选</a>
+								</li>
+								<li>
+									<a href="javascript:;">欧洲</a>
+								</li>
+								<li>
+									<a href="javascript:;">美洲</a>
+								</li>
+								<li>
+									<a href="javascript:;">中东非</a>
+								</li>
+								<li>
+									<a href="javascript:;">澳新</a>
+								</li>
+								<li>
+									<a href="javascript:;">马代</a>
+								</li>
+								<li>
+									<a href="javascript:;">海岛</a>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">
+									更多产品&nbsp;&gt;
+								</a>
+							</div>
+						</div>
+						<div class="mainLayerBody clear">
+							<div class="bodyLeft fl">
+								<h4>热门景点玩法</h4>
+								<ul class="hotCity clear">
+									<li>
+										<a href="javascript:;">法瑞意德</a>
+									</li>
+									<li>
+										<a href="javascript:;">黄石公园</a>
+									</li>
+									<li>
+										<a href="javascript:;">澳凯墨</a>
+									</li>
+									<li>
+										<a href="javascript:;">神秘古国埃及</a>
+									</li>
+									<li>
+										<a href="javascript:;">马尔代夫</a>
+									</li>
+									<li>
+										<a href="javascript:;">毛里求斯</a>
+									</li>
+								</ul>
+								<a href="javascript:;">
+									<img src="images/00-index/C5.jpg">
+								</a>
+							</div>
+							<div class="bodyRight fr">
+								<ul class="tabList clear" data-rel="changxianList">
+									<img class="gif" src="images/00-index/loading-72x72.gif">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 自驾旅游 -->
+					<div class="layerBox layerType2 layerType3">
+						<div class="layerHeader" data-rel="zijia">
+							<h2 class="fl">自驾旅游</h2>
+							<ul class="tabs">
+								<li>
+									<a href="javascript:;">常州</a>
+								</li>
+								<li>
+									<a href="javascript:;">黄山</a>
+								</li>
+								<li>
+									<a href="javascript:;">杭州</a>
+								</li>
+								<li>
+									<a href="javascript:;">普陀山</a>
+								</li>
+								<li>
+									<a href="javascript:;">横店</a>
+								</li>
+								<li>
+									<a href="javascript:;">湖州</a>
+								</li>
+								<li>
+									<a href="javascript:;">跟队精选</a>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">
+									更多产品&nbsp;&gt;
+								</a>
+							</div>
+						</div>
+						<div class="mainLayerBody clear">
+							<div class="bodyLeft fl">
+								<ul class="hotCity clear">
+									<li>
+										<a href="javascript:;">上海迪士尼</a>
+									</li>
+									<li>
+										<a href="javascript:;">天目湖</a>
+									</li>
+									<li>
+										<a href="javascript:;">宁波</a>
+									</li>
+									<li>
+										<a href="javascript:;">灵山·拈花湾</a>
+									</li>
+								</ul>
+								<a href="javascript:;">
+									<img src="images/00-index/ZJ1.jpg">
+								</a>
+							</div>
+							<div class="bodyRight fr">
+								<ul class="tabList clear" data-rel="zijiaList">
+									<img class="gif" src="images/00-index/loading-72x72.gif">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 门票精选 -->
+					<div class="layerBox layerType2 layerType3">
+						<div class="layerHeader" data-rel="menpiao">
+							<h2 class="fl">门票精选</h2>
+							<ul class="tabs">
+								<li>
+									<a href="javascript:;">精选</a>
+								</li>
+								<li>
+									<a href="javascript:;">亲子</a>
+								</li>
+								<li>
+									<a href="javascript:;">假日胜地</a>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">
+									更多产品&nbsp;&gt;
+								</a>
+							</div>
+						</div>
+						<div class="mainLayerBody clear">
+							<div class="bodyLeft fl">
+								<ul class="hotCity clear">
+									<li>
+										<a href="javascript:;">北京</a>
+									</li>
+									<li>
+										<a href="javascript:;">上海</a>
+									</li>
+									<li>
+										<a href="javascript:;">南京</a>
+									</li>
+									<li>
+										<a href="javascript:;">横店影视城</a>
+									</li>
+								</ul>
+								<a href="javascript:;">
+									<img src="images/00-index/M3 (1).png">
+								</a>
+							</div>
+							<div class="bodyRight fr">
+								<ul class="tabList clear" data-rel="menpiaoList">
+									<img class="gif" src="images/00-index/loading-72x72.gif">
+								</ul>
+							</div>
+						</div>
+					</div>	
+					<!-- 当地玩乐 -->
+					<div class="layerBox layerType2 layerType3">
+						<div class="layerHeader" data-rel="wanle">
+							<h2 class="fl">当地玩乐</h2>
+							<ul class="tabs">
+								<li>
+									<a href="javascript:;">东南亚</a>
+								</li>
+								<li>
+									<a href="javascript:;">海岛</a>
+								</li>
+								<li>
+									<a href="javascript:;">日本</a>
+								</li>
+								<li>
+									<a href="javascript:;">韩国</a>
+								</li>
+								<li>
+									<a href="javascript:;">欧洲</a>
+								</li>
+								<li>
+									<a href="javascript:;">美国</a>
+								</li>
+								<li>
+									<a href="javascript:;">澳新</a>
+								</li>
+							</ul>
+							<div class="more">
+								<a href="javascript:;">
+									更多产品&nbsp;&gt;
+								</a>
+							</div>
+						</div>
+						<div class="mainLayerBody clear">
+							<div class="bodyLeft fl">
+								<ul class="hotCity clear">
+									<li>
+										<a href="javascript:;">买卖日本</a>
+									</li>
+									<li>
+										<a href="javascript:;">畅玩普吉</a>
+									</li>
+									<li>
+										<a href="javascript:;">精选一日游</a>
+									</li>
+									<li>
+										<a href="javascript:;">出境WIFI</a>
+									</li>
+								</ul>
+								<a href="javascript:;">
+									<img src="images/00-index/DD1_1.jpg">
+								</a>
+							</div>
+							<div class="bodyRight fr">
+								<ul class="tabList clear" data-rel="wanleList">
+									<img class="gif" src="images/00-index/loading-72x72.gif">
+								</ul>
+							</div>
+						</div>
+					</div>	
+					<!-- 游记攻略 -->
+					<div class="tourBox">
+						<div class="tourTit clear">
+							<div class="titLeft" data-rel="youji">
+								<h2>游记攻略</h2>
+							</div>
+							<div class="titRight">
+								<span class="rt1">
+									<span></span>
+									<a href="javascript:;">写游记赢大奖</a>
+								</span>
+								<span class="rt2">
+									<span></span>
+									<a href="javascript:;">发表游记</a>
+								</span>
+							</div>
+						</div>
+						<div class="tourHeader clear">
+							<ul class="Htabs">
+								<li class="current"><a href="javascript:;">度假美人计</a></li>
+								<li><a href="javascript:;">异国风情</a></li>
+								<li><a href="javascript:;">达人视界</a></li>
+								<li><a href="javascript:;">敢玩不同</a></li>
+								<li><a href="javascript:;">带娃去哪儿</a></li>
+							</ul>
+						</div>
+						<ul class="tourBodyList">
+							<!-- 旅游攻略-度假美人记 -->
+							<li class="tourBody clear" style="display:block">
+								<div class="BLeft fl">
+									<div class="L1">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m7mB-INQ5XAACMqXYEJ5EAABQqgJy9v8AAIzB24.jpeg">
+											<div class="proCover">
+												<div class="proTit"> 遇见爱情的地方，巴黎VS罗马 ——如何避开人群拍美照</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EFZ6lG-IfywXABBTP49o9AwAABIPwEY-lgAEFNX013_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>5822</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2"> 遇见爱情的地方，巴黎VS罗马 ——如何避开人群拍美照</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_NXyIaKj9AABWeXxxztIAABVIQAiMRkAAFaR39.jpeg">
+											<div class="proCover">
+												<div class="proTit">【首发】#带着挖财去旅行#【菲】一般的旅行</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EVkbIoCIFrsJAA2Oldc6deUAAKRGgPkFjsADY6t986_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>5919</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">【首发】#带着挖财去旅行#【菲】一般的旅行</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_JnaICnmaAABbeGloK2kAABU6wE2hw0AAFuQ96.jpeg">
+											<div class="proCover">
+												<div class="proTit">【首发】#带着挖财去旅行#马来西亚之槟城、浪中岛、吉隆坡</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EVkbIoCIFrsJAA2Oldc6deUAAKRGgPkFjsADY6t986_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>13316</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>3</span>
+														</div>
+														<div class="tt2">【首发】#带着挖财去旅行#马来西亚之槟城、浪中岛、吉隆坡</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_JJ2IUywWAAA8dkWhDrEAABU5gKauu0AADyO27.jpeg">
+											<div class="proCover">
+												<div class="proTit">#皇家加勒比#去风下之乡，享一个悠然假期</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-TFgf6w2ISV77AAIL5mgGe40AAENnQCD4V0AAgv-609_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>12249</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>4</span>
+														</div>
+														<div class="tt2">#皇家加勒比#去风下之乡，享一个悠然假期</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVmmP0mIfUzzAABM8Y2sf6EAAAk5AGWWr4AAE0J79.jpeg">
+											<div class="proCover">
+												<div class="proTit">和蓓昂斯来一场蜜旅【活动】</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/45e4c49cbd7634e9b4f7f498e6eb9195_w90_h90_c1_t0.png">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>4101</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>9</span>
+														</div>
+														<div class="tt2">和蓓昂斯来一场蜜旅【活动】</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="BRight fr">
+									<a href="javascript:;">
+										<img src="images/00-index/Cii_J1m_PqSIWttkAAEcrK9YXNYAABVPgF3xg4AARzE93.jpeg">
+										<div class="proCover">
+											<div class="proTit">2017年9月写游记 赢千元大奖</div>
+											<div class="tTit clear">
+												<div class="avatar fl">
+
+												</div>
+												<div>
+													<div class="tt1">
+														<span>3378</span>
+														<span style="color:#3f3f3f;">|</span>
+														<span>42</span>
+													</div>
+													<div class="tt2">2017年9月写游记 赢千元大奖</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+							<!-- 旅游攻略-异国风情 -->
+							<li class="tourBody clear">
+								<div class="BLeft fl">
+									<div class="L1">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_LrmIBeWmAAEAV0C25mQAABVBwJgYwIAAQBv86.jpeg">
+											<div class="proCover">
+												<div class="proTit">【日本和风之旅】漫游大阪五日记实——USJ、美食、购物+奥莱</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EFh6Ss2ID4tsAAKxG6upUN8AAG96gJ9yw4AArEz798_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3232</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">【日本和风之旅】漫游大阪五日记实——USJ、美食、购物+奥莱</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_KbCIHJEPAACk8zkYfSoAABU9QMCSvkAAKUL76.jpeg">
+											<div class="proCover">
+												<div class="proTit">艳遇清迈：我眼中不一样的烟火</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-Tle8kyGIUIN3AAGO51NfCd8AABo7wJKS38AAY7_142_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>2828</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">艳遇清迈：我眼中不一样的烟火</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_LDGIKl_gAABitjWdWqUAABU_QJlT2IAAGLO81.jpeg">
+											<div class="proCover">
+												<div class="proTit">牵手十年，意大利希腊de爱之旅 (海量原创大片) </div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-TlhylKyIabuHAAFJCe2oggEAAGgrwKXBzMAAUkh920_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>13316</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>3</span>
+														</div>
+														<div class="tt2">牵手十年，意大利希腊de爱之旅 (海量原创大片) </div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_KmOIYhOzAABOAknCWTsAABU9wO3AWcAAE4a91.jpeg">
+											<div class="proCover">
+												<div class="proTit"> 世界那么大之希腊 爱琴海之殇</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EVZGi6-IC4lvAAiQrnWEuioAAAMjAIQJEgACJDG712_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3086</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>4</span>
+														</div>
+														<div class="tt2"> 世界那么大之希腊 爱琴海之殇</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_NGyIPXCGAAB2oC9TJL8AABVGwPEdekAAHa461.jpeg">
+											<div class="proCover">
+												<div class="proTit">马来西亚--仙本那，亚庇，槟城，吉隆坡4城8日国庆错峰游</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii_NlmLARWIZ3BfAADmXcR2GrwAAGyZwPMwaAAAOZ1361_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>4464</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">马来西亚--仙本那，亚庇，槟城，吉隆坡4城8日国庆错峰游</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="BRight fr">
+									<a href="javascript:;">
+										<img src="images/00-index/Cii-VVm_McKIDvtwAAD9hbzHKqQAABVEgHYPvwAAP2d27.jpeg">
+										<div class="proCover">
+												<div class="proTit">fly over canada「加拿大温哥华枫叶国深度游</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/59237cde92e2d075b0a75eecfad22c67_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3174</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">fly over canada「加拿大温哥华枫叶国深度游</div>
+													</div>
+												</div>
+											</div>
+									</a>
+								</div>
+							</li>
+							<!-- 旅游攻略-达人视界 -->
+							<li class="tourBody clear">
+								<div class="BLeft fl">
+									<div class="L1">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_PbyIZ8UbAAC7cSlZwnAAABVOgGHUQcAALuJ40.jpeg">
+											<div class="proCover">
+												<div class="proTit"> 风情芽庄，开启度假慢生活！</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-VVmbgkiIIa7iAB5SYs9i7OgAAAP-wABtTEAHlJ6335_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3232</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2"> 风情芽庄，开启度假慢生活！</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_OKWIZaifAACSyiZzqG0AABVKwP-XI8AAJLi30.jpeg">
+											<div class="proCover">
+												<div class="proTit">【途牛首发】丽江，有如一碗酒，足以慰风尘</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-TFgjGciIegElAAYCX4hBD-cAAESgwDAT4gABgJ3889_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>5795</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">【途牛首发】丽江，有如一碗酒，足以慰风尘</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_OVeIawGGAABkHojQeKcAABVLgH5_lAAAGQ296.jpeg">
+											<div class="proCover">
+												<div class="proTit">【途牛首发】梦里水乡朱家角</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-TFf6PLWIX6DQAAXmwtXcxy0AADM0gMtDUwABeba463_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>5561</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>2</span>
+														</div>
+														<div class="tt2">【途牛首发】梦里水乡朱家角</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_O3uIAzWNAACNkRfMn2oAABVNAIg65sAAI2p42.jpeg">
+											<div class="proCover">
+												<div class="proTit">【途牛首发】勇敢者的游戏，自驾皖浙天路</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-T1gsEBSIXBmyAABpJ8tq-K8AAEdGwPlzQMAAGk_282_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3201</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">【途牛首发】勇敢者的游戏，自驾皖浙天路</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_P0yIeAgIAABBet6-F3cAABVQAHEiAgAAEGS65.jpeg">
+											<div class="proCover">
+												<div class="proTit">听，北纬18°的海在唱歌</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-T1eZ6A6IDkmSAAIdVXry0BkAAAjQQF-YgkAAh1t727_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>2675</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">听，北纬18°的海在唱歌</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="BRight fr">
+									<a href="javascript:;">
+										<img src="images/00-index/Cii_J1m_PqSIWttkAAEcrK9YXNYAABVPgF3xg4AARzE93 (1).jpeg">
+										<div class="proCover">
+												<div class="proTit">【途牛首发】#带着挖财去旅行#仙之境界，黔西南山地玩美之旅</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EVZ2vG6IVBbZAAFUc57M4PEAABFgAFxzJcAAVSL663_w90_h90_c1_t0.JPG">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3323</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">【途牛首发】#带着挖财去旅行#仙之境界，黔西南山地玩美之旅</div>
+													</div>
+												</div>
+											</div>
+									</a>
+								</div>
+							</li>
+							<!-- 旅游攻略-敢玩不同 -->
+							<li class="tourBody clear">
+								<div class="BLeft fl">
+									<div class="L1">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_Vj6IOxp2AACSUKCfP6IAABVdAN-8OIAAJJo81.jpeg">
+											<div class="proCover">
+												<div class="proTit">追寻生命中的那道光</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EVdGnamIS6TYAAanrp_-sC4AAGLbwLDuCwABqfG448_w90_h90_c1_t0.PNG">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>2866</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">追寻生命中的那道光</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_QKyIB-LfAACiJIFDOKoAABVQwP3tEEAAKI860.jpeg">
+											<div class="proCover">
+												<div class="proTit">跟着法国土著到他的“乡下”，住他“娘家”。</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/669fb72e11f01baa0cbf048855c32363_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>12774</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>2</span>
+														</div>
+														<div class="tt2">跟着法国土著到他的“乡下”，住他“娘家”。</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m7m3yIUyiiAABttYFe0ygAABQuQO-K0gAAG3N79.jpeg">
+											<div class="proCover">
+												<div class="proTit">#带着挖财去旅行#探索西藏的神秘雪山与骷髅墙【首发】</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-T1hZ8deIPym0AAOteDlV0I0AAFzwgDUpLwAA62Q758_w90_h90_c1_t0.JPG">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>4636</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">#带着挖财去旅行#探索西藏的神秘雪山与骷髅墙【首发】</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_V7eICLawAABzXPLSBTcAABVdwPCRHAAAHN022.jpeg">
+											<div class="proCover">
+												<div class="proTit">（首发）#带着挖财去旅行# 世界那么大 我却恋上冰岛</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-TFewiwOIf-4UAAChR6Cvo5AAABNuQDfBjkAAKFf315_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3455</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">（首发）#带着挖财去旅行# 世界那么大 我却恋上冰岛</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_WCWISGg8AABJkVqfB_EAABVeQBB8qYAAEmp37.jpeg">
+											<div class="proCover">
+												<div class="proTit"> (首发)#带着挖财去旅行# 挪威：北极圈的遗珠 罗弗敦群岛</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-TFewiwOIf-4UAAChR6Cvo5AAABNuQDfBjkAAKFf315_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3001</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>1</span>
+														</div>
+														<div class="tt2"> (首发)#带着挖财去旅行# 挪威：北极圈的遗珠 罗弗敦群岛</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="BRight fr">
+									<a href="javascript:;">
+										<img src="images/00-index/Cii-VVm_VtCIIN8QAACSZAj_CS4AABVdQKK2MUAAJJ839.jpeg">
+										<div class="proCover">
+												<div class="proTit">#KEEWATER众测#途风之行美国众多国家公园我们来了</div>
+												<div class="tTit clear">
+													<div class="avatar fl">											
+													</div>
+													<div>
+														<div class="tt1">
+															<span>2715</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">#KEEWATER众测#途风之行美国众多国家公园我们来了</div>
+													</div>
+												</div>
+											</div>
+									</a>
+								</div>
+							</li>
+							<!-- 旅游攻略-带娃去哪儿 -->
+							<li class="tourBody clear">
+								<div class="BLeft fl">
+									<div class="L1">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii_J1m_WX6IdgZcAAD7eLOPPRIAABVfAOs_2MAAPuQ19.jpeg">
+											<div class="proCover">
+												<div class="proTit">｛BabyEva环球旅记之2岁｝日本最美樱花VS和服宝宝</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii-VVmiElWIR2ouAAMHbJqgHawAAAdWAIGkbMAAweE44_w90_h90_c1_t0.jpeg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>5371</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">｛BabyEva环球旅记之2岁｝日本最美樱花VS和服宝宝</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm7kq-IUvE5AABgv5icdpoAABQlAIXTpoAAGDX65.jpeg">
+											<div class="proCover">
+												<div class="proTit"> #Osmo众测#这世界太大，我们的旅程从巴厘岛开始</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/78a818258c36479980b6d1459b3da934_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>37084</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>2</span>
+														</div>
+														<div class="tt2"> #Osmo众测#这世界太大，我们的旅程从巴厘岛开始</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_Wf2IFqP6AABiSGp7i-MAABVfgEXrN8AAGJg42.jpeg">
+											<div class="proCover">
+												<div class="proTit">【Allen的华丽冒险】暑假就去三亚海棠湾度个假</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/7182b0e843ff26622a950f4984c3e653_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>30543</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>47</span>
+														</div>
+														<div class="tt2">【Allen的华丽冒险】暑假就去三亚海棠湾度个假</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm_WpyIGmE3AABI1rYstXwAABVfwGQTkYAAEju39.jpeg">
+											<div class="proCover">
+												<div class="proTit">#带着挖财去旅行#同手同脚，鼓浪屿清唱云海谣【首发】</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EVcJ5WaIVtNyAARHxXA6i64AADEzABdH8AABEfd900_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>3630</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2">#带着挖财去旅行#同手同脚，鼓浪屿清唱云海谣【首发】</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="L2">
+										<a href="javascript:;">
+											<img src="images/00-index/Cii-VVm7lY2IHu08AABvG9I92OgAABQoQC1tKcAAG8z32.jpeg">
+											<div class="proCover">
+												<div class="proTit"> 恍如隔世，从千年古城到童话世界的亲子之旅</div>
+												<div class="tTit clear">
+													<div class="avatar fl">
+														<img src="images/00-index/Cii9EFdrlo2IGgcgAARq4a1Tzh0AAGtMgKQOJ8ABGr5789_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>6015</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>0</span>
+														</div>
+														<div class="tt2"> 恍如隔世，从千年古城到童话世界的亲子之旅</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="BRight fr">
+									<a href="javascript:;">
+										<img src="images/00-index/Cii-VVm_XJeIKkMEAADMkS_1cB8AABVhAF4rVgAAMyp54.jpeg">
+										<div class="proCover">
+												<div class="proTit"> #带着挖财去旅行#【首发】在珠海长隆海洋王国做一回大海的孩子</div>
+												<div class="tTit clear">
+													<div class="avatar fl">	
+														<img src="images/00-index/Cii_JVmIjw6IPT2dAAjzM7WeD8wAAGmFQPcL54ACPNL268_w90_h90_c1_t0.jpg">
+													</div>
+													<div>
+														<div class="tt1">
+															<span>40101</span>
+															<span style="color:#3f3f3f;">|</span>
+															<span>2</span>
+														</div>
+														<div class="tt2"> #带着挖财去旅行#【首发】在珠海长隆海洋王国做一回大海的孩子</div>
+													</div>
+												</div>
+											</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrapRight fr">
+					<!-- 出行服务 -->
+					<div class="asideBox free">
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii_LllTfM2IRrLQAABB13ZgJCwAAB4CgJoIEUAAEHv57.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii_JVlTfSyIXWkVAABEi_vSzIgAAB4CwPQcjwAAESj62.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii_LllTfV6IaO1ZAABC7PVKlecAAB4DAP_oRkAAEME81.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii_JVlTfY-IL6ELAAA7cEfq75cAAB4DgGc4LgAADuI69.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii_NllTfdaISBtYAAA_UMmOjdcAAB4DgPrf_0AAD9o21.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+					</div>
+					<!-- 银行服务 -->
+					<div class="asideBox bank">
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii-T1k0zKeIIchoAAAqWOW-ui8AALRkwPPQS4AACpw57.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii9EFk0ziWIHQjqAAAdM-Wc3j4AALpFgGc3J0AAB1L59.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii-T1k0zqqIdghwAAAw76vfxHcAALRnQI9PwQAADEH80.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii-TFk0zw-IWLVmAAAoR0UCbHEAALRoAP5o6sAAChf54.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+						<div class="imgs">
+							<a href="javascript:;">
+								<img src="images/00-index/Cii-U1k06IWIGwcwAAAohroK8-wAALppwP-M7MAACie28.jpeg">
+							</a>
+							<div class="line"></div>
+						</div>
+					</div>
+					<!-- 畅销榜 -->
+					<div class="asideBox">
+						<div class="boxInner">
+							<p>畅销排行版</p>
+							<div class="asideTab">
+								<ul class="asideTabTit clear">
+									<li class="current">周边</li>
+									<li>国内</li>
+									<li>出境</li>
+								</ul>
+								<ul class="asideTabList">
+									<li class="asideTabItem" style="display:block">
+										<ul>
+											<li class="clear">
+												<span class="topIcon1"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/Cii-T1gVq06IEifnAAQ9pPCPTBsAAD-IALJbpoABD28543_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;杭州-千岛湖中心湖区1日游&gt;纯玩无购物 游千岛湖精华岛屿登梅峰观岛 锁岛 月光岛景区 杭州市中心免费上门接车
+													</a>
+												</p>
+												<p>
+													杭州出发 纯玩无购物 免费接 天天发班 梅峰观群岛 
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥230</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<span class="topIcon2"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/193f48a8_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;杭州-乌镇-西塘3日游&gt;情迷四西，纯玩0购物，含宋城，含2早2正，漫步西湖，船游西溪，夜宿西栅，小资西塘，1车1导
+													</a>
+												</p>
+												<p>
+													1车1导 绝不进店 乌镇西栅 小资西塘 西溪湿地 情迷四西  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥586</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<span class="topIcon3"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/Cii-U1i2irSILEEhABCDEhavRTAAAIKLQPk3EAAEIMq660_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;普陀山2日跟团游&gt;宿（海边精装客栈，WIFI覆盖）含早，全程无购物（回程也不进杭州丝绸购物店），畅游千步沙沙滩，祈福首 选
+													</a>
+												</p>
+												<p>
+													许愿祈福 海边精装客栈 含早餐 纯玩0购物 独立卫浴 WiFi覆盖  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥302</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<a href="javascript:;">
+													<img src="images/00-index/8be6b0dfde5a291656660bae4260f625_w80_h80_c1_t0.png">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;乌镇东栅-西栅1日游&gt;白天游东栅 晚上看西栅夜景，0购物，看华东美丽水乡夜景
+													</a>
+												</p>
+												<p>
+													西栅夜景 天天发车 纯玩无购物 乌镇东栅  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥281</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<a href="javascript:;">
+													<img src="images/00-index/Cii9EFZBiTiILJN2AAdwbHJpJIsAAAJQAAAAAAAB3CE607_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">[国庆]&lt;黄山-西海大峡谷2日游&gt;杭州参团 纯玩无购物 30人私家团 宿山上 赏黄山日出  壮丽云海 杭州主城区免费上门接 含门票景交
+													</a>
+												</p>
+												<p>
+													住宿可另升级 萧山、临安 免费上门接
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥535</i>起
+													</span>
+												</p>
+											</li>
+										</ul>
+									</li>
+									<li class="asideTabItem">
+										<ul>
+											<li class="clear">
+												<span class="topIcon1"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/Cii-T1jUvQGILaa5AAl6wx0zuAMAAIwsgKNwTUACXrb971_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">[国庆]&lt;海南三亚-蜈支洲-亚龙湾双飞5日游&gt;奢享180度海景房连住，纯玩0购物，可升挂五一线海景天通，24H专车接机，爆款12万人出游
+													</a>
+												</p>
+												<p>
+													牛人年度爆款 连住180海景房 亲子蜜月纯玩 TOP5精华景点 途牛明星导游 品质游
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥2136</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<span class="topIcon2"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/Cii-U1jSZ8aIaeU2AAs5LOvACasAAJChQPvgZgACzlE528_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">[国庆]&lt;鄂尔多斯大草原-沙漠莲花酒店-藏式黄庙双飞5日游&gt;宿草原观星蒙古包，品社会餐厅，享1500元活动套餐，0购物不推自费，20人轻奢团
+													</a>
+												</p>
+												<p>
+													热门搜索 沙漠莲花酒店 深度玩草原 篝火晚会 特色美食餐 20人小团  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥3154</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<span class="topIcon3"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/Cii9EFjPiLuICjrAACEiGzIAV2QAAI_FwHRvBsAISIz289_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">[国庆]&lt;青海湖+茶卡盐湖+卓尔山+门源+祁连雪山双飞5日游&gt;青海湖骑行，茶卡摄影，无负重休闲徒步体验，西宁进出0购物
+													</a>
+												</p>
+												<p>
+													途牛户外 青海湖骑行 茶卡盐湖摄影 攀登祁连雪山  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥3443</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<a href="javascript:;">
+													<img src="images/00-index/Cii_JVlWIzyIOhTXAEln9LsyNeIAACGVQAAAAAASWgM421_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;八达岭长城1日游&gt;五环内接，含可口午餐，十三陵地下宫殿两大文化遗产组合，纯玩无购物
+													</a>
+												</p>
+												<p>
+													长城 奥运  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥148</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<a href="javascript:;">
+													<img src="images/00-index/d436522922f6d09f199f8674e8f416e5_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">[中秋]&lt;海南三亚国光豪生双飞5日自由行&gt;5星产品，三亚湾一线海景酒店，9元专车接机、水果礼盒、下午茶任选，万人出游优选
+													</a>
+												</p>
+												<p>
+													花椒同款  三亚湾  一线海景五星酒店  距机场8min  交通便利
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥1765</i>起
+													</span>
+												</p>
+											</li>
+										</ul>
+									</li>
+									<li class="asideTabItem">
+										<ul>
+											<li class="clear">
+												<span class="topIcon1"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/Cii9EFadny2II5nTACnF0e6LVpoAABhgQEAoEkAKcXp126_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;泰国-曼谷-芭堤雅-沙美岛5晚6日或7日游&gt;杭州直飞，锁定2晚湄南河畔华美达，2晚芭堤雅海边泳池酒店，半天Free，可选按摩2小时，B行程为国航5晚7天
+													</a>
+												</p>
+												<p>
+													富贵黄金屋 仅1站购物店 全程泳池国五 日游沙美岛 清迈小镇 1天自由活动  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥3377</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<span class="topIcon2"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/67b88d860133d6cc2821e8dc4d266517_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;芽庄5日或6日游&gt;杭州包机直飞芽庄，海边Palace酒店或同类型可升级，1或2日FREE，特别安排泥浆浴，约你度过完美的秋季
+													</a>
+												</p>
+												<p>
+													休闲海岛度假 阳光沙滩 杭州直飞 丰富夜生活   
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥1904</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<span class="topIcon3"></span>
+												<a href="javascript:;">
+													<img src="images/00-index/4c6e01cf4beda95e0dbc211d0545033f_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">[元旦]&lt;越南-芽庄5或6日游&gt;杭州直飞，Palace或同等酒店，酒店可升级，泥浆浴，充足自由活动
+													</a>
+												</p>
+												<p>
+													芽庄 海岛 亲子 暑期 暑假 蜜月  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥1798</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<a href="javascript:;">
+													<img src="images/00-index/Cii_J1mf6R-Ia83EAAgvdrOXEoEAAAajALUGHUACC-O925_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;巴厘岛6日游&gt;臻程牛人专线，途牛自营，杭州往返，希尔顿洲际君悦威斯汀，私密泳池VILLA，一栋一户，蓝梦出海（含海底漫步），阿勇河漂流，无购物，含WIFI
+													</a>
+												</p>
+												<p>
+													2晚海边国际五星  2晚独栋别墅   经典行程一网打尽  
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥6099</i>起
+													</span>
+												</p>
+											</li>
+											<li class="clear">
+												<a href="javascript:;">
+													<img src="images/00-index/Cii9EFZBiTiILJN2AAdwbHJpJIsAAAJQAAAAAAAB3CE607_w80_h80_c1_t0.jpg">
+												</a>
+												<p class="p1">
+													<a href="javascript:;">&lt;泰国曼谷-芭堤雅-沙美岛6日游&gt;1站购物1站免税，2晚国五2晚芭堤雅海边酒店，摩天轮夜市，唐人街，沙美岛，杭州直飞，B行程为国航5晚7天
+													</a>
+												</p>
+												<p>
+													杭州直飞 0自费 有自由活动 
+												</p>
+												<p>
+													跟团游
+													<span class="fr">
+														<i>¥3493</i>起
+													</span>
+												</p>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 主题活动 -->
+					<div class="asideBox theme">
+						<div class="boxInner">
+							<p>主题活动</p>
+							<div class="asideTab">		
+								<a href="javascript:;">
+									<img src="images/00-index/Cii_NllR0aCIfdgKAABIFzkBAjEAABvHQK2-N0AAEgv06.jpeg">
+								</a>
+							</div>
+							<div class="line"></div>
+							<div class="asideTab">		
+								<a href="javascript:;">
+									<img src="images/00-index/Cii-T1k09guIdZ-6AAAbuNLMQ2QAALSgQHVi9YAABvQ412.png">
+								</a>
+							</div>
+							<div class="line"></div>
+							<div class="asideTab">		
+								<a href="javascript:;">
+									<img src="images/00-index/Cii-TFk09meIGi31AAAdbZTsE6MAALShQDeaR0AAB2F213.png">
+								</a>
+							</div>
+							<div class="line"></div>
+							<div class="asideTab">		
+								<a href="javascript:;">
+									<img src="images/00-index/Cii-T1k0-36IaMOkAAAb5ikmbBwAALSpAPfzFUAABv-591.png">
+								</a>
+							</div>
+							<div class="line"></div>
+							<div class="asideTab">		
+								<a href="javascript:;">
+									<img src="images/00-index/Cii-Tlk09-qIfxs8AAAbvQnVUL0AALSjQDDeVEAABvV344.png">
+								</a>
+							</div>
+							<div class="line"></div>
+							<div class="asideTab">		
+								<a href="javascript:;">
+									<img src="images/00-index/Cii9EVk0-DaINEUJAAAb97a8IOoAALqCgNiEw0AABwP231.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- 热门目的地 -->
+					<div class="asideBox dest">
+						<div class="boxInner">
+							<p>
+								热门目的地
+								<span class="btnLeft"></span>
+								<span class="btnRight"></span>
+							</p>					
+							<div class="destContent">
+								<ul class="clear">
+									<li>
+										<div>
+											<img src="images/00-index/Cii9EVaXeVaIHm_VAAAK_O0IxnsAABcZwP_9MwAAAs097.jpeg">
+										</div>
+										<p>海南</p>
+									</li>
+									<li>
+										<div>
+											<img src="images/00-index/Cii9EVaXelOIR_GYAAAKpYdFORYAABbIgP_9MYAAAs629.jpeg">
+										</div>
+										<p>云南</p>
+									</li>
+									<li>
+										<div>
+											<img src="images/00-index/Cii9EVaXe8GIHPEeAAALSY11RygAABcSAP_9IMAAAt987.jpeg">
+										</div>
+										<p>日本</p>
+									</li>
+									<li>
+										<div>
+											<img src="images/00-index/Cii9EVaXfDSIIjF7AAALRVOliasAABdagP_9HoAAAuG39.jpeg">
+										</div>
+										<p>欧洲</p>
+									</li>
+									<li>
+										<div>
+											<img src="images/00-index/Cii9EVaXfJSII6qCAAALntLDdUIAABdsAP_9EgAAAu421.jpeg">
+										</div>
+										<p>马尔代夫</p>
+									</li>
+								</ul>
+							</div>							
+						</div>
+					</div>
+					<!-- 最新点评 -->
+					<div class="asideBox comm">
+						<div class="boxInner">
+							<p>最新点评</p>						
+							<div style="height:220px;">
+								<p class="commTit">
+									用户夏***木 发表了点评
+								</p>
+								<p class="commTxt">
+									&lt;双人报价套餐-上海迪士尼乐园自驾2日游&gt;宿上海迪士尼玩具总动员酒店
+								</p>
+								<p class="commCnt">
+									选择周一周二出行，人比想象中多，不过玩的还是很开心的
+								</p>
+							</div>
+							<div style="height:220px;">
+								<p class="commTit">
+									用户嘭***聪 发表了点评
+								</p>
+								<p class="commTxt">
+									&lt;天山天池-魔鬼城-五彩滩-喀纳斯-禾木-吐鲁番-库木塔格沙漠双飞8日游&gt;醉美金秋喀纳斯，20人内新疆精品小团，0购物，乌市升级环球国际，品大盘鸡
+								</p>
+								<p class="commCnt">
+									新疆太大太大，景点之间相隔几百公里，不去新疆不知道什么叫路途遥远。喀纳斯大美，太值得一去。必顺一提的是某二个酒店的早餐跟抢似的，希望能改进管理。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="asideBox img">
+						<img src="images/00-index/Cii9EVcUeMGIFXYRAAAxj2QsG2gAADVuwImJ8cAADGn67.jpeg">
+					</div>
+					<div class="asideBox img">
+						<img src="images/00-index/Cii9EVcUeJ6IGeA3AAAe8v0a_U4AADVugH6doEAAB8K25.jpeg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主体底部 -->
+		<div class="mainBottom">
+			<div class="tourismBox">
+				<div class="tourismTit">
+					<span>旅游合作局</span>
+					<span class="fr">
+						<a href="javascript:;">更多旅游局合作 &gt;</a>
+					</span>
+				</div>
+				<div class="tourismWrap">
+					<ul class="twList clear">
+						<li>
+							<div>
+								<img src="images/00-index/new_austr.jpg">
+							</div>
+							<p>澳大利亚旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_J1m3kiqIPZwSAAAXpaz6AkYAABIAwDWVe8AABe976.jpeg">
+							</div>
+							<p>拉斯维加斯旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Berlin.jpg">
+							</div>
+							<p>柏林旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TlfjkFuIUvZfAAALfQ1ljAoAACrSwP_85cAAAxp52.jpeg">
+							</div>
+							<p>加拿大不列颠哥伦比亚省旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_NlmNWzSIDdhrAAATt8wT2dUAAG-lwPqbY0AABPP29.jpeg">
+							</div>
+							<p>华盛顿特区旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/xi_adly.png">
+							</div>
+							<p>西澳大利亚旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Germany.jpg">
+							</div>
+							<p>德国国家旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TljbhCGIYK75AAAauhcUrI8AAI4GgMxyV4AABrS10.jpeg">
+							</div>
+							<p>菲律宾旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii9EFdXyBeIM22DAAAblYN9CosAAGcMQEfITAAABut17.jpeg">
+							</div>
+							<p>新南威尔士州旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/saiban_corp.jpg">
+							</div>
+							<p>马里亚纳观光局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/zyjc.jpg">
+							</div>
+							<p>新加坡樟宜机场</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_JVlsMtOIZWl4AAAXbIZviMUAAD92wIgbKMAABeE00.jpeg">
+							</div>
+							<p>加拿大艾伯塔省旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/NewZealand.jpg">
+							</div>
+							<p>新西兰旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii9EVdED3qIEm2IAAAfUDwpkF4AAGJrgP_zkUAAB9o32.jpeg">
+							</div>
+							<p>免税易购</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/9.jpg">
+							</div>
+							<p>DFS集团</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-T1jTnGmIXD9sAAAWn3noSugAAIvlwP8UHMAABa370.jpeg">
+							</div>
+							<p>日本九州旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TFfg9kmINk-EAABL7T9fDBYAACmmgAqKS4AAEwF83.jpeg">
+							</div>
+							<p>英国旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_NlmC-qCIVPUxAAAKXyQcGjoAAF08AP_9YkAAAp342.jpeg">
+							</div>
+							<p>洛杉矶旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/combined.png">
+							</div>
+							<p>关岛观光局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-T1fiPG6ITG8oAAAPFeTgEr0AACo_AEboHQAAA8t90.jpeg">
+							</div>
+							<p>泰州旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Feiji.jpg">
+							</div>
+							<p>斐济旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TlgQQVOIYMyYAAAQRqfm-jAAADvxgP_5l8AABBe35.jpeg">
+							</div>
+							<p>宿迁旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TFhTs5SIVNMhAAAKJZVfHcIAAFnrwP_9ZkAAApn209_w640_h480_c0_t0.jpg">
+							</div>
+							<p>广安市旅发委</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/yuexi.jpg">
+							</div>
+							<p>岳西旅游</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Hawaiian.JPG">
+							</div>
+							<p>夏威夷旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/zhongmian.jpg">
+							</div>
+							<p>中免商城</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/nantong.jpg">
+							</div>
+							<p>南通市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii9EVkDAKiIX0EHAAAHh_O9qNoAAJ1swP_-GAAAAeg02.jpeg">
+							</div>
+							<p>齐齐哈尔旅发委</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_NllBCbeIQHoPAAANR8loChoAAANsAP_8poAAA1m95.jpeg">
+							</div>
+							<p>利川市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/abuzabi.png">
+							</div>
+							<p>阿布扎比旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Disney.jpg">
+							</div>
+							<p>香港迪士尼乐园</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/7.jpg">
+							</div>
+							<p>香港海洋公园</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/hainan.jpg">
+							</div>
+							<p>海南省旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Deyang.jpg">
+							</div>
+							<p>德阳市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Liuzhou.jpg">
+							</div>
+							<p>柳州旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/cgbr_2.jpg">
+							</div>
+							<p>昆士兰旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/tasimayalogo.jpg">
+							</div>
+							<p>塔斯马尼亚旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/cgbr.jpg">
+							</div>
+							<p>澳大利亚北昆士兰旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/adlybld.jpg">
+							</div>
+							<p>澳大利亚北领地</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/California.jpg">
+							</div>
+							<p>美国加利福尼亚州会展局</p>
+						</li>					
+						<li>
+							<div>
+								<img src="images/00-index/mssj.jpg">
+							</div>
+							<p>新加坡圣淘沙名胜世界</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_LllbMy2IT94FAAAPGFd0g2cAACfHgIxe24AAA8w20.jpeg">
+							</div>
+							<p>陇南市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Portugal.jpg">
+							</div>
+							<p>葡萄牙</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Guilin.jpg">
+							</div>
+							<p>桂林市旅发委</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/haining.jpg">
+							</div>
+							<p>海宁旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/canada_adl.jpg">
+							</div>
+							<p>加拿大安大略省旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_NlmRanCIQABrAAAbERAEbZEAAHSWwFE9tUAABsp00.jpeg">
+							</div>
+							<p>瓦努阿图旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/HongKong.jpg">
+							</div>
+							<p>香港旅游发展局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Canada_kbk.jpg">
+							</div>
+							<p>加拿大魁北克省旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_NlmJZsuIDb6GAAARirafa0YAAGqhwP_5OIAABGi61.jpeg">
+							</div>
+							<p>榆林市局旅游外事(侨胞)局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/jiangsulogo.jpg">
+							</div>
+							<p>江苏旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Sichuan.jpg">
+							</div>
+							<p>四川省旅游发展委员会</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/liaoning.jpg">
+							</div>
+							<p>辽宁省旅游发展局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/dibailogo.jpg">
+							</div>
+							<p>迪拜政府商业及旅游推广局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Xiamen.jpg">
+							</div>
+							<p>厦门市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-T1jTnGmIXD9sAAAWn3noSugAAIvlwP8UHMAABa370.jpeg">
+							</div>
+							<p>日本九州旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TFfg9kmINk-EAABL7T9fDBYAACmmgAqKS4AAEwF83.jpeg">
+							</div>
+							<p>英国旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_NlmC-qCIVPUxAAAKXyQcGjoAAF08AP_9YkAAAp342.jpeg">
+							</div>
+							<p>洛杉矶旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/combined.png">
+							</div>
+							<p>关岛观光局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-T1fiPG6ITG8oAAAPFeTgEr0AACo_AEboHQAAA8t90.jpeg">
+							</div>
+							<p>泰州旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Feiji.jpg">
+							</div>
+							<p>斐济旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TlgQQVOIYMyYAAAQRqfm-jAAADvxgP_5l8AABBe35.jpeg">
+							</div>
+							<p>宿迁旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii-TFhTs5SIVNMhAAAKJZVfHcIAAFnrwP_9ZkAAApn209_w640_h480_c0_t0.jpg">
+							</div>
+							<p>广安市旅发委</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/yuexi.jpg">
+							</div>
+							<p>岳西旅游</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Hawaiian.JPG">
+							</div>
+							<p>夏威夷旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/zhongmian.jpg">
+							</div>
+							<p>中免商城</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/nantong.jpg">
+							</div>
+							<p>南通市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii9EVkDAKiIX0EHAAAHh_O9qNoAAJ1swP_-GAAAAeg02.jpeg">
+							</div>
+							<p>齐齐哈尔旅发委</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Cii_NllBCbeIQHoPAAANR8loChoAAANsAP_8poAAA1m95.jpeg">
+							</div>
+							<p>利川市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/abuzabi.png">
+							</div>
+							<p>阿布扎比旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Disney.jpg">
+							</div>
+							<p>香港迪士尼乐园</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/7.jpg">
+							</div>
+							<p>香港海洋公园</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/hainan.jpg">
+							</div>
+							<p>海南省旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Deyang.jpg">
+							</div>
+							<p>德阳市旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/Liuzhou.jpg">
+							</div>
+							<p>柳州旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/cgbr_2.jpg">
+							</div>
+							<p>昆士兰旅游局</p>
+						</li>
+						<li>
+							<div>
+								<img src="images/00-index/fujian_logo.jpg">
+							</div>
+							<p>福建省旅游局</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sunService">
+				<ul class="clear">
+					<li>
+						<span></span>
+						<p>阳光保证</p>
+					</li>
+					<li>
+						<span></span>
+						<p>产品丰富</p>
+					</li>
+					<li>
+						<span></span>
+						<p>卓越服务</p>
+					</li>
+					<li>
+						<span></span>
+						<p>预定价格保障</p>
+					</li>
+					<li>
+						<span></span>
+						<p>酒店升级保障</p>
+					</li>
+					<li>
+						<span></span>
+						<p>航班延误保障</p>
+					</li>
+					<li>
+						<span></span>
+						<p>特殊原因退订保障</p>
+					</li>
+					<li>
+						<span></span>
+						<p>不可抗力退订保障</p>
+					</li>
+					<li>
+						<span></span>
+						<p>重大灾害保障</p>
+					</li>
+				</ul>
+			</div>
+			<div class="footInfo clear">
+				<dl>
+					<dt>预定常见问题</dt>
+					<dd>纯玩是什么意思？</dd>
+					<dd>单房差是什么？</dd>
+					<dd>双飞、双卧都是什么意思？</dd>
+					<dd>满意度是怎么计算的？</dd>
+				</dl>
+				<dl>
+					<dt>付款和发票</dt>
+					<dd>签约可以刷卡吗？</dd>
+					<dd>付款方式有哪些？</dd>
+					<dd>怎么网上支付？</dd>
+					<dd>如何获取发票？</dd>
+				</dl>
+				<dl>
+					<dt>签署旅游合同</dt>
+					<dd>有旅游合同范本下载吗？</dd>
+					<dd>门市地址在哪里？</dd>
+					<dd>能传真签合同吗？</dd>
+					<dd>可以不签合同吗？</dd>
+				</dl>
+				<dl>
+					<dt>旅游预订优惠政策</dt>
+					<dd>什么是抵用券？</dd>
+					<dd>途牛抵用券使用帮助</dd>
+					<dd>什么是旅游券？</dd>
+					<dd>如何获得旅游券？</dd>
+				</dl>
+				<dl>
+					<dt>其他事项</dt>
+					<dd>签证相关问题解答</dd>
+					<dd>旅游保险问题解答</dd>
+					<dd>退款问题解答</dd>
+					<dd>旅途中的问题</dd>
+				</dl>
+				<dl class="tiexin">
+					<dd>
+						<p>途牛贴心服务</p>
+						<p>
+							途牛旅游网创立于2006年10月，并于2014年5月在纳斯达克成功上市。已在北京、上海、深圳等城市设立了近百个区域服务中心，提供全年365天24小时400电话预订服务。
+            			</p>
+						<span class="car"></span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!-- 电梯 -->
+		<div class="floatNav">
+			<ul>
+				<li>
+					<a href="javascript:;">当季热玩</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="javascript:;">国内旅游</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="javascript:;">出境短线</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="#cx">出境长线</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="#cx">自驾旅游</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="#cx">门票精选</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="#cx">当地玩乐</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="#cx">游记攻略</a>
+				</li>
+				<li class="line"></li>
+			</ul>
+		</div>
+		<!--  -->
+	</div>
+	<div class="wOpen">
+		<div class="wOpenBg"></div>
+		<div class="wOpenInner">
+			<div class="innerBgImg">
+				<img src="images/00-index/Cii-VVnAghOIXkBnAALtLeW13H4AABXRQP1eBwAAu1F472.png">
+			</div>
+			<div class="btnDown">
+				<a href="javascript:;">
+					<img src="images/00-index/1.png">
+				</a>
+				<a href="javascript:;">
+					<img src="images/00-index/2.png">
+				</a>
+				<a href="javascript:;">
+					<img src="images/00-index/3.png">
+				</a>
+			</div>
+			<div class="btnClose">
+				<img src="images/00-index/Cii_JVmMICGIfKvnAAAFxCFfeR0AAGJ7gP_-iQAAAXc646.png">
+			</div>
+		</div>
+	</div>
+	<div class="wClose">
+		<img src="images/00-index/Cii-VVnAgiiIC68MAABtGHN2RagAABXRgFhtcYAAG0w384.png">
+	</div>
+	<div class="rightOrder">
+		<ul>
+			<li class="wanzhuan">
+				<div> 
+					<img src="images/00-index/Cii_J1m8-U-IVrGZAAC3iUYcLmIAABS0gHnRyMAALeh18.jpeg" alt="">
+				</div>
+			</li>
+			<li class="app">
+				<div> 
+					<img src="images/00-index/Cii_J1nIdqGIV0mQAACdnbjvt44AABkXQLrcZgAAJ21051.png" alt="">
+				</div>
+			</li>
+			<li class="niuniu">
+				<span></span>
+			</li>
+			<li class="heart">
+				<div class="commTit">
+					我的关注
+				</div>
+			</li>
+			<li class="dingdan">
+				<div class="commTit">
+					我的订单
+				</div>
+			</li>
+			<li class="gift">
+				<div class="commTit">
+					我的礼券
+				</div>
+			</li>
+			<li class="remind">
+				<div class="commTit">
+					消息提醒
+				</div>
+			</li>
+			<li class="question">
+				<div class="commTit">
+					问卷调查
+				</div>
+			</li>
+			<li class="suggest">
+				<div class="commTit">
+					意见建议
+				</div>
+			</li>
+			<li class="toTop">
+				<div class="commTit">
+					返回顶部
+				</div>
+			</li>
+		</ul>
+	</div>
+	<footer>
+		<div class="trav_sev">
+		<ul class="ts_box clearfix">
+			<li class="trav_l_first">
+				<dl class="trav_l ">
+					<dt class="tl_tt">
+						<a>去旅游</a>
+					</dt>
+					<dd class="tl_w">
+						<p>
+							<a href="http://www.tuniu.com/tours/" target="_blank">跟团游</a>
+							<a href="http://www.tuniu.com/pkg/" target="_blank">自助游</a>
+							<a href="http://www.tuniu.com/drive/" target="_blank">酒+景</a>
+						</p>
+						<p>
+							<a href="http://www.tuniu.com/theme/haidao/" target="_blank">海岛游</a>
+							<a href="http://flight.tuniu.com/" target="_blank">机票</a>
+							<a href="http://youlun.tuniu.com/" target="_blank">邮轮</a>
+						</p>
+						<p>
+							<a href="http://menpiao.tuniu.com/" target="_blank">门票</a>
+							<a href="http://www.tuniu.com/theme/guaguoqinziyou/" target="_blank">亲子游</a>
+							<a href="http://www.tuniu.com/visa/" target="_blank">签证</a>
+						</p>
+						<p>
+							<a href="http://super.tuniu.com/" target="_blank">机票+酒店</a>
+							<a href="http://www.tuniu.com/theme/miyue/" target="_blank">蜜月游</a>
+							<a href="http://hotel.tuniu.com/" target="_blank">酒店</a>
+						</p>
+						<p>
+							<a href="http://v.tuniu.com/" target="_blank">老于推荐</a>
+							<a href="http://www.tuniu.com/gongsi/" target="_blank">公司旅游</a>
+							<a href="http://www.tuniu.com/niuren/" target="_blank">牛人专线</a>
+						</p>
+						<p>
+							<a href="http://www.tuniu.com/zt/sfcf/" target="_blank">首付出发</a>
+							<a href="http://www.tuniu.com/local/" target="_blank">当地玩乐</a>
+							<a href="http://love.tuniu.com/" target="_blank">旅拍</a>
+						</p>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl class="trav_l ">
+					<dt class="tl_tt">
+						<a>寻优惠</a>
+					</dt>
+					<dd class="tl_w">
+						<p>
+							<a href="http://temai.tuniu.com/" target="_blank">特卖</a></p>
+						<p>
+							<a href="http://hotel.tuniu.com/" target="_blank">订酒店 返现金</a>
+						</p>
+						<p>
+							<a href="http://points.tuniu.com/" target="_blank">积分商城</a>
+						</p>
+						<p>
+							<a href="http://www.tuniu.com/zt/bankactivities/" target="_blank">银行特惠游</a>
+						</p>
+						<p>
+							<a href="http://www.tuniu.com/zt/bankactivities/" target="_blank">银行分期游</a>
+						</p>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl class="trav_l ">
+					<dt class="tl_tt">
+						<a>看攻略</a>
+					</dt>
+					<dd class="tl_w">
+						<p>
+							<a href="http://go.tuniu.com/" target="_blank">攻略</a>
+						</p>
+						<p>
+							<a href="http://top.tuniu.com/" target="_blank">途牛风向标</a>
+						</p>
+						<p>
+							<a href="http://trips.tuniu.com/" target="_blank">游记</a>
+						</p>
+						<p>
+							<a href="http://www.tuniu.com/way/" target="_blank">达人玩法</a>
+						</p>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl class="trav_l ">
+					<dt class="tl_tt">
+						<a>查服务</a>
+					</dt>
+					<dd class="tl_w tl_cont">
+						<p>
+							<a href="http://www.tuniu.com/help/" target="_blank">帮助中心</a>
+						</p>
+						<p>
+							<a href="http://www.tuniu.com/u/club" target="_blank">积分俱乐部</a>
+						</p>
+						<p>
+							<a href="http://www.tuniu.com/static/sunshine_ensure/" target="_blank">阳光保障</a>
+						</p>
+						<p>
+							<a href="http://huoche.tuniu.com/" target="_blank">火车时刻表</a>
+						</p>
+						<p>
+							<a href="http://flight.tuniu.com/" target="_blank">航班查询</a>
+						</p>
+					</dd>
+				</dl>
+			</li>
+			<li class="trav_l_last">
+				<dl class="trav_l ">
+					<dt class="tl_tt"><a>途牛APP</a></dt>
+					<dd class="tl_w tl_cont">
+						<p><a>扫描下载途牛APP</a></p>
+						<p>
+							<img src="images/footer/erweima.jpg">
+						</p>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+		<div class="three_trav">
+		<div class="thr_trav">
+			<a style="width: 100%; height: 100%; display: block;" href="http://www.tuniu.com/static/sunshine_ensure/" target="_blank">
+				<em id="service_phone_head_text" class="tn_text">客户服务电话(免长途费)</em>
+				<em id="service_phone_head_phone" class="tn_phone">4007-999-999</em>
+			</a>
+		</div>
+	</div>
+		<div class="fourImgs">
+		<ul class="clear">
+			<li>
+				<a href="http://www.tuniu.com/zt/brand/" target="_blank">
+					<img alt="品牌合作" width="238" height="58" src="images/footer/dianpu.png">
+				</a>
+			<li>
+				<a href="http://temai.tuniu.com/" target="_blank">
+					<img alt="超值特卖-底部" src="images/footer/tuniu.jpg" width="238" height="58">
+				</a>
+			</li>
+			<li>
+				<a href="http://super.tuniu.com/" target="_blank">
+					<img alt="超级自由行" src="images/footer/free.jpg" width="238" height="58">
+				</a>
+			</li>
+			<li>
+				<a href="http://points.tuniu.com/" target="_blank">
+					<img alt="积分商城" src="images/footer/score.jpg" width="238" height="58">
+				</a>
+			</li>
+		</ul>
+	</div>
+		<div class="img_place">
+			<a style="display: block;" rel="nofollow" target="_blank">
+				<img alt="牛人专线" src="images/footer/tn_footer_05l_007.jpg" width="988" height="58">
+			</a>
+		</div>
+		<div id="TN-footer" class="tn_footer datalazyload">
+			<p id="TN-24">途牛客服中心位于南京市 来电显示为 025-86859999 、025-86259999 、025-85029999
+				、025-69609987 、025-69609986 、025-57629999 或 025-52339999
+			</p>
+			<p>北京途牛国际旅行社有限公司，旅行社业务经营许可证编号：L-BJ-CJ00144　　上海途牛国际旅行社有限公司，旅行社		业务经营许可证编号：L-SH-CJ00107
+			</p>
+			<p id="TN-links">
+				<a href="http://www.tuniu.com/corp/aboutus.shtml" rel="nofollow" target="_blank">关于我们&nbsp;&nbsp;&nbsp;</a>
+				<a href="http://ir.tuniu.com/" target="_blank" $nofollow="">Investor Relations</a>
+				<a href="http://www.tuniu.com/corp/contactus.shtml" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;联系我们</a>
+				<a href="http://www.tuniu.com/corp/advise.shtml" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;投诉建议</a>
+				<a href="http://www.tuniu.com/corp/advertising.shtml" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;广告服务</a>
+				<a href="http://www.tuniu.com/giftcard/" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;旅游券</a>
+				<a style="color: red;" href="http://tuniu.zhiye.com/" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;途牛招聘</a>
+				<a href="http://www.tuniu.com/corp/privacy.shtml" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;隐私保护</a>
+				<a href="http://www.tuniu.com/corp/duty.shtml" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;免责声明</a>
+				<a href="http://www.tuniu.com/corp/zizhi.shtml" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;旅游度假资质</a>
+				<a href="http://www.tuniu.com/theme/index/" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;主题旅游</a>
+				<a href="http://www.tuniu.com/corp/agreement.shtml" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;用户协议</a>
+				<a href="http://www.tuniu.com/corp/sitemap.shtml" target="_blank">&nbsp;&nbsp;&nbsp;网站地图</a>
+				<a href="http://www.tuniu.com/ueip/" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;UEIP</a>
+				<a href="http://www.tuniu.com/help/" rel="nofollow" target="_blank">&nbsp;&nbsp;&nbsp;帮助中心</a>
+			</p>
+			<p id="copyright">Copyright © 2006-2017
+				<a href="http://www.tuniu.com/" rel="nofollow">南京途牛科技有限公司</a>
+				<a href="http://www.tuniu.com/" rel="nofollow">Tuniu.com</a> |
+				<a href="http://www.tuniu.com/corp/company.shtml" rel="nofollow" target="_blank">营业执照</a> |
+				<a href="http://www.miibeian.gov.cn/" rel="nofollow" target="_blank">ICP证：苏B2-20130006</a> |
+				<a href="http://www.miibeian.gov.cn/" rel="nofollow" target="_blank">苏ICP备12009060号</a> |
+				<a href="http://nj.tuniu.com/" target="_blank">上海旅游网</a>
+			</p>
+			<div class="thr_img">
+				<ul class="clearfix">
+					<li>
+						<a href="http://www.tuniu.com/tours/" target="_blank">
+							<img alt="跟团" src="images/footer/footer_1.jpg" width="175" height="38">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.tuniu.com/pkg/" target="_blank">
+							<img alt="自助" src="images/footer/footer_2.jpg" width="175" height="38">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.tuniu.com/merchants/" target="_blank">
+							<img alt="供应商合作" src="images/footer/bottom.jpg" width="175" height="38">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="slideOrder" class="slide_order clear">
+				<span class="fl">最新预订：</span>
+				<div class="fl w_940 foo">
+					<div class="fl w_940">
+						<ul>
+							<li>1分钟前用户***_G预订&lt;南京金丝利喜来登酒店1晚&gt;游南京云锦博物馆 含双人自助早餐  穿梭历史古今
+								领略人文魅力&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>1分钟前用户***656676预订&lt;华南QY广州长隆酒店&gt;单房2晚&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>1分钟前用户***899221预订[国庆]&lt;南宁-越南-北海-德天瀑布-通灵峡谷-下龙湾-天堂岛双飞9日游&gt;中越连线，全程0购物，境外四星酒店，越南海鲜自助，含签证费，边境风情，轻松出国&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>2分钟前用户***208315预订[国庆]&lt;塞班岛5日或6日
+								半自助游&gt;经典行程上海直飞，可升级（马里亚纳、凯悦等）级别酒店，北部环岛、军舰岛、丛林探险，含税含餐，国庆可指定凯悦&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>3分钟前用户***预订[国庆]&lt;温州雁荡山3日游&gt;四绝门票全含（大龙湫，小龙湫，灵峰日景，灵峰夜景，天烛仙境），纯玩0购物，宿经济性酒店，经
+								典推荐，游山不爬山&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>4分钟前用户***250782预订&lt;浙江嘉兴西塘-烟雨长廊1日游&gt;纯玩无购物，含西塘大门票，往返车位&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li>4分钟前用户***预订[国庆]&lt;拉萨布宫-日喀则-羊湖-卡若拉冰川-珠峰大本营卧飞10游&gt;西藏深度全景游，宿珠峰拍银河，0自费，游11大景点，含边防证，回上海，含纳木错&nbsp;&nbsp;&nbsp;&nbsp;</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="trav_corp">
+				<a id="___szfw_logo___" href="https://credit.szfw.org/CX20160128013521800380.html" rel="nofollow" target="_blank">
+					<img style="height: 41px;" border="0" alt="中国互联网诚信示范企业" src="images/footer/chengxinOne.png">
+				</a>
+				<a href="http://net.china.cn/" rel="nofollow" target="_blank">
+					<img alt="违法和不良信息举报中心" src="images/footer/buliang.png" width="109" height="47">
+				</a>
+				<a href="http://js.cyberpolice.cn/webpage/index.jsp" rel="nofollow" target="_blank">
+					<img alt="网络110报警服务" src="images/footer/wangluo.png" width="110" height="47">
+				</a>
+				<img alt="cata航空资质认证" src="images/footer/cata.png" width="110" height="47">
+				<a target="_blank">
+					<img alt="中国互联网协会" src="images/footer/huiyuan.png" width="110" height="47">
+				</a>
+				<a rel="nofollow" target="_blank">
+					<img alt="中国互联网协会信用评价中心" src="images/footer/3acomp.png" width="110" height="47">
+				</a>
+				<a title="可信网站" href="https://ss.knet.cn/verifyseal.dll?sn=e14120832010056662smwq000000&amp;ct=df&amp;a=1&amp;pa=0.06350954016670585" rel="nofollow" target="_blank">
+					<img alt="诚信网站" src="images/footer/chengxin.png" width="110" height="47">
+				</a>
+				<a href="http://www.jsgsj.gov.cn:60101/keyLicense/verifKey.jsp?serial=320000163820121119100000009204&amp;signData=LvIMjwILeOCOnIt65a1kGAk+FxZKCnAoexteChdi5LEEvVGY5TUoYBJ15zmxNW1dwAE4U4mMREXkWocqMPODoh+IfB2ojCxtCvMF4gVdgsMXKTbkhemenyjWlproKM0XWYyPNEYxgn8H1kxvUgCWX35ExI1xLVWA3Zuw7ZiLdYM=" rel="nofollow" target="_blank">
+					<img src="images/footer/dianziyingye.png" width="110" height="47">
+				</a>
+				<a href="http://www.patachina.org/" rel="nofollow" target="_blank">
+					<img alt="亚太旅游协会会员单位" src="images/footer/pata.png" width="140" height="47">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="js/00-index.js"></script>
+<script src="js/001-index.js"></script>
+<script src="js/00-search.js"></script>
+<script>
+	var w=parseFloat($("#slideOrder ul li:first-child").css("width"));
+	var n=-w;
+	var timer=setInterval(function(){
+		n+=w;
+		$("div.foo ul").css("left",-n);
+		if(n>4000){
+			n=-w;
+		}
+	},2000);
+	
+</script>
+</html>
